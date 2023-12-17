@@ -1,1 +1,224 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+html {
+    font-size: 100%;
+}
+
+
+body {
+    padding: 0px;
+    font-family:Poppins, sans-serif;
+    background-color: #ffffff;
+    color:black;
+}
+
+nav,
+.desktop-nav-links {
+  display: flex;
+}
+
+nav {
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.desktop-nav-links {
+  list-style: none;
+  font-size: 18px;
+  display: flex;
+}
+
+.desktop-nav-links li{
+  margin-right: 40px;
+  padding-left:40px;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: grey;
+}
+
+.myname {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.profile {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-bottom:25px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.profile-text {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.profile-text h1 {
+  font-size:35px;
+  margin-top:0px;
+}
+
+.profile-text p {
+  line-height:1.5em;
+  font-size:15px;
+}
+
+.profile-logos {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.profile-logos img {
+  max-width: 25%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile-logos img:hover {
+  background-color:grey;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.profile-headshot img{
+    max-width: 65%;
+    margin-right: 50px;
+    margin-bottom: 45px;
+}
+
+.skills-section {
+  text-align: center;
+  margin: 20px;
+  flex-direction:column;
+}
+
+.skills-section h1{
+  margin-bottom:35px;
+  margin-top:0px;
+}
+.skill-column {
+  margin-top: 55px;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  width: 450px;
+  height: 325px;
+  text-align: left;
+  border: 1.5px solid black;
+  border-radius: 35px;
+  vertical-align: top;
+}
+
+.skill-column h3 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.skill-column ul {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.skill-column li {
+  margin-bottom: 8px;
+  font-size:14px;
+  line-height:1.5rem;
+}
+
+.skill-column strong {
+  font-weight:bold;
+}
+
+.projects-button {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.projects-button button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.projects-button button:hover {
+  background-color:grey;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+footer{
+  margin-top:60px;
+  margin-bottom:100px;
+  text-align:center;
+}
+
+footer p{
+  margin-bottom: 15px;
+}
+
+footer h1{
+  font-size:25px;
+  margin-top:0px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+.contact-item {
+  text-align: center;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+}
+
+.contact-item img {
+  max-width: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: grey;
+}
+
+.contact-item p {
+  margin: 10px;
+  font-size:15px;
+}
