@@ -9,7 +9,7 @@ html {
 body {
     padding: 0px;
     font-family:Poppins, sans-serif;
-    background-color: #ffffff;
+    background-color: white;
     color:black;
 }
 
@@ -186,7 +186,6 @@ footer h1{
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-
 }
 
 .contact-item {
@@ -221,4 +220,151 @@ footer h1{
 .contact-item p {
   margin: 10px;
   font-size:15px;
+}
+
+.project-title-center {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 45px;
+  margin-bottom:65px;
+}
+
+.project-container {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left:125px;
+  margin-right:125px;
+  align-items: stretch;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 50px;
+  display: flex;
+  align-items: stretch;
+}
+
+.image-box {
+  width: 100%;
+  padding: 40px;
+  background-color: #efefef;
+  box-sizing: border-box;
+}
+
+.image-box:hover{
+  background-color: #b5b5b5;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.project-image {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-container {
+  flex: 2;
+  flex-direction:column;
+  align-items: stretch;
+}
+
+.text-container h2 {
+  font-size: 25px;
+  margin-top:0px;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  margin-bottom: 10px;
+  font-size:13px;
+}
+
+@media (max-width: 650px) {
+  html {
+    box-sizing: border-box;
+  }
+
+  .profile{
+    flex-direction:column;
+  }
+
+  .profile-content {
+    margin-right: 25px;
+    margin-left:25px;
+  }
+
+  .profile-text{
+    margin-right: 15px;
+    margin-left:15px;
+  }
+
+  .skill-column{
+    flex-direction:column;
+    margin: 20px;
+    width: auto;
+    height: auto;
+  }
+
+  .profile {
+    margin-left: 20px;
+  }
+
+  .profile-headshot img{
+    max-width: 65%;
+    margin-right: 50px;
+    margin-left:50px;
+    margin-bottom: 45px;
+  }
+
+  .profile-logos {
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-evenly;
+  }
+
+  .profile-logos img {
+    margin: 10px;
+  }
+
+  .project-container {
+    flex-direction: column;
+    margin-left:50px;
+    margin-right:50px;
+  }
+
+  .project-title-center {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom:65px;
+  }
+
+  .text-container {
+    margin-top:40px;
+  }
+
+  .text-container h2 {
+    font-size: 15px;
+    text-align:center;
+    font-weight:bold;
+  }
+
+  .image-container {
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  .contact-section {
+    display: flex;
+    margin-top: 50px;
+    flex-direction:column;
+  }
+
+  .contact-item {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+  }
 }
