@@ -14,22 +14,39 @@
 <body>
     <header>
         <div>
-            <nav id="desktop-nav">
+            <nav id="widescreen">
                 <div class="myname">
                     <p>Ashley Huang</p>
                 </div>
                 <div>
                   <ul class="desktop-nav-links">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" aria-label="navigate to home">Home</a>
                     </li>
                     <li>
-                        <a href="projects.html">Projects</a>
+                        <a href="projects.html" aria-label="navigate to projects">Projects</a>
                     </li>
                   </ul>
                 </div>
               </nav>
         </div>
+        <!-- Narrow Hamburger Menu -->
+        <div id="header">
+            <div class="myname">
+                <p>Ashley Huang</p>
+            </div>
+            <button id="menubutton">≡</button>
+        </div>
+        <nav id="navmenu" class="accessible-hidden">
+          <ul>
+            <li>
+                <a href="index.html" aria-label="navigate to home">Home</a>
+            </li>
+            <li>
+                <a href="projects.html" aria-label="navigate to projects">Projects</a>
+            </li>
+          </ul>
+      </nav>
     </header>
 
     <main>
@@ -111,8 +128,8 @@
             </div>
     </div>
     </footer>
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
 </body>
-
-
 
 </html>
