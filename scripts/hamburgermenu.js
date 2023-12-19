@@ -1,18 +1,18 @@
 $("#menubutton").click(function() {
-    if ($("#navmenu").hasClass("hidden")) {
-        $("#navmenu").removeClass("hidden")
+    if ($("#navmenu").hasClass("accessible-hidden")) {
+        $("#navmenu").removeClass("accessible-hidden")
       } else {
-        $("#navmenu").addClass("hidden")
+        $("#navmenu").addClass("accessible-hidden")
       }
   });
 
 
 $(window).resize(function() {
-    if ($(document).width() < 850) {
-        $("#navmenu").addClass("hidden")
-        $("#menubutton").removeClass("hidden")
+    if ($(document).width() < 650) {
+        $("#navmenu").addClass("accessible-hidden")
+        $("#menubutton").removeClass("accessible-hidden")
     } else {
-        $("#menubutton").addClass("hidden")
-        $("#navmenu").removeClass("hidden")
+        $("#menubutton").addClass("accessible-hidden")
+        $("#navmenu").removeClass("accessible-hidden")
     }
   });
