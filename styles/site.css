@@ -352,6 +352,10 @@ footer h1{
     order: 2;
   }
 
+  .myname {
+    text-align:center;
+  }
+
   #navmenu {
     display: none;
     position: fixed;
