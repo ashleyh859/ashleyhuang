@@ -42,6 +42,7 @@ nav {
   border: 2px solid black;
   cursor: pointer;
   border: none;
+  margin-left:0px;
 }
 
 #navmenu {
@@ -341,6 +342,8 @@ footer h1{
     margin: 0 auto;
     background-color: white;
     padding: 6px 16px;
+    margin-left:0px;
+    margin-right:0px;
   }
 
   #widescreen{
