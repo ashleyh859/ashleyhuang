@@ -353,7 +353,8 @@ footer h1{
   }
 
   .myname {
-    text-align:center;
+    margin-left: auto;
+    margin-right:auto;
   }
 
   #navmenu {
@@ -362,7 +363,7 @@ footer h1{
     top: 82px;
     left:0px;
     width:100%;
-    height: 10vh;
+    height: 20vh;
     background-color:#ffffff;
     color: black;
     display: flex;
@@ -376,12 +377,15 @@ footer h1{
   #navmenu ul {
     list-style: none;
     padding: 0;
+    margin-bottom:10px;
     text-align: center;
+    justify-content: space-around;
   }
 
   #navmenu ul a {
     padding-bottom: 25px;
     color:black;
+    display: inline-block;
   }
 
   main {
