@@ -84,14 +84,19 @@ a:hover {
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-left: 200px;
     margin-bottom:25px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.container {
+  max-width: 50%;
 }
 
 .profile-content {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
 }
 
 .profile-text {
@@ -129,9 +134,9 @@ a:hover {
 }
 
 .profile-headshot img{
-    max-width: 65%;
-    margin-right: 50px;
+    max-width: 95%;
     margin-bottom: 45px;
+    text-align: center;
 }
 
 .skills-section {
