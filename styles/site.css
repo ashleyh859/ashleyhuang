@@ -301,9 +301,11 @@ footer h1{
   overflow: hidden;
 }
 
-.image-box img{
+.image-box a img{
   object-fit: cover;
   object-position: center center;
+  height: auto;
+  width: auto;
 }
 
 .image-box:hover{
