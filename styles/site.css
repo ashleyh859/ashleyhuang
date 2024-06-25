@@ -354,6 +354,80 @@ footer h1{
   transform: translateY(0);
 }
 
+/* UX design pages */
+.UX-header-image {
+  width: 100vw;
+  height: 73vh;
+  object-fit: cover;
+}
+
+.UX-container {
+  width: 70vw;
+  background-color: #fff;
+  margin: 0 15vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uxtitle {
+  font-weight: bold;
+  font-weight: 1500;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  font-size: 7vh;
+  letter-spacing: 0.3vw;
+  text-align: left;
+}
+
+.uxtitle + h4 {
+  margin-top: 1.5vh;
+  margin-bottom:10vh;
+  font-weight: 1000;
+  font-size: 3.5vh;
+  letter-spacing: 0.0025vw;
+  color:#474747;
+  line-height: 5.5vh;
+}
+
+.ux-project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.sectiontitle {
+  font-weight: bold;
+  font-size: 5vh;
+  letter-spacing: 0.01vw;
+  margin: 20px 0;
+}
+
+.uximage {
+  width: 100%;
+  width: 65vw;
+  height: 50vh;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.uxparagraph {
+  margin-top: 0vh;
+  font-size: 1.4vw;
+  letter-spacing: 0.0025vw;
+  line-height: 1.6;
+}
+
+.uxlist {
+  margin-top: 0vh;
+  padding-top: 0vh;;
+  font-size: 1.4vw;
+  letter-spacing: 0.0025vw;
+  line-height: 1.6;
+}
+
 @media (max-width: 650px) {
   html {
     box-sizing: border-box;
