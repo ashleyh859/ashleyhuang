@@ -20,9 +20,18 @@ nav,
 }
 
 nav {
-  align-items: center;
   height: 80px;
+  width: 100vw;
   justify-content: space-between;
+}
+
+#widescreen {
+  position: fixed;
+  z-index: 1000;
+}
+
+main{
+  padding-top: 10vh;
 }
 
 .accessible-hidden {
@@ -193,7 +202,8 @@ a:hover {
 
 .projects-button {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
 }
 
 .projects-button button {
@@ -278,6 +288,7 @@ footer h1{
 
 .project-container {
   display: flex;
+  padding-top: 10vh;
   margin-bottom: 50px;
   margin-left:125px;
   margin-right:125px;
@@ -425,6 +436,64 @@ footer h1{
   letter-spacing: 0.0025vw;
   line-height: 1.6;
 }
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 88vw;
+  margin: 0 auto;
+}
+
+.project {
+  width: 40vw;
+  height: 75vh;
+  margin: 2vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.project-image {
+  flex: 1; /* Take up remaining space */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+.project-details {
+  padding: 1rem;
+}
+
+.project-details h2 {
+  margin-top: 0;
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+.project-details p {
+  margin-bottom: 0.5rem;
+  font-size: 0.92rem;
+}
+
+a.project-link {
+  color: #333;
+  text-decoration: none;
+}
+
 
 @media (max-width: 650px) {
   html {
