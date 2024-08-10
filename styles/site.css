@@ -170,11 +170,14 @@ a:hover {
 
 .profile-headshot {
   flex:1;
+
 }
 .profile-headshot img{
-    max-width: 55%;
+  width:25vw;
+  height:75vh;
     text-align: center;
-    border-radius:10%;
+    border-radius:5%;
+    object-fit: cover;
 }
 
 .skills-section {
@@ -737,6 +740,12 @@ a.project-link {
   justify-content: center;
   width: 100vw;
   margin: 0 auto;
+}
+
+.home-project-project {
+  overflow: hidden;
+  width: 100vw;
+  margin-bottom: 20px;
 }
 
 .project-container {
