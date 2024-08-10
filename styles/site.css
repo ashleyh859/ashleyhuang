@@ -317,55 +317,6 @@ footer h1{
   align-items: stretch;
 }
 
-.image-container {
-  flex: 1.5;
-  margin-right: 50px;
-  display: flex;
-  align-items: stretch;
-  overflow: hidden;
-}
-
-.image-box {
-  width: 100%;
-  padding: 40px;
-  background-color: #efefef;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.image-box a img{
-  object-fit: cover;
-  object-position: center center;
-  height: auto;
-  width: auto;
-}
-
-.image-box:hover{
-  background-color: #b5b5b5;
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
-.text-container {
-  flex: 2.5;
-  flex-direction:column;
-  align-items: stretch;
-}
-
-
-.text-container h2 {
-  font-size: 28px;
-  margin-top:0px;
-  margin-bottom: 10px;
-  letter-spacing:2px;
-}
-
-.text-container p {
-  margin-bottom: 10px;
-  font-size:15px;
-  letter-spacing: 0.5px;
-}
-
 
 .home-project-portfolio {
   display: flex;
@@ -376,6 +327,7 @@ footer h1{
   width: 88vw;
   margin: 0 auto;
 }
+
 
 .home-project-project {
   background-color: white;
@@ -717,18 +669,38 @@ a.project-link {
   }
 
   .profile{
-    flex-direction:column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom:25px;
+      text-align: center;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 8vh;
   }
 
   .profile-content {
-    margin-right: 25px;
-    margin-left:25px;
+    margin-right: 0px;
+    margin-left:0px;
   }
 
   .profile-text{
-    margin-right: 15px;
-    margin-left:15px;
+    margin-right: 0px;
+    margin-left:0px;
   }
+  .profile-text h1{
+    font-size:15px;
+    letter-spacing: 1.5px;
+  }
+  .profile-text p{
+    font-size:12px;
+  }
+  .profile-headshot img{
+    max-width: 55%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius:10%;
+}
 
   .skill-column{
     flex-direction:column;
@@ -758,6 +730,20 @@ a.project-link {
     margin: 10px;
   }
 
+
+.home-project-portfolio {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.project-container {
+  flex-direction: column;
+  margin-left:0px;
+  margin-right:0px;
+}
   .project-container {
     flex-direction: column;
     margin-left:50px;
