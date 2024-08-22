@@ -987,6 +987,13 @@ a.project-link {
     margin-right: 0px;
   }
 
+  .sectiontitle img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra space below the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
   .about-header-content {
     flex-direction: column;
     text-align: center;
