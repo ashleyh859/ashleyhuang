@@ -1006,6 +1006,10 @@ a.project-link {
     text-align: left;
   }
 
+  .about-drives {
+    width: 80vw; /* Adjust image size for mobile */
+  }
+
   .hobby-images {
     flex-direction: column;
     align-items: center; /* Center images vertically on mobile */
