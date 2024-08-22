@@ -869,7 +869,6 @@ a.project-link {
 .home-headshot-image {
     width: 180px; /* Adjust as needed */
     height: 180px; /* Adjust as needed */
-    background-color: red;
     margin-top:0;
 }
 
@@ -1006,9 +1005,9 @@ a.project-link {
     text-align: left;
   }
 
-  .about-drives {
+  /* .about-drives {
     width: 80vw; /* Adjust image size for mobile */
-  }
+  /* } */ */
 
   .hobby-images {
     flex-direction: column;
@@ -1018,6 +1017,7 @@ a.project-link {
   .hobby-img {
     width: 80vw; /* Adjust image size for mobile */
     margin-bottom: 20px; /* Space between images */
+    object-fit: cover;
   }
 
   .about-hobby {
