@@ -994,17 +994,17 @@ a.project-link {
   }
 
   .about-photo {
-    width: 80vw; /* Make photo larger on mobile if needed */
+    width: 90vw; /* Make photo larger on mobile if needed */
   }
 
   .about-intro-text {
-    width: 80vw;
+    width: 90vw;
     text-align: left;
   }
 
-  /* .about-drives {
-    width: 80vw; /* Adjust image size for mobile */
-  /* } */ */
+  .about-drives {
+    width: 90vw; /* Adjust image size for mobile */
+  }
 
   .hobby-images {
     flex-direction: column;
@@ -1012,7 +1012,7 @@ a.project-link {
   }
 
   .hobby-img {
-    width: 80vw; /* Adjust image size for mobile */
+    width: 90vw; /* Adjust image size for mobile */
     margin-bottom: 20px; /* Space between images */
   }
 
@@ -1026,7 +1026,7 @@ a.project-link {
   }
 
   .hobby-img {
-    width: 80vw; /* Adjust image size for mobile */
+    width: 90vw; /* Adjust image size for mobile */
     margin-bottom: 20px; /* Space between images */
   }
 
