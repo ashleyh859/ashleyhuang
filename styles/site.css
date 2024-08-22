@@ -96,9 +96,6 @@ main{
   margin-right: 4vw;
 }
 
-.desktop-nav-links li{
-
-}
 
 .desktop-nav-links li a{
   text-decoration:none;
@@ -1017,11 +1014,20 @@ a.project-link {
   .hobby-img {
     width: 80vw; /* Adjust image size for mobile */
     margin-bottom: 20px; /* Space between images */
-    object-fit: cover;
   }
 
   .about-hobby {
     margin-top: 20px; /* Reduce top margin on mobile */
+  }
+
+  .hobby-images {
+    flex-direction: column;
+    align-items: center; /* Center images vertically on mobile */
+  }
+
+  .hobby-img {
+    width: 80vw; /* Adjust image size for mobile */
+    margin-bottom: 20px; /* Space between images */
   }
 
 
