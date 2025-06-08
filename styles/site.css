@@ -195,6 +195,12 @@ a:hover {
 .myname {
   font-size: 3vh;
   margin-left: 40px;
+  color: black;
+}
+
+.myname a {
+  color: black;
+  text-decoration: none;
 }
 
 .profile {
@@ -803,6 +809,7 @@ a.project-link {
     margin-left: auto;
     margin-right:auto;
   }
+  
 
   #navmenu {
     display: none;
