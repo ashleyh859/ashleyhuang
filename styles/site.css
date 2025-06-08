@@ -426,7 +426,7 @@ footer h1{
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
-  width: calc(46% - 15px);
+  width: calc(47% - 0px);
   margin-bottom: 20px;
 }
 
@@ -434,7 +434,9 @@ footer h1{
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.25s ease;
-  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  object-fit: cover;
+  border: 1.25px solid #cccccc;
+
 
 
 }
@@ -809,7 +811,7 @@ a.project-link {
     margin-left: auto;
     margin-right:auto;
   }
-  
+
 
   #navmenu {
     display: none;
