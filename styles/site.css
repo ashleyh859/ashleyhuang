@@ -346,11 +346,13 @@ footer{
 
 footer p{
   margin-bottom: 15px;
+  font-size: 1.35rem;
 }
 
 footer h1{
-  font-size:25px;
   margin-top:0px;
+    font-size: 1.6rem;
+
 }
 
 .contact-section {
@@ -533,9 +535,11 @@ footer h1{
   flex: 1;
   padding-right: 40px;
   box-sizing: border-box;
+    font-size: 1.2rem;
+
 }
 .role-header {
-  font-weight: bold;
+  font-weight: 1000;
   margin-bottom: 10px;
 }
 .section-break {
@@ -558,11 +562,10 @@ footer h1{
 .uxtitle {
   margin-top: 4vh;
   margin-bottom: 1vh;
-  font-size: 65px;
-  letter-spacing: 0.3vw;
+  font-size: 3.5rem;
   text-align: left;
   color:#000000;
-  font-weight:500;
+  font-weight:380;
 }
 
 .uxtitle + h4 {
@@ -583,10 +586,9 @@ footer h1{
 }
 
 .sectiontitle {
-  font-weight: bold;
-  font-size: 22px;
-  letter-spacing: 0.01vw;
-  color:#717171;
+  font-weight: 380;
+  font-size: 1.65rem;
+  color:#5c5c5c;
   margin-bottom: 0vh;
 
 }
@@ -667,31 +669,82 @@ a.project-link {
 }
 
 
+/* example code
+.home-header-container {
+  justify-content: center;
+  align-items: center;
+  padding-left:30px;
+  padding-right:30px;
+  padding-top:42px;
+  padding-bottom:42px;
+
+}
+
+.home-headshot {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-headshot-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+
+
+.home-intro {
+  flex: 7;
+  padding: 20px;
+}
+
+
 /* Container for header with image and text */
-/* Container for header with image and text */
+
 .about-header-content {
   display: flex;
   align-items: center;
   gap: 80px; /* Adjust gap as needed */
-  flex:8;
   margin-bottom: 5vh;
+  height:80vh;
+
 }
 
 /* Photo styling */
 .about-photo {
-  width:25vw;
   border-radius: 8px; /* Optional: adds rounded corners */
   object-fit: cover;
-  flex:2;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    flex: 4;
+  height: 70vh;
+
 }
 
 /* Text container styling */
 .about-intro-text {
-  width: 58%;
+    flex: 6;
+}
+
+.about-intro-text h1 {
+    font-size: 2.2em;
+  letter-spacing: 0.75px;
+  font-weight:400;
+}
+
+.about-intro-text p{
+    font-size: 1.6rem;
 }
 
 /* Flexbox for section and other content */
 .about-main {
+
   padding: 20px;
   margin-bottom: 20px;
   width: 80vw;
@@ -702,7 +755,17 @@ a.project-link {
   margin: 0 auto;
 }
 
-.about-section,.about-outside, .about-leadership {
+.about-main h2{
+      font-size: 2.2em;
+  letter-spacing: 0.75px;
+  font-weight:400;
+}
+
+.about-main p{
+      font-size: 1.3em;
+}
+
+.about-outside, .about-leadership {
   margin-bottom: 40px; /* Space between sections */
 }
 
