@@ -169,7 +169,6 @@ a:hover {
 
 }
 
-}
 .home-experience-heading {
   font-size: 18px;
   font-weight: bold;
@@ -706,30 +705,33 @@ a.project-link {
 
 /* Container for header with image and text */
 
+.about-header {
+  display: flex;
+  align-items: center;
+}
+
 .about-header-content {
   display: flex;
   align-items: center;
-  gap: 80px; /* Adjust gap as needed */
-  margin-bottom: 5vh;
-  height:80vh;
-
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+  gap: 40px;
 }
 
 /* Photo styling */
 .about-photo {
-  border-radius: 8px; /* Optional: adds rounded corners */
+  flex: 3; /* Takes up 4 parts of available space */
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Set a reasonable max height */
+  border-radius: 10px;
   object-fit: cover;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-    flex: 4;
-  height: 70vh;
-
 }
 
 /* Text container styling */
 .about-intro-text {
-    flex: 6;
+    flex: 7;
 }
 
 .about-intro-text h1 {
