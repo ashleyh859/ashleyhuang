@@ -40,7 +40,7 @@ nav {
     top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
@@ -343,13 +343,22 @@ a:hover {
 
 footer{
   margin-top:60px;
-  margin-bottom:100px;
   text-align:center;
 }
 
 footer p{
   margin-bottom: 15px;
   font-size: 1.35rem;
+}
+
+.footer-credit {
+ font-size: 1.1rem;
+ color: #333;; /* Nice medium gray */
+ text-align: center;
+
+  margin-top: 3rem; /* More space */
+    margin-bottom: 3rem; /* More space */
+
 }
 
 footer h1{
