@@ -114,86 +114,99 @@ a:hover {
 }
 
 .home-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:0;
-  margin:0;
-  margin-bottom: 20px;;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    min-height: 60vh;
 }
+
 
 .home-header-container {
-  display: flex;
-  align-items: flex-start;
-  width: 88vw;
-  border-radius: 10px;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  padding-left:30px;
-  padding-right:30px;
-  padding-top:42px;
-  padding-bottom:42px;
-
+    display: flex;
+    width: 56vw;
+    max-width: 900px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    position: relative;
+    background: white;
 }
-
-.home-headshot {
-  flex: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-headshot-image {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  object-fit: cover;
-  width: 250px;
-  height: 250px;
-}
-
 
 .home-intro {
-  flex: 7;
+    flex: 1;
+    text-align: center;
 }
 
 .home-name {
-  font-size: 2.2em;
-  margin-bottom: 10px;
-  letter-spacing: 0.75px;
-  font-weight:400;
+    font-size: 2.2em;
+    margin-bottom: 2rem;
+    letter-spacing: 0.75px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.home-name strong {
+    font-weight: 600;
 }
 
 .home-blurb {
-  font-size: 1.3em;
-  color: #282828;
-  font-weight:80;
-
+    font-size: 1.3em;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 2rem;
 }
 
 .home-experience-heading {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: #555;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 2rem 0 1rem 0;
+    color: #1a1a1a;
 }
 
 .home-experience-list {
-  list-style-type: none;
-  padding: 0;
-  color: #555;
+    list-style-type: none;
+    padding: 0;
+    color: #666;
+    font-style: italic;
+    font-weight: 300;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
 }
 
 .home-experience-list li {
-  font-size: 15px;
-  margin-bottom: 2px;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
 }
 
-.home-experience-list li strong {
-  font-weight: bold;
+.home-role {
+  color:#2c2c2c;
+      font-size: 1.3rem;
+    font-weight: 400;
+
+}
+
+
+/* Gradient underline on "impactful, real-world solutions" */
+.home-name strong {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899) no-repeat 0 100%;
+    background-size: 100% 2px;
+    padding-bottom: 2px;
+    font-weight: 600;
+}
+
+/* Colored symbols */
+.symbol-accent {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .myname {
