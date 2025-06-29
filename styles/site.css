@@ -104,12 +104,14 @@ main{
 
 .desktop-nav-links li a{
   text-decoration:none;
+    color: black; /* Add this line */
+
 }
 
-a:hover {
+.desktop-nav-links li a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: 1rem;
+  text-underline-offset: 0.6rem;
   text-decoration-color: grey;
 }
 
