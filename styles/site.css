@@ -213,11 +213,20 @@ a:hover {
   font-size: 3vh;
   margin-left: 40px;
   color: black;
+  display: flex;
+  align-items: center; /* This will center the bear vertically */
+}
+
+.myname img {
+  vertical-align: middle;
+  display: block;
 }
 
 .myname a {
   color: black;
   text-decoration: none;
+  display: flex;
+  align-items: center; /* This ensures the link container also centers */
 }
 
 .profile {
