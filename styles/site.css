@@ -127,9 +127,9 @@ main{
 
 
 .home-header-container {
-    display: flex;
-    width: 56vw;
-    max-width: 900px;
+    display: column;
+    width:80vw;
+    max-width: 1100px;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -144,22 +144,34 @@ main{
 }
 
 .home-name {
-    font-size: 2.2em;
+    font-size: 1.9em;
     margin-bottom: 2rem;
-    letter-spacing: 0.75px;
-    font-weight: 400;
-    line-height: 1.2;
+    letter-spacing: 0.1px;
+    font-weight: 200;
+    line-height: 1.6;
 }
 
 .home-name strong {
-    font-weight: 600;
+    font-weight: 400;
+}
+
+.bear-icon-container {
+    text-align: center;
+}
+
+.bear-icon-container img {
+    border-radius: 8px; /* Optional: subtle rounding */
+    /* You could also add a subtle shadow: */
+    width: 10vw;  /* 8% of viewport width */
+    height: 10vw;
+    min-width: 80px;  /* Won't get smaller than this */
+    max-width: 150px; /* Won't get bigger than this */
 }
 
 .home-blurb {
-    font-size: 1.3em;
-    color: #666;
+    font-size: 1.5em;
+    color: #000000;
     font-weight: 300;
-    margin-bottom: 2rem;
 }
 
 .home-experience-heading {
@@ -466,8 +478,8 @@ footer h1{
   border-radius: 10px;
   overflow: hidden;
  flex: 1 1 500px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 400px */
-  max-width: 600px; /* Prevents cards from getting too wide */
-  min-width: 400px; /* Prevents cards from getting too narrow */
+  max-width: 800px; /* Prevents cards from getting too wide */
+  min-width: 700px; /* Prevents cards from getting too narrow */
 }
 
 .home-project-image-container {
