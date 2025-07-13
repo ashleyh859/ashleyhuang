@@ -562,13 +562,13 @@ footer h1{
 
 /* UX design pages */
 
+
 .UX-header-image {
-  margin-top: 0px;
-  width: 100vw;
-  margin-left: 0px;
-  margin-right: 0px;
-  height: 69vh;
-  object-fit: cover;
+    width: 80vw; /* Same width as container */
+    height: auto; /* Maintains aspect ratio, no cropping */
+    border-radius: 12px; /* Rounded rectangle */
+    margin-top: 4vh; /* Add some space above the image */
+    margin-bottom: 2vh; /* Space below if needed */
 }
 
 .role-container {
