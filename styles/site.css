@@ -650,7 +650,7 @@ footer h1{
 
 .uxparagraph {
   margin-top: 0vh;
-  font-size: 16px;
+    font-size: 1.4rem;
   letter-spacing: 0.0025vw;
   line-height: 1.6;
   margin-bottom: 0vh;
@@ -659,7 +659,7 @@ footer h1{
 .uxlist {
   margin-top: 0vh;
   padding-top: 0vh;;
-  font-size: 16px;
+    font-size: 1.2rem;
   letter-spacing: 0.0025vw;
   line-height: 1.6;
 }
