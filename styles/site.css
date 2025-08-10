@@ -461,23 +461,18 @@ footer h1{
   align-items: stretch;
 }
 
-
 .home-project-portfolio {
-  display: flex;
-  gap: 55px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 75px;
 }
-
 
 .home-project-project {
   background-color: #ffffff;
   border-radius: 10px;
   overflow: hidden;
- flex: 1 1 500px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 400px */
-  max-width: 600px; /* Prevents cards from getting too wide */
-  min-width: 400px; /* Prevents cards from getting too narrow */
 }
 
 .home-project-image-container {
