@@ -2,17 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Technical</title>
-  <link rel="stylesheet"
-        type="text/css"
-        href="styles/site.css" >
+    <title>Technical</title>
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
 
-  <link rel="icon" type="image/svg+xml" href="bearicon.svg">
-  <link rel="icon" type="image/x-icon" href="bearicon.svg">
-  <link rel="shortcut icon" href="bearicon.svg">
+    <link rel="icon" type="image/svg+xml" href="bearicon.svg">
+    <link rel="icon" type="image/x-icon" href="bearicon.svg">
+    <link rel="shortcut icon" href="bearicon.svg">
 </head>
 
 <body>
@@ -21,35 +19,11 @@
             <nav id="widescreen">
                 <div class="myname">
                     <a href="index.html" aria-label="navigate to home">
-                            <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
+                        <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
                     </a>
                 </div>
                 <div>
-                  <ul class="desktop-nav-links">
-                    <li>
-                        <a href="index.html" aria-label="navigate to design">design</a>
-                    </li>
-                    <li>
-                        <a href="technical.html" aria-label="navigate to technical">technical</a>
-                    </li>
-                    <li>
-                        <a href="about.html" aria-label="navigate to about">about</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-        </div>
-        <!-- Narrow Hamburger Menu -->
-        <div id="header">
-            <div class="myname">
-                    <a href="index.html" aria-label="navigate to home">
-                            <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
-                    </a>
-                </div>
-            <button id="menubutton" aria-label="open hamburger menu">≡</button>
-            </div>
-                <nav id="navmenu" class="accessible-hidden">
-                    <ul>
+                    <ul class="desktop-nav-links">
                         <li>
                             <a href="index.html" aria-label="navigate to design">design</a>
                         </li>
@@ -60,27 +34,73 @@
                             <a href="about.html" aria-label="navigate to about">about</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
+            </nav>
+        </div>
+        <!-- Narrow Hamburger Menu -->
+        <div id="header">
+            <div class="myname">
+                <a href="index.html" aria-label="navigate to home">
+                    <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
+                </a>
+            </div>
+            <button id="menubutton" aria-label="open hamburger menu">≡</button>
+        </div>
+        <nav id="navmenu" class="accessible-hidden">
+            <ul>
+                <li>
+                    <a href="index.html" aria-label="navigate to design">design</a>
+                </li>
+                <li>
+                    <a href="technical.html" aria-label="navigate to technical">technical</a>
+                </li>
+                <li>
+                    <a href="about.html" aria-label="navigate to about">about</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
 
         <div class="home-project-portfolio" id="projects-section">
 
-     <div class="home-project-project">
+            <div class="home-project-project">
+                <a href="https://ashleyhuang.me/campusevents.html" class="home-project-image-link">
+                    <div class="home-project-image-container" onclick="toggleScale(this)">
+                        <img src="images/technical/campuseventcover.png" alt="Campus Catalog Project"
+                            class="home-project-project-image">
+                    </div>
+                </a>
+                <a href="https://ashleyhuang.me/campusevents.html" class="home-project-title-link">
+                    <h2 class="home-project-title">Campus Events Website</h2>
+                </a>
+                <div class="home-project-tags">
+                    <span class="home-project-tag">HTML, CSS, JS, PHP</span>
+                    <span class="home-project-tag">Full-Stack Development</span>
+                </div>
+                <p class="home-project-description">Connecting new Cornell students with campus events through an
+                    intuitive browsing experience while empowering student leaders to manage their event postings
+                    efficiently.</p>
+
+            </div>
+
+            <div class="home-project-project">
                 <a href="https://cornellceme.org/index.html" class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
                         <img src="images/technical/cemecover.png" alt="CEME Project" class="home-project-project-image">
                     </div>
                 </a>
                 <a href="https://cornellceme.org/" class="home-project-title-link">
-                    <h2 class="home-project-title">Cornell Eastern Music Ensemble (CEME) Website  </h2>
+                    <h2 class="home-project-title">Cornell Eastern Music Ensemble (CEME) Website </h2>
                 </a>
                 <div class="home-project-tags">
                     <span class="home-project-tag">HTML, CSS, JS</span>
                     <span class="home-project-tag">Frontend Development</span>
                 </div>
-                <p class="home-project-description">Redesigning an inactive website into a platform that celebrates Eastern culture and engages music enthusiasts.</p>
+                <p class="home-project-description">Bringing East Asian musical heritage to Cornell's campus through a
+                    redesigned responsive website that helps music enthusiasts discover performances and cultural
+                    experiences</p>
             </div>
 
             <div class="home-project-project ">
@@ -92,22 +112,24 @@
                 <a href="https://ashleyhuang.me/airy.html" class="home-project-title-link">
                     <h2 class="home-project-title">Dandilyonn Nonprofit Program: Mental Health App</h2>
                 </a>
-                       <div class="home-project-tags">
+                <div class="home-project-tags">
                     <span class="home-project-tag">Mobile App Developer </span>
                     <span class="home-project-tag">React Native</span>
                 </div>
-                <p class="home-project-description">A mental health app for college students with mood tracking and anonymous journaling, designed and built through the SEEDS nonprofit developer program.</p>
+                <p class="home-project-description">Supporting college students' mental wellbeing through a React Native
+                    app that provides safe spaces for mood tracking and anonymous journaling.</p>
             </div>
 
-
-
             <div class="home-project-project">
-                <a href="https://github.com/ashleyh859/sephoraproductpricepredictionmodel/blob/main/README.md" class="home-project-image-link">
+                <a href="https://github.com/ashleyh859/sephoraproductpricepredictionmodel/blob/main/README.md"
+                    class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/technical/sephoracover.png" alt="Sephora Project" class="home-project-project-image">
+                        <img src="images/technical/sephoracover.png" alt="Sephora Project"
+                            class="home-project-project-image">
                     </div>
                 </a>
-                <a href="https://github.com/ashleyh859/sephoraproductpricepredictionmodel/blob/main/README.md" class="home-project-title-link">
+                <a href="https://github.com/ashleyh859/sephoraproductpricepredictionmodel/blob/main/README.md"
+                    class="home-project-title-link">
                     <h2 class="home-project-title">Sephora Product Price Prediction Model</h2>
                 </a>
                 <div class="home-project-tags">
@@ -115,13 +137,16 @@
                     <span class="home-project-tag">Python Libraries</span>
                     <span class="home-project-tag">SQL</span>
                 </div>
-                <p class="home-project-description">Created a predictive modeling function between key product variables (Ratings, Brand Name, and Category) and price of product using hypothesis testing and model building.</p>
+                <p class="home-project-description">Empowering beauty consumers to make informed purchasing decisions
+                    through a machine learning model that predicts product prices based on ratings, brands, and
+                    categories.</p>
             </div>
 
             <div class="home-project-project">
                 <a href="https://github.com/ashleyh859/applefest/blob/main/README.md" class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/technical/applefestcover.png" alt="Apple Fest Project" class="home-project-project-image">
+                        <img src="images/technical/applefestcover.png" alt="Apple Fest Project"
+                            class="home-project-project-image">
                     </div>
                 </a>
                 <a href="https://github.com/ashleyh859/applefest/blob/main/README.md" class="home-project-title-link">
@@ -131,17 +156,20 @@
                     <span class="home-project-tag">Frontend Development</span>
                     <span class="home-project-tag">HTML, CSS, JS</span>
                 </div>
-                <p class="home-project-description">Redesigned the Ithaca Apple Harvest Festival website, improving navigation and readability for one of Ithaca's largest annual community events.
-</p>
+                <p class="home-project-description">Helping Ithaca community members navigate one of the city's largest
+                    annual events through improved website navigation and accessibility.</p>
             </div>
 
             <div class="home-project-project">
-                <a href="https://github.com/ashleyh859/amazonuserexperience/blob/main/README.md" class="home-project-image-link">
+                <a href="https://github.com/ashleyh859/amazonuserexperience/blob/main/README.md"
+                    class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/amazon/amazon-cover.png" alt="Amazon Project" class="home-project-project-image">
+                        <img src="images/amazon/amazon-cover.png" alt="Amazon Project"
+                            class="home-project-project-image">
                     </div>
                 </a>
-                <a href="https://github.com/ashleyh859/amazonuserexperience/blob/main/README.md" class="home-project-title-link">
+                <a href="https://github.com/ashleyh859/amazonuserexperience/blob/main/README.md"
+                    class="home-project-title-link">
                     <h2 class="home-project-title">Amazon User Experience</h2>
                 </a>
                 <div class="home-project-tags">
@@ -149,34 +177,42 @@
                     <span class="home-project-tag">Python Libraries</span>
                     <span class="home-project-tag">SQL</span>
                 </div>
-                <p class="home-project-description">Tested hypothesises on the correlation between Amazon user experience and consumer willingness of purchasing products in different age groups.</p>
+                <p class="home-project-description">Revealing how user experience influences purchasing behavior across
+                    generations to help Amazon optimize their platform for diverse age groups.</p>
             </div>
 
 
             <div class="home-project-project">
                 <a href="https://github.com/ashleyh859/incomedisparitiesproject" class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/technical/incomedisparities.png" alt="Income Project" class="home-project-project-image">
+                        <img src="images/technical/incomedisparities.png" alt="Income Project"
+                            class="home-project-project-image">
                     </div>
                 </a>
                 <a href="https://github.com/ashleyh859/incomedisparitiesproject" class="home-project-title-link">
-                    <h2 class="home-project-title">Income Disparities Among Individuals with Work Disabilities    </h2>
+                    <h2 class="home-project-title">Income Disparities Among Individuals with Work Disabilities </h2>
                 </a>
                 <div class="home-project-tags">
                     <span class="home-project-tag">Data Analysis</span>
                     <span class="home-project-tag">R</span>
                 </div>
-                <p class="home-project-description">Explore income trends among individuals with work disabilities, considering variations based on race and sex to gain insights into the economic disparities faced by this demographic.</p>
+                <p class="home-project-description">Uncovering economic inequalities faced by individuals with work
+                    disabilities to evaluate policy effectiveness and inform advocacy efforts for equal employment
+                    opportunities.</p>
             </div>
 
             <div class="home-project-project">
-                <a href="https://github.com/ashleyh859/internship_project/blob/main/README.md" class="home-project-image-link">
+                <a href="https://github.com/ashleyh859/internship_project/blob/main/README.md"
+                    class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/technical/goddardcover.png" alt="Income Project" class="home-project-project-image">
+                        <img src="images/technical/goddardcover.png" alt="Income Project"
+                            class="home-project-project-image">
                     </div>
                 </a>
-                <a href="https://github.com/ashleyh859/internship_project/blob/main/README.md" class="home-project-title-link">
-                    <h2 class="home-project-title">Educational Empowerment: Uncovering Engagement Patterns at a Nonprofit</h2>
+                <a href="https://github.com/ashleyh859/internship_project/blob/main/README.md"
+                    class="home-project-title-link">
+                    <h2 class="home-project-title">Educational Empowerment: Uncovering Engagement Patterns at a
+                        Nonprofit</h2>
                 </a>
                 <div class="home-project-tags">
                     <span class="home-project-tag">Data Analytics Intern</span>
@@ -184,7 +220,9 @@
                     <span class="home-project-tag">Tableau</span>
                     <span class="home-project-tag">Excel</span>
                 </div>
-                <p class="home-project-description">Explored correlations between student engagement and various factors, including colleges, grade levels, and more. The goal was to provide valuable insights to enhance program services.</p>
+                <p class="home-project-description">Improving educational opportunities for underserved students by
+                    identifying engagement patterns that helped the nonprofit optimize their program services and
+                    outreach.</p>
             </div>
 
 
@@ -206,13 +244,15 @@
             </div>
             <div class="contact-item scroll-hidden">
                 <img src="images/linkedin.png" alt="LinkedIn">
-                <p><a href="http://www.linkedin.com/in/ashleyhuang-ny" target="_blank" rel="noopener noreferrer">ashleyhuang-ny</a></p>
+                <p><a href="http://www.linkedin.com/in/ashleyhuang-ny" target="_blank"
+                        rel="noopener noreferrer">ashleyhuang-ny</a></p>
             </div>
             <div class="contact-item scroll-hidden">
                 <img src="images/email.png" alt="Email">
-                <p><a href="mailto:ashleyhuang.ny@gmail.com" target="_blank" rel="noopener noreferrer">ashleyhuang.ny@gmail.com</a></p>
+                <p><a href="mailto:ashleyhuang.ny@gmail.com" target="_blank"
+                        rel="noopener noreferrer">ashleyhuang.ny@gmail.com</a></p>
             </div>
-         </div>
+        </div>
 
     </footer>
 
