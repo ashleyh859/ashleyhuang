@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CUPet: Cornell Pet Sitting App</title>
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
+
+    <link rel="icon" type="image/svg+xml" href="bearicon.svg">
+    <link rel="icon" type="image/x-icon" href="bearicon.svg">
+    <link rel="shortcut icon" href="bearicon.svg">
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav id="widescreen">
+                <div class="myname">
+                    <a href="index.html" aria-label="navigate to home">
+                        <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
+                    </a>
+                </div>
+                <div>
+                    <ul class="desktop-nav-links">
+                        <li>
+                            <a href="index.html" aria-label="navigate to design">design</a>
+                        </li>
+                        <li>
+                            <a href="technical.html" aria-label="navigate to technical">technical</a>
+                        </li>
+                        <li>
+                            <a href="about.html" aria-label="navigate to about">about</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Narrow Hamburger Menu -->
+        <div id="header">
+            <div class="myname">
+                <a href="index.html" aria-label="navigate to home">
+                    <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
+                </a>
+            </div>
+            <button id="menubutton" aria-label="open hamburger menu">≡</button>
+        </div>
+        <nav id="navmenu" class="accessible-hidden">
+            <ul>
+                <li>
+                    <a href="index.html" aria-label="navigate to design">design</a>
+                </li>
+                <li>
+                    <a href="technical.html" aria-label="navigate to technical">technical</a>
+                </li>
+                <li>
+                    <a href="about.html" aria-label="navigate to about">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="UX-container">
+            <div class="project-header">
+                <h2 class="uxtitle">CUPet: Cornell Pet Sitting App</h2>
+                <h3 class="sectiontitle">Connecting Cornell pet owners with trusted student sitters through a marketplace app built for AppDev Hack Challenge.
+                </h3>
+                <img src="images/technical/cupetcover.png" alt="CUPet App Cover" class="UX-header-image">
+
+                <div class="role-column">🏆 Honorable Mention for Most Creative - AppDev Hack Challenge
+
+
+                <div class="role-container">
+                    <div class="role-column">
+                        <div class="role-header">Role</div>
+                        iOS Frontend Developer
+                    </div>
+                    <div class="role-column">
+                        <div class="role-header">Timeline</div>
+                        2 Weeks (Spring 2025)
+                    </div>
+                    <div class="role-column">
+                        <div class="role-header">Team</div>
+                        2 Frontend, 2 Backend Developers
+                    </div>
+                    <div class="role-column">
+                        <div class="role-header">Tools & Skills</div>
+                        Swift, Python, REST API
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+            <div class="section-break"></div>
+
+            <div class="ux-project-content">
+
+                <h3 class="sectiontitle">View Project</h3>
+                <p class="uxparagraph">
+                    <strong>Demo Video:</strong> <a href="https://youtu.be/emS4gJyaVjQ"
+                        target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+                </p>
+                <p class="uxparagraph">
+                    <strong>GitHub Repository:</strong> <a href="https://github.com/vivianzhou1288/cupet"
+                        target="_blank" rel="noopener noreferrer">github.com/vivianzhou1288/cupet</a>
+                </p>
+
+
+                <h3 class="sectiontitle">Project Overview</h3>
+                <p class="uxparagraph">Built an iOS marketplace app in 2 weeks for Cornell's AppDev Hack Challenge that connects pet owners with student sitters on campus.</p>
+
+                <p class="uxparagraph">The app features dual interfaces: pet owners post sitting requests with pet details, dates, and location, while sitters browse and filter opportunities by pet type, activity level, and campus area. I led frontend development in Swift, implementing role-based authentication, dynamic filtering, and the complete user interface for both owner and sitter experiences.</p>
+
+
+                <h3 class="sectiontitle">Technical Implementation</h3>
+                <ol class="uxlist" style="padding-left: 60px;">
+                    <li><strong>iOS development:</strong> Built native Swift app with role-based authentication (Pet Owner/Sitter) and custom NetworkManager using URLSession for API communication
+                    </li>
+                    <li><strong>Dynamic filtering:</strong> Implemented real-time filtering system allowing sitters to search by pet type, activeness level, and campus neighborhood location
+                    </li>
+                    <li><strong>Pet listing management:</strong> Built functionality for creating, viewing, and deleting pet postings with detailed information cards, image handling, and empty state designs
+                    </li>
+                    <li><strong>Backend integration:</strong> Integrated with Python backend featuring RESTful API with user authentication, pet posting models, and database operations
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Get in Touch</p>
+        <h1>
+            Contact Me
+        </h1>
+        <div class="contact-section">
+            <div class="contact-item scroll-hidden">
+                <img src="images/github.png" alt="GitHub">
+                <p><a href="https://github.com/ashleyh859" target="_blank" rel="noopener noreferrer">ashleyh859</a></p>
+            </div>
+            <div class="contact-item scroll-hidden">
+                <img src="images/linkedin.png" alt="LinkedIn">
+                <p><a href="http://www.linkedin.com/in/ashleyhuang-ny" target="_blank"
+                        rel="noopener noreferrer">ashleyhuang-ny</a></p>
+            </div>
+            <div class="contact-item scroll-hidden">
+                <img src="images/email.png" alt="Email">
+                <p><a href="mailto:ashleyhuang.ny@gmail.com" target="_blank"
+                        rel="noopener noreferrer">ashleyhuang.ny@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <p class="footer-credit">designed & developed by Ashley Huang © 2025</p>
+
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/scroll-animations.js"></script>
+
+</body>
+
+</html>
