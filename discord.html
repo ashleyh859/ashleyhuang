@@ -2,325 +2,242 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Discord Bookmarks</title>
-    <link rel="stylesheet" type="text/css" href="styles/site.css">
+  <title>Discord Bookmarks - Ashley Huang</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
 
-    <link rel="icon" type="image/svg+xml" href="bearicon.svg">
-    <link rel="icon" type="image/x-icon" href="bearicon.svg">
-    <link rel="shortcut icon" href="bearicon.svg">
+  <link rel="icon" type="image/svg+xml" href="bearicon.svg">
+  <link rel="icon" type="image/x-icon" href="bearicon.svg">
+  <link rel="shortcut icon" href="bearicon.svg">
 </head>
 
 <body>
-    <header>
+  <header>
+    <div>
+      <nav id="widescreen">
+        <div class="myname">
+          <a href="index.html" aria-label="navigate to home">
+            <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
+          </a>
+        </div>
         <div>
-            <nav id="widescreen">
-                <div class="myname">
-                    <a href="index.html" aria-label="navigate to home">
-                        <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
-                    </a>
-                </div>
-                <div>
-                    <ul class="desktop-nav-links">
-                        <li>
-                            <a href="index.html" aria-label="navigate to design">design</a>
-                        </li>
-                        <li>
-                            <a href="technical.html" aria-label="navigate to technical">technical</a>
-                        </li>
-                        <li>
-                            <a href="about.html" aria-label="navigate to about">about</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+          <ul class="desktop-nav-links">
+            <li>
+              <a href="index.html" aria-label="navigate to design">design</a>
+            </li>
+            <li>
+              <a href="technical.html" aria-label="navigate to technical">technical</a>
+            </li>
+            <li>
+              <a href="about.html" aria-label="navigate to about">about</a>
+            </li>
+          </ul>
         </div>
-        <!-- Narrow Hamburger Menu -->
-        <div id="header">
-            <div class="myname">
-                <a href="index.html" aria-label="navigate to home">
-                    <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
-                </a>
-            </div>
-            <button id="menubutton" aria-label="open hamburger menu">≡</button>
-        </div>
-        <nav id="navmenu" class="accessible-hidden">
-            <ul>
-                <li>
-                    <a href="index.html" aria-label="navigate to design">design</a>
-                </li>
-                <li>
-                    <a href="technical.html" aria-label="navigate to technical">technical</a>
-                </li>
-                <li>
-                    <a href="about.html" aria-label="navigate to about">about</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+      </nav>
+    </div>
+    <!-- Narrow Hamburger Menu -->
+    <div id="header">
+      <div class="myname">
+        <a href="index.html" aria-label="navigate to home">
+          <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
+        </a>
+      </div>
+      <button id="menubutton" aria-label="open hamburger menu">≡</button>
+    </div>
+    <nav id="navmenu" class="accessible-hidden">
+      <ul>
+        <li>
+          <a href="index.html" aria-label="navigate to design">design</a>
+        </li>
+        <li>
+          <a href="technical.html" aria-label="navigate to technical">technical</a>
+        </li>
+        <li>
+          <a href="about.html" aria-label="navigate to about">about</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <div class="UX-container">
+  <main>
+    <div class="UX-container">
 
-            <div class="project-header">
-                <h2 class="uxtitle">Discord Bookmarks</h2>
-                <h3 class="sectiontitle">Helping Discord users stay organized and productive by designing a bookmarks
-                    feature that saves important messages from getting lost in busy conversations.
+      <div class="project-header">
+            <h2 class="uxtitle">Discord Bookmarks</h2>
+            <h3 class="sectiontitle">Helping Discord users stay organized and productive by designing a bookmarks feature that saves important messages from getting lost in busy conversations.
 
-                </h3>
-                <img src="images/discordux/discord_cover.png" alt="Discord Bookmarks Cover" class="UX-header-image">
+            </h3>
+                <img src="images/discordux/discord_cover.png" alt="Discord UX Cover" class="UX-header-image">
 
-                <div class="role-container">
-                    <div class="role-column">
-                        <div class="role-header">Role</div>
-                        Web Developer, UX Designer
-                    </div>
-                    <div class="role-column">
-                        <div class="role-header">Timeline</div>
-                        Fall 2025
-
-                    </div>
-                    <div class="role-column">
-                        <div class="role-header">Course</div>
-                        Intro to Digital Product Design
-
-                    </div>
-                    <div class="role-column">
-                        <div class="role-header">Tools & Skills</div>
-                        Figma, User Research, Prototyping
-                    </div>
+            <div class="role-container">
+                <div class="role-column">
+                    <div class="role-header">Role</div>
+                    UX Designer
                 </div>
-
-            </div>
-
-            <div class="section-break"></div>
-
-            <div class="ux-project-content">
-                <section class="ux-section">
-                    <div class="problem-layout">
-                        <!-- Left: narrative context -->
-                        <div class="problem-column">
-                            <p class="section-eyebrow">Context</p>
-                            <h2 class="section-heading">Important messages vanish in busy Discord servers.</h2>
-
-                            <p class="section-body">
-                                Like many college students, I'm part of several Discord activity groups like my dance
-                                team, project groups, and club organizations. We use Discord to coordinate practices and
-                                meetings, but important information like deadlines, event schedules, and form links gets
-                                buried within hours.
-                            </p>
-
-                            <p class="section-body">
-                                Two weeks ago, I missed a form because I couldn't find the message. After scrolling
-                                endlessly, I gave up and waited for someone else to remind me, even though the
-                                information was technically “there” the whole time.
-                            </p>
-                        </div>
-
-                        <div class="problem-column actions-column">
-                            <h3 class="section-subheading">When users want to find old information, they...</h3>
-
-                            <div class="action-cards">
-                                <div class="action-card">
-                                    <p class="action-title">1) Scroll through channels</p>
-                                    <p class="action-body">
-                                        Users scroll up through channels, hoping to recognize the message as they go.
-                                    </p>
-                                </div>
-
-                                <div class="action-card">
-                                    <p class="action-title">2) Try Discord search</p>
-                                    <p class="action-body">
-                                        Search often requires specific keywords or dates they don't remember.
-                                    </p>
-                                </div>
-
-                                <div class="action-card">
-                                    <p class="action-title">3) Rely on other workarounds or give up.</p>
-                                    <p class="action-body">
-                                        They screenshot messages, ask others to resend information, or give up and wait
-                                        for reminders.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-            <section class="ux-section">
-                <div class="chat-section">
-                    <p class="section-eyebrow">User interviews</p>
-                    <h2 class="section-heading">Why finding information feels exhausting</h2>
-                    <p class="section-body">
-                        After interviewing 3
-                        users (ages 18–24) who actively use Discord for activity groups (dance teams, clubs, and
-                        coordination), I discovered a pattern:
-
-
-                    </p>
-
-                    <!-- Chat-style quotes -->
-                    <div class="chat-container">
-                        <div class="chat-message">
-                            <div class="chat-bubble left-bubble">
-                                <span class="chat-meta">User 1</span>
-                                <p>"You have to know exactly what you want and when."</p>
-                            </div>
-                        </div>
-
-                        <div class="chat-message">
-                            <div class="chat-bubble left-bubble">
-                                <span class="chat-meta">User 2</span>
-                                <p>"Sometimes I can't find what I'm looking for. So I just give up."</p>
-                            </div>
-                        </div>
-
-                        <div class="chat-message">
-                            <div class="chat-bubble left-bubble">
-                                <span class="chat-meta">User 3</span>
-                                <p>"I'd rather not look at my Discord than have to deal with scrolling."</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4 insights in one row on desktop -->
-                    <div class="insight-cards insight-cards-4">
-                        <div class="insight-card">
-                            <p class="insight-label">Insight 1</p>
-                            <p class="insight-title">Users don’t trust search</p>
-                            <p class="insight-text">
-                                Users scroll first and only switch to search when messages are very old.
-                            </p>
-                        </div>
-
-                        <div class="insight-card">
-                            <p class="insight-label">Insight 2</p>
-                            <p class="insight-title">Effort → giving up</p>
-                            <p class="insight-text">
-                                When finding information takes too long, users give up, even for important details.
-
-                            </p>
-                        </div>
-
-                        <div class="insight-card">
-                            <p class="insight-label">Insight 3</p>
-                            <p class="insight-title">No system to stay organized</p>
-                            <p class="insight-text">
-                                People rely on screenshots, calendars, or moderators instead of Discord itself.
-
-                            </p>
-                        </div>
-
-                        <div class="insight-card">
-                            <p class="insight-label">Insight 4</p>
-                            <p class="insight-title">High-stakes content</p>
-                            <p class="insight-text">
-                                Missing messages means missed forms, deadlines, and showing up unprepared.
-
-                            </p>
-                        </div>
-                    </div>
+                <div class="role-column">
+                    <div class="role-header">Timeline</div>
+                    Fall 2025
                 </div>
-            </section>
-
-            <section class="ux-section">
-                <div class="journey-section">
-                    <p class="section-eyebrow">Journey</p>
-                    <h2 class="section-heading">Mapping the struggle to find old messages</h2>
-
-                    <p class="section-body">
-                        I mapped the journey from the moment users realize they need information to when they either
-                        find it or give up. The pattern was consistent across all users:
-                    </p>
-
-                    <div class="journey-container">
-                        <div class="journey-steps">
-                            <div class="journey-card">
-                                <p class="journey-step-label">Step 1</p>
-                                <p class="journey-step-title"> Users realize they now need a form, schedule, or practice
-                                    video from weeks ago</p>
-
-                            </div>
-
-                            <div class="journey-card">
-                                <p class="journey-step-label">Step 2</p>
-                                <p class="journey-step-title">They try to recall the context like channel, sender, and
-                                    rough time.</p>
-                                <p class="journey-step-text">
-                                </p>
-                            </div>
-
-                            <div class="journey-card">
-                                <p class="journey-step-label">Step 3</p>
-                                <p class="journey-step-title">They scan and scroll through long message histories for
-                                    anything that looks
-                                    familiar.</p>
-                            </div>
-
-                            <div class="journey-card">
-                                <p class="journey-step-label">Step 4</p>
-                                <p class="journey-step-title">When scrolling fails, they try Discord's search but feel
-                                    overwhelmed by results and
-                                    filters.</p>
-
-                            </div>
-
-                            <div class="journey-card">
-                                <p class="journey-step-label">Step 5</p>
-                                <p class="journey-step-title">Eventually, they will find it after a lot of effort, or
-                                    give up.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p class="section-body">
-                        By step 5, users feel extremely frustrated and defeated; not just annoyed, but anxious about
-                        missing deadlines. The emotional toll of repeatedly failing to find critical information was
-                        clear.
-
-                    </p>
-
+                <div class="role-column">
+                    <div class="role-header">Course</div>
+                     Intro to Digital Product Design
                 </div>
-            </section>
-
+                <div class="role-column">
+                    <div class="role-header">Tools & Skills</div>
+            Figma, User Research, Prototyping
+                </div>
+            </div>
 
         </div>
 
+      <div class="section-break"></div>
 
+      <!-- Problem Section - Combined with context -->
+      <section class="ux-section">
+        <div class="problem-layout">
+          <div class="problem-column">
+            <p class="section-eyebrow">The Problem</p>
+            <h2 class="section-heading">Important messages disappear in hours</h2>
 
+            <p class="section-body">
+              I'm in several Discord servers for dance team, project groups, and clubs. Critical info—practice
+              schedules, form deadlines, meeting links—gets buried fast.
+            </p>
 
+            <p class="section-body">
+              Two weeks ago, I missed a form deadline because I couldn't find the message. After endless scrolling, I
+              gave up. <strong>Discord has no way to bookmark messages.</strong>
+            </p>
+          </div>
 
-    </main>
-
-    <footer>
-        <p>Get in Touch</p>
-        <h1>Contact Me</h1>
-        <div class="contact-section">
-            <div class="contact-item scroll-hidden">
-                <img src="images/github.png" alt="GitHub">
-                <p><a href="https://github.com/ashleyh859" target="_blank" rel="noopener noreferrer">ashleyh859</a></p>
-            </div>
-            <div class="contact-item scroll-hidden">
-                <img src="images/linkedin.png" alt="LinkedIn">
-                <p><a href="http://www.linkedin.com/in/ashleyhuang-ny" target="_blank"
-                        rel="noopener noreferrer">ashleyhuang-ny</a></p>
-            </div>
-            <div class="contact-item scroll-hidden">
-                <img src="images/email.png" alt="Email">
-                <p><a href="mailto:ashleyhuang.ny@gmail.com" target="_blank"
-                        rel="noopener noreferrer">ashleyhuang.ny@gmail.com</a></p>
-            </div>
+          <div class="problem-column actions-column">
+            <img src="images/discordux/discord_context.png" alt="Discord context image"
+              style="margin-top: 2rem; margin-bottom: 2rem; max-height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
         </div>
-    </footer>
-    <p class="footer-credit">designed & developed by Ashley Huang © 2025</p>
+    </section>
+    <section class="ux-section">
+      <p class="section-eyebrow">User Research</p>
+      <h2 class="section-heading">Finding info feels impossible</h2>
 
-    <script src="scripts/jquery-3.7.1.js"></script>
-    <script src="scripts/hamburgermenu.js"></script>
-    <script src="scripts/scroll-animations.js"></script>
+
+      <p class="section-body">
+        Key User Interview Insights </p>
+
+            <img src="images/discordux/discord_userinterviews.png" alt="Discord user interview insights"
+        style="margin-top: 2rem; margin-bottom: 2rem; max-width: 700px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+
+    </section>
+
+
+
+    <!-- User Journey Map -->
+    <section class="ux-section">
+      <div class="journey-section">
+        <p class="section-eyebrow">User Journey</p>
+        <h2 class="section-heading">The frustrating search for old messages</h2>
+        <p class="section-body"> Mapping out how users currently try to find information in Discord reveals multiple
+          pain points and moments of frustration that compound over time. </p>
+
+           <img src="images/discordux/discord_journeymapping.png" alt="Discord user journey mapping"
+        style="margin-top: 2rem; margin-bottom: 2rem; max-width: 1050px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+
+
+        <p class="journey-emotion"> <strong>Result:</strong> Users feel defeated and anxious about missing important
+          info.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- Brainstorming Section -->
+    <section class="ux-section">
+      <p class="section-eyebrow">Ideation</p>
+      <h2 class="section-heading">From 90+ ideas to 3 concepts</h2>
+
+      <p class="section-body">
+        I recruited 2 Discord users to brainstorm solutions. We generated 50+ "How Might We" questions, grouped them
+        into opportunity areas, then sketched flows to understand feasibility.
+      </p>
+
+      <!-- Brainstorming process image -->
+      <img src="images/discordux/discord_brainstorm.png" alt="Discord brainstorming process"
+        style="margin-top: 2rem; margin-bottom: 3rem; max-height: 290px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+
+
+      <!-- 3 Low-fi Concept Cards -->
+      <div class="lowfi-cards">
+        <div class="lowfi-card">
+          <img src="images/discordux/discord_lowfi_remindmein.png" alt="Reminder feature low-fi sketch" class="lowfi-image">
+          <div class="lowfi-content">
+            <p class="lowfi-number">1</p>
+            <p class="lowfi-title">Reminder/Schedule Alerts</p>
+            <p class="lowfi-description">"Remind Me In" feature for time-sensitive messages</p>
+          </div>
+        </div>
+
+        <div class="lowfi-card">
+          <img src="images/discordux/discord_lowfi_personalbookmarks.jpg" alt="Bookmarks feature low-fi sketch" class="lowfi-image">
+          <div class="lowfi-content">
+            <p class="lowfi-number">2</p>
+            <p class="lowfi-title">Personal Bookmarks</p>
+            <p class="lowfi-description">Save messages with optional reminders</p>
+          </div>
+        </div>
+
+        <div class="lowfi-card">
+          <img src="images/discordux/discord_lowfi_filterbutton.png" alt="Search filters low-fi sketch" class="lowfi-image">
+          <div class="lowfi-content">
+            <p class="lowfi-number">3</p>
+            <p class="lowfi-title">Quick Filter Buttons</p>
+            <p class="lowfi-description">Make search filters more visible and intuitive</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="decision-card">
+        <p class="decision-label">The Turning Point</p>
+        <p class="decision-title">Why bookmarks over better search</p>
+        <p class="decision-text">
+          I initially thought improving search was the answer. But better search is <strong>reactive</strong>—users
+          still forget to look. Bookmarks are <strong>proactive</strong>—users save messages before they get buried,
+          then access them anytime with optional reminders.
+        </p>
+      </div>
+    </section>
+
+
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Get in Touch</p>
+    <h1>Contact Me</h1>
+    <div class="contact-section">
+      <div class="contact-item scroll-hidden">
+        <img src="images/github.png" alt="GitHub">
+        <p><a href="https://github.com/ashleyh859" target="_blank" rel="noopener noreferrer">ashleyh859</a></p>
+      </div>
+      <div class="contact-item scroll-hidden">
+        <img src="images/linkedin.png" alt="LinkedIn">
+        <p><a href="http://www.linkedin.com/in/ashleyhuang-ny" target="_blank"
+            rel="noopener noreferrer">ashleyhuang-ny</a></p>
+      </div>
+      <div class="contact-item scroll-hidden">
+        <img src="images/email.png" alt="Email">
+        <p><a href="mailto:ashleyhuang.ny@gmail.com" target="_blank"
+            rel="noopener noreferrer">ashleyhuang.ny@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <p class="footer-credit">designed & developed by Ashley Huang © 2025</p>
+
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/hamburgermenu.js"></script>
+  <script src="scripts/scroll-animations.js"></script>
 
 </body>
 
