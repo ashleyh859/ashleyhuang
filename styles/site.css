@@ -594,6 +594,7 @@ footer h1{
   height: 1px;
   background-color: #e5e5e5;
   border: none;
+  margin-bottom: 60px;
 }
 
 .UX-container {
@@ -638,6 +639,7 @@ footer h1{
 
 .ux-section {
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .sectiontitle {
