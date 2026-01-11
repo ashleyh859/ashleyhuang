@@ -1036,7 +1036,89 @@ a.project-link {
   line-height: 1.5;
 }
 
-/* responsive */
+.journey-section {
+  margin: 4rem auto 0 auto;
+}
+
+.journey-container {
+  margin-top: 1.4rem;
+  background: #faf9ff;
+  border-radius: 18px;
+  padding: 1.1rem 1.1rem 1.2rem 1.1rem;
+  border: 1px solid #D5DAFF;
+}
+
+/* horizontal, scrollable steps inside blue panel */
+.journey-steps {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(180px, 1fr);
+  gap: 1rem;
+  padding-bottom: 0.3rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.journey-steps::-webkit-scrollbar {
+  height: 6px;
+}
+
+.journey-steps::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+}
+
+.journey-steps::-webkit-scrollbar-thumb {
+  background: #D5DAFF;
+  border-radius: 999px;
+}
+
+/* white cards on blue background */
+.journey-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+  border: 1px solid #EAEDFF;
+  box-shadow: 0 5px 12px rgba(80, 81, 90, 0.10);
+  scroll-snap-align: start;
+}
+
+.journey-step-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #5C5F64;
+  margin-bottom: 0.2rem;
+}
+
+.journey-step-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.25rem;
+}
+
+.journey-step-text {
+  font-size: 0.85rem;
+  color: #5C5F64;
+  line-height: 1.5;
+}
+
+.journey-emotion {
+  font-size: 0.9rem;
+  color: #4E5058;
+  margin-top: 1.2rem;
+}
+
+/* stack cards on small screens if you prefer no horizontal scroll */
+@media (max-width: 700px) {
+  .journey-steps {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    overflow-x: visible;
+  }
+}
 @media (max-width: 960px) {
   .insight-cards-4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
