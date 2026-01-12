@@ -1346,6 +1346,120 @@ a.project-link {
   font-weight: 600;
 }
 
+/* ============================================
+   USER TESTING SECTION
+   ============================================ */
+
+/* Container for each testing task */
+.testing-task {
+  margin-bottom: 5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e8eaff;
+}
+
+.ux-section .uxlist ol{
+  color: #2a2c4b;
+}
+
+.testing-task:last-of-type {
+  border-bottom: none;
+}
+
+.testing-task-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #2a2c4b;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.3px;
+}
+
+.testing-task-description {
+  font-size: 1.05rem;
+  color: #5a5c78;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+/* Row 1: Prototype + User Feedback */
+.testing-feedback-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.testing-gif-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.testing-gif-container img,
+.testing-gif-container video {
+  width: auto;
+  height: 400px;
+  border-radius: 12px;
+  display: block;
+  object-fit: contain;
+}
+
+.testing-conversation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.testing-conversation img {
+  width: auto;
+  height: 350px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.conversation-header {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color:
+#7c7fb0;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+/* Responsive adjustments for user testing */
+@media (max-width: 960px) {
+  .testing-feedback-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .single-row-comparison {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .testing-task {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .testing-task-title {
+    font-size: 1.2rem;
+  }
+
+  .testing-task-description {
+    font-size: 0.95rem;
+  }
+
+  .testing-conversation {
+    padding: 1.5rem 1.2rem;
+  }
+}
+
 @media (max-width: 960px) {
   .single-row-comparison {
     flex-direction: column;

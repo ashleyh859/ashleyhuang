@@ -348,6 +348,180 @@
         </div>
       </section>
 
+      <section class="ux-section">
+        <p class="section-eyebrow">User Testing</p>
+        <h2 class="section-heading">Testing with Real Users</h2>
+
+        <p class="section-body">
+          I tested all three flows with 3 users (ages 18–24, all active in Discord activity groups). Each session
+          followed task-based scenarios:
+        </p>
+        <ol class="uxlist">
+          <li>Bookmark a showcase timeline message and set a reminder for one week before</li>
+          <li>View and manage saved bookmarks</li>
+          <li>Find a bookmark without remembering which channel or when it was posted</li>
+        </ol>
+
+        <!-- Task 1: Creating a Bookmark -->
+        <div class="testing-task">
+          <h3 class="testing-task-title">Flow 1: Creating a Bookmark</h3>
+          <p class="testing-task-description">
+            <strong> The task:</strong> "Bookmark this message about showcase timeline and set a reminder for one week before."
+          </p>
+
+
+          <!-- Row 1: Prototype + User Feedback -->
+          <div class="testing-feedback-row">
+            <div class="testing-gif-container">
+              <img src="images/discordux/discord_testing1proto.gif" alt="Flow 1 prototype showing bookmark creation">
+            </div>
+
+            <div class="testing-conversation">
+              <img src="images/discordux/discord_testing1convo.png" alt="User feedback quotes" style="width: 100%;">
+            </div>
+          </div>
+
+          <!-- Row 2: Before/After with bullets -->
+          <div class="single-row-comparison">
+            <div class="comparison-column">
+              <p class="column-title">Before</p>
+              <div class="column-content">
+                <img src="images/discordux/discord_decision1.1.png" alt="Before state" class="column-image">
+                <ul class="column-bullets">
+                  <li class="con">✗ No visual cue that title was editable</li>
+                  <li class="con">✗ No recurring reminder options</li>
+                  <li class="con">✗ Users had to set reminders one by one</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comparison-column">
+              <p class="column-title">After</p>
+              <div class="column-content">
+                <img src="images/discordux/discord_decision1.2.png" alt="After state" class="column-image">
+                <ul class="column-bullets">
+                  <li class="pro">✓ Blinking cursor shows field is editable</li>
+                  <li class="pro">✓ X button for quick clearing</li>
+                  <li class="pro">✓ Recurring options: Every day, week, month</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- What Changed -->
+          <div class="decision-outcome">
+            <p><strong>What I changed:</strong> Added a blinking cursor and X button to make it immediately clear the
+              field was editable, using familiar patterns from Safari and Google Docs. Added recurring reminders (Every
+              day, Every week, Every month) to support the weekly practices and monthly events users asked for.</p>
+          </div>
+        </div>
+
+        <!-- Task 2: Managing Bookmarks -->
+        <div class="testing-task">
+          <h3 class="testing-task-title">Flow 2: Managing Bookmarks</h3>
+          <p class="testing-task-description">
+           <strong> The task: </strong> "Show me where you'd go to see all your saved bookmarks. Then try deleting one."
+          </p>
+
+              <!-- Row 1: Prototype + User Feedback -->
+          <div class="testing-feedback-row">
+            <div class="testing-gif-container">
+              <img src="images/discordux/discord_testing2proto.gif" alt="Flow 2 prototype showing bookmark creation">
+            </div>
+
+            <div class="testing-conversation">
+              <img src="images/discordux/discord_testing2convo.png" alt="User feedback quotes" style="width: 100%;">
+            </div>
+          </div>
+
+          <!-- Row 2: Before/After with bullets -->
+          <div class="single-row-comparison">
+            <div class="comparison-column">
+              <p class="column-title">Before</p>
+              <div class="column-content">
+                <img src="images/discordux/flow3_before.png" alt="Before state" class="column-image">
+                <ul class="column-bullets">
+                  <li class="con">✗ "Bookmarks" section name was confusing</li>
+                  <li class="con">✗ Separated from "Upcoming" items</li>
+                  <li class="con">✗ No search functionality</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comparison-column">
+              <p class="column-title">After</p>
+              <div class="column-content">
+                <img src="images/discordux/flow3_after.png" alt="After state" class="column-image">
+                <ul class="column-bullets">
+                  <li class="pro">✓ Renamed to "Saved" for clarity</li>
+                  <li class="pro">✓ All bookmarks in one unified view</li>
+                  <li class="pro">✓ Search bar for quick filtering</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- What Changed -->
+          <div class="decision-outcome">
+            <p><strong>What I changed:</strong> Renamed "Bookmarks" → "Saved" to eliminate the confusion all 3 users had
+              about section organization. Added search bar at the top of the bookmarks modal so users could browse OR
+              search in one place, addressing the request from 2 out of 3 users.</p>
+          </div>
+        </div>
+
+        <div class="testing-task">
+          <h3 class="testing-task-title">Flow 3: Searching for Bookmarks</h3>
+          <p class="testing-task-description">
+            <strong>The task: </strong>"Find your bookmark about the showcase schedule without remembering which channel or date."
+          </p>
+
+              <!-- Row 1: Prototype + User Feedback -->
+          <div class="testing-feedback-row">
+            <div class="testing-gif-container">
+              <img src="images/discordux/discord_testing3proto.gif" alt="Flow 3 prototype showing bookmark creation">
+            </div>
+
+            <div class="testing-conversation">
+              <img src="images/discordux/discord_testing3convo.png" alt="User feedback quotes" style="width: 100%;">
+            </div>
+          </div>
+
+          <!-- Row 2: Before/After with bullets -->
+          <div class="single-row-comparison">
+            <div class="comparison-column">
+              <p class="column-title">Before</p>
+              <div class="column-content">
+                <img src="images/discordux/flow4_before.png" alt="Before state" class="column-image">
+                <ul class="column-bullets">
+                  <li class="con">✗ Required using Discord's channel search</li>
+                  <li class="con">✗ Search separated from bookmarks view</li>
+                  <li class="con">✗ No option to browse and search together</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comparison-column">
+              <p class="column-title">After</p>
+              <div class="column-content">
+                <img src="images/discordux/flow4_after.png" alt="After state" class="column-image">
+                <ul class="column-bullets">
+                  <li class="pro">✓ Integrated search within bookmarks</li>
+                  <li class="pro">✓ Browse and search in same location</li>
+                  <li class="pro">✓ Flexible: users can choose their method</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- What Changed -->
+          <div class="decision-outcome">
+            <p><strong>What I changed:</strong> Added search functionality directly within the bookmarks modal, allowing
+              users to both browse and search in one place rather than forcing them to use Discord's separate channel
+              search.</p>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 
