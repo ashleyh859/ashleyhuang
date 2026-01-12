@@ -1197,6 +1197,243 @@ a.project-link {
   font-weight: 600;
 }
 
+/* ============================================
+   DESIGN DECISION COMPARISON - SINGLE ROW LAYOUT
+   Screen on left, bullets on right
+   ============================================ */
+
+/* Design Decision Container */
+.design-decision {
+  margin: 4rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e8eaff;
+}
+
+.design-decision:last-of-type {
+  border-bottom: none;
+}
+
+.decision-header {
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #2a2c4b;
+  margin-bottom: 1rem;
+  letter-spacing: -0.3px;
+}
+
+/* Context text right under header */
+.decision-context {
+  font-size: 1.05rem;
+  color: #5a5c78;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+/* Single Row Comparison - Works for 2 or 3 columns */
+.single-row-comparison {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.comparison-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  max-width: 450px;
+}
+
+/* Title at the top */
+.column-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1c3a;
+  margin-bottom: 1rem;
+  letter-spacing: -0.2px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Container for Image + Bullets side-by-side */
+.column-content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+/* Image on left */
+.column-image {
+  width: 250px;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Bullets on right */
+.column-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  align-items: center;
+}
+
+.column-bullets li {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+}
+
+.column-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+/* Pro/Con styling */
+.column-bullets li.pro {
+  color: #4a7c59;
+}
+
+.column-bullets li.con {
+  color: #8b5a5a;
+}
+
+/* Decision Outcome */
+.decision-outcome {
+  margin-top: 2.5rem;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #f0f3ff 0%, #f8f9ff 100%);
+  border-radius: 16px;
+  border-left: 4px solid #5b68df;
+}
+
+.decision-outcome p {
+  font-size: 1.05rem;
+  color: #2a2c4b;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.decision-outcome strong {
+  color: #1a1c3a;
+  font-weight: 600;
+}
+
+/* Testing Card - Final Summary */
+.testing-card {
+  background: linear-gradient(135deg, #f0f3ff 0%, #f8f9ff 100%);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  border: 1px solid #d5daff;
+  box-shadow: 0 6px 28px rgba(91, 104, 223, 0.12);
+  margin-top: 4rem;
+}
+
+.testing-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #5b68df;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.testing-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1c3a;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.testing-text {
+  font-size: 1.1rem;
+  color: #4a4c68;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.testing-text strong {
+  color: #5b68df;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+  .single-row-comparison {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .comparison-column {
+    max-width: 450px;
+  }
+
+  .column-image {
+    width: 160px;
+  }
+
+  .decision-outcome {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .testing-card {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .decision-header {
+    font-size: 1.2rem;
+  }
+
+  .decision-context {
+    font-size: 0.95rem;
+  }
+
+  .single-row-comparison {
+    gap: 2rem;
+  }
+
+  .column-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column-image {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .column-bullets {
+    width: 100%;
+  }
+
+  .column-title {
+    font-size: 0.95rem;
+  }
+
+  .column-bullets li {
+    font-size: 0.85rem;
+  }
+
+  .decision-outcome p,
+  .testing-text {
+    font-size: 0.95rem;
+  }
+
+  .testing-title {
+    font-size: 1.2rem;
+  }
+}
 
 /* Responsive adjustments */
 @media (max-width: 960px) {
