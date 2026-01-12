@@ -963,7 +963,6 @@ a.project-link {
   margin-bottom: 1.2rem;
 }
 
-/* Overview cards */
 .overview-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1002,7 +1001,6 @@ a.project-link {
   font-weight: 600;
 }
 
-/* Chat section improvements */
 .chat-section {
   margin: 5rem auto 0 auto;
 }
@@ -1060,7 +1058,6 @@ a.project-link {
   font-weight: 400;
 }
 
-/* 4 insight cards in a row on desktop */
 .insight-cards-4 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1106,7 +1103,6 @@ a.project-link {
   line-height: 1.6;
 }
 
-/* Journey section */
 .journey-section {
   margin: 5rem auto 0 auto;
 }
@@ -1197,12 +1193,6 @@ a.project-link {
   font-weight: 600;
 }
 
-/* ============================================
-   DESIGN DECISION COMPARISON - SINGLE ROW LAYOUT
-   Screen on left, bullets on right
-   ============================================ */
-
-/* Design Decision Container */
 .design-decision {
   margin: 4rem 0;
   padding-bottom: 2rem;
@@ -1221,7 +1211,6 @@ a.project-link {
   letter-spacing: -0.3px;
 }
 
-/* Context text right under header */
 .decision-context {
   font-size: 1.05rem;
   color: #5a5c78;
@@ -1229,7 +1218,6 @@ a.project-link {
   margin-bottom: 2.5rem;
 }
 
-/* Single Row Comparison - Works for 2 or 3 columns */
 .single-row-comparison {
   display: flex;
   flex-direction: row;
@@ -1247,7 +1235,6 @@ a.project-link {
   max-width: 450px;
 }
 
-/* Title at the top */
 .column-title {
   font-size: 1.05rem;
   font-weight: 600;
@@ -1258,7 +1245,6 @@ a.project-link {
   text-align: center;
 }
 
-/* Container for Image + Bullets side-by-side */
 .column-content {
   display: flex;
   flex-direction: row;
@@ -1267,7 +1253,6 @@ a.project-link {
   align-items: center;
 }
 
-/* Image on left */
 .column-image {
   width: 250px;
   height: auto;
@@ -1276,7 +1261,6 @@ a.project-link {
   border-radius: 8px;
 }
 
-/* Bullets on right */
 .column-bullets {
   list-style: none;
   padding: 0;
@@ -1296,7 +1280,6 @@ a.project-link {
   margin-bottom: 0;
 }
 
-/* Pro/Con styling */
 .column-bullets li.pro {
   color: #4a7c59;
 }
@@ -1305,7 +1288,6 @@ a.project-link {
   color: #8b5a5a;
 }
 
-/* Decision Outcome */
 .decision-outcome {
   margin-top: 2.5rem;
   padding: 1.5rem 2rem;
@@ -1326,7 +1308,6 @@ a.project-link {
   font-weight: 600;
 }
 
-/* Testing Card - Final Summary */
 .testing-card {
   background: linear-gradient(135deg, #f0f3ff 0%, #f8f9ff 100%);
   border-radius: 20px;
@@ -1365,7 +1346,6 @@ a.project-link {
   font-weight: 600;
 }
 
-/* Responsive Design */
 @media (max-width: 960px) {
   .single-row-comparison {
     flex-direction: column;
