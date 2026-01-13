@@ -1346,11 +1346,6 @@ a.project-link {
   font-weight: 600;
 }
 
-/* ============================================
-   USER TESTING SECTION
-   ============================================ */
-
-/* Container for each testing task */
 .testing-task {
   margin-bottom: 5rem;
   padding-bottom: 3rem;
@@ -1380,7 +1375,6 @@ a.project-link {
   margin-bottom: 2.5rem;
 }
 
-/* Row 1: Prototype + User Feedback */
 .testing-feedback-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1427,7 +1421,6 @@ a.project-link {
   font-weight: 600;
 }
 
-/* Responsive adjustments for user testing */
 @media (max-width: 960px) {
   .testing-feedback-row {
     grid-template-columns: 1fr;
