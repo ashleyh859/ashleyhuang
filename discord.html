@@ -365,7 +365,8 @@
         <div class="testing-task">
           <h3 class="testing-task-title">Flow 1: Creating a Bookmark</h3>
           <p class="testing-task-description">
-            <strong> The task:</strong> "Bookmark this message about showcase timeline and set a reminder for one week before."
+            <strong> The task:</strong> "Bookmark this message about showcase timeline and set a reminder for one week
+            before."
           </p>
 
           <div class="testing-feedback-row">
@@ -414,7 +415,8 @@
         <div class="testing-task">
           <h3 class="testing-task-title">Flow 2: Managing Bookmarks</h3>
           <p class="testing-task-description">
-           <strong> The task: </strong> "Show me where you'd go to see all your saved bookmarks. Then try deleting one."
+            <strong> The task: </strong> "Show me where you'd go to see all your saved bookmarks. Then try deleting
+            one."
           </p>
           <div class="testing-feedback-row">
             <div class="testing-gif-container">
@@ -444,7 +446,8 @@
               <div class="column-content">
                 <img src="images/discordux/discord_testing2after.png" alt="After state" class="column-image">
                 <ul class="column-bullets">
-                  <li class="pro">✓ Renamed to "Saved" for clarity that these were permanent bookmarks, compared to time-sensitive bookmarks </li>
+                  <li class="pro">✓ Renamed to "Saved" for clarity that these were permanent bookmarks, compared to
+                    time-sensitive bookmarks </li>
                   <li class="pro">✓ All bookmarks in one unified view</li>
                   <li class="pro">✓ Search bar for quick filtering</li>
                 </ul>
@@ -454,7 +457,8 @@
 
           <div class="decision-outcome">
             <p><strong>What I changed:</strong> Renamed "Bookmarks" → "Saved" to eliminate the confusion all 3 users had
-              about organization (time sensitive bookmarks vs permanent bookmarks). Added search bar at the top of the bookmarks modal so users could browse OR
+              about organization (time sensitive bookmarks vs permanent bookmarks). Added search bar at the top of the
+              bookmarks modal so users could browse OR
               search in one place.</p>
           </div>
         </div>
@@ -462,7 +466,8 @@
         <div class="testing-task">
           <h3 class="testing-task-title">Flow 3: Searching for Bookmarks</h3>
           <p class="testing-task-description">
-            <strong>The task: </strong>"Find your bookmark about the showcase schedule without remembering which channel or date."
+            <strong>The task: </strong>"Find your bookmark about the showcase schedule without remembering which channel
+            or date."
           </p>
 
           <div class="testing-feedback-row">
@@ -509,6 +514,108 @@
         </div>
       </section>
 
+     <section class="ux-section">
+  <p class="section-eyebrow">Final Design</p>
+  <h2 class="section-heading">Final Design Walkthrough</h2>
+
+  <p class="section-body">
+    The final prototype brings all three flows together into one seamless bookmark experience.
+  </p>
+
+  <div class="testing-task">
+    <h3 class="testing-task-title">Creating a Bookmark</h3>
+    <p class="testing-task-description">
+      Users can quickly save important messages before they get buried in busy channels.
+    </p>
+
+    <div class="final-design-row">
+      <div class="final-design-gif">
+        <img src="images/discordux/flow1.gif" alt="Creating bookmark flow">
+      </div>
+
+      <div class="final-design-screen">
+        <p class="screen-title">Context Menu</p>
+        <img src="images/discordux/flow1.1.png" alt="Context menu">
+        <p class="screen-caption">Access bookmarks via familiar context menu (long-press)</p>
+      </div>
+
+      <div class="final-design-screen">
+        <p class="screen-title">Edit & Reminders</p>
+        <img src="images/discordux/flow1.2.png" alt="Bookmark modal">
+        <p class="screen-caption">Edit auto-suggested titles and set optional recurring reminders</p>
+      </div>
+
+      <div class="final-design-screen">
+        <p class="screen-title">Confirmation</p>
+        <img src="images/discordux/flow1.3.png" alt="Confirmation toast">
+        <p class="screen-caption">Receive instant confirmation and inline edit option when bookmark is saved</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testing-task">
+    <h3 class="testing-task-title">Managing Bookmarks</h3>
+    <p class="testing-task-description">
+      Users can browse or search their saved bookmarks with full context.
+    </p>
+
+    <div class="final-design-row">
+      <div class="final-design-gif">
+        <img src="images/discordux/flow2.gif" alt="Managing bookmarks flow">
+      </div>
+
+      <div class="final-design-screen">
+        <p class="screen-title">Search & Toggle</p>
+        <img src="images/discordux/flow2.1.png" alt="Bookmarks modal">
+        <p class="screen-caption">Search and toggle between time-sensitive ("Upcoming") and permanent ("Saved")
+          bookmarks</p>
+      </div>
+
+      <div class="final-design-screen">
+        <p class="screen-title">Edit Modal</p>
+        <img src="images/discordux/flow2.2.png" alt="Edit">
+        <p class="screen-caption">Re-customize bookmarks by editing title and reminders</p>
+      </div>
+
+      <div class="final-design-screen">
+        <p class="screen-title">Delete Confirmation</p>
+        <img src="images/discordux/flow2.3.png" alt="Delete confirmation">
+        <p class="screen-caption">Confirm deletions to prevent accidental removal</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="testing-task">
+    <h3 class="testing-task-title">Finding Bookmarks Through Search</h3>
+    <p class="testing-task-description">
+      Alternative path for users who prefer searching over browsing.
+    </p>
+
+    <div class="final-design-row">
+      <div class="final-design-gif">
+        <img src="images/discordux/flow3.gif" alt="Search bookmarks flow">
+      </div>
+
+      <div class="final-design-screen">
+        <p class="screen-title">Channel Search Filter</p>
+        <img src="images/discordux/discord_testing3before.png" alt="Search filter">
+        <p class="screen-caption">Filter bookmarks within Discord's channel search</p>
+      </div>
+
+      <div class="final-design-screen">
+        <p class="screen-title">Prioritized Results</p>
+        <img src="images/discordux/flow3.2.png" alt="Search results">
+        <p class="screen-caption">View most relevant bookmarks prioritized at the top of search results</p>
+      </div>
+
+      <div class="final-design-screen">
+        <p class="screen-title">In-Modal Search</p>
+        <img src="images/discordux/flow3.3.png" alt="Grouped results">
+        <p class="screen-caption">Search within bookmarks modal for quick filtering</p>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   </main>
 
