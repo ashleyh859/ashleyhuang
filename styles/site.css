@@ -1473,6 +1473,19 @@ a.project-link {
   margin: 0;
 }
 
+.reflection-list {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  font-size: 1.15rem;
+  color: #454760;
+  line-height: 1.75;
+  list-style-type: disc;
+}
+
+.reflection-list li {
+  margin-bottom: 0.8rem;
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
   .final-design-row {
