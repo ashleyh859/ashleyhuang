@@ -1693,7 +1693,7 @@ a.project-link {
     padding: 0;
     margin: 0;
   }
-  
+
   main{
     padding-top: 0vh;
   }
@@ -1957,10 +1957,9 @@ a.project-link {
     font-size: 1.15em;
     line-height: 1.6;
     margin-bottom: 1.2rem;
-    text-align: center;
+    text-align: left;
   }
 
-  /* Style the Amazon line specifically if needed */
   .home-name:last-child {
     margin-top: 1.5rem;
   }
@@ -2060,6 +2059,125 @@ a.project-link {
     flex-direction: column;
     align-items: center;
     width: 170px;
+  }
+
+  .UX-container {
+    width: 100vw;
+    padding: 0 20px;
+  }
+
+  .project-header {
+    width: 100%;
+  }
+
+  .uxtitle {
+    font-size: 2rem;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+  }
+
+  .sectiontitle {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin-bottom: 3vh;
+  }
+
+  .UX-header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  /* Honorable Mention Badge */
+  .project-header > .role-column:first-of-type {
+    font-size: 1rem;
+    text-align: center;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #fff7e6 0%, #fff9ed 100%);
+    border: 2px solid #ffb84d;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  /* Role Container */
+  .role-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .role-column {
+    padding-right: 0;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .role-header {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #1a1c3a;
+  }
+
+   .ux-section img[alt="Discord user interview insights"],
+  .ux-section img[alt="Discord user journey mapping"],
+  .ux-section img[alt="Discord brainstorming process"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 1.5rem auto !important;
+    display: block !important;
+  }
+
+  /* Testing Feedback Row - Stack Vertically */
+  .testing-feedback-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .testing-gif-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .testing-gif-container img,
+  .testing-gif-container video {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .testing-conversation {
+    align-items: center;
+    width: 100%;
+  }
+
+  .testing-conversation img {
+    width: 100% !important;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Low-fi Cards - Stack on Mobile */
+  .lowfi-cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .lowfi-image {
+    height: 250px;
+    object-fit: cover;
   }
 }
 /* ============================================
