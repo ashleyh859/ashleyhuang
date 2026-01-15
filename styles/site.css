@@ -1582,6 +1582,32 @@ a.project-link {
 }
 
 @media (max-width: 640px) {
+
+    .uxparagraph {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  .uxlist {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-left: 30px !important; /* Override inline styles */
+    margin-bottom: 1.2rem;
+  }
+
+  .uxlist li {
+    margin-bottom: 1rem;
+  }
+
+  /* Section titles */
+  .sectiontitle {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+  }
+  
   .decision-header {
     font-size: 1.2rem;
   }
