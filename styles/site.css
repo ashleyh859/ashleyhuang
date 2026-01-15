@@ -1927,6 +1927,38 @@ a.project-link {
     padding: 4px 12px;
   }
 
+   .home-container {
+    width: 100vw;
+    padding: 0 20px;
+  }
+
+  .home-header-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .home-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .home-blurb {
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+  }
+
+  .home-name {
+    font-size: 1.15em;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  /* Style the Amazon line specifically if needed */
+  .home-name:last-child {
+    margin-top: 1.5rem;
+  }
+
 .project-container {
   flex-direction: column;
   margin-left:0px;
