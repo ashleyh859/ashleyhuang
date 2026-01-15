@@ -1821,10 +1821,14 @@ a.project-link {
     font-size: 1em; /* Adjust size as needed */
 }
 
-.home-project-portfolio {
-    width: 100%;
-    gap: 20px;
-}
+ .home-project-portfolio {
+    width: 100vw;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 40px;
+  }
 
 .home-project-project {
     width: calc(100% - 20px); /* Full width with some margin */
@@ -1881,19 +1885,47 @@ a.project-link {
   }
 
 
-.home-project-portfolio {
-  display: flex;
-  padding: 20px;
-  justify-content: center;
-  width: 100vw;
-  margin: 0 auto;
-}
+  .home-project-portfolio {
+    width: 100vw;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 40px;
+  }
 
-.home-project-project {
-  overflow: hidden;
-  width: 100vw;
-  margin-bottom: 20px;
-}
+  .home-project-project {
+    width: 100%;
+    margin-bottom: 0; /* Gap handles spacing */
+  }
+
+
+  .home-project-image-container {
+    width: 100%;
+  }
+
+  .home-project-project-image {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .home-project-title {
+    font-size: 1.3em;
+  }
+
+  .home-project-description {
+    font-size: 1em;
+  }
+
+  .home-project-tags {
+    justify-content: flex-start;
+  }
+
+  .home-project-tag {
+    font-size: 0.9em;
+    padding: 4px 12px;
+  }
 
 .project-container {
   flex-direction: column;
