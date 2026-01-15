@@ -1688,6 +1688,12 @@ a.project-link {
     box-sizing: border-box;
   }
 
+    body {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  
   main{
     padding-top: 0vh;
   }
