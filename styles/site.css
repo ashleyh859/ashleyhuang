@@ -1373,6 +1373,16 @@ a.project-link {
   margin-bottom: 3rem;
   align-items: center;
 }
+.testing-feedback-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  max-width: 1000px;  /* ← ADD THIS */
+  margin-left: auto;  /* ← ADD THIS */
+  margin-right: auto; /* ← ADD THIS */
+}
 
 .testing-gif-container {
   display: flex;
