@@ -1196,11 +1196,6 @@ a.project-link {
 .design-decision {
   margin: 4rem 0;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #e8eaff;
-}
-
-.design-decision:last-of-type {
-  border-bottom: none;
 }
 
 .decision-header {
@@ -1349,16 +1344,12 @@ a.project-link {
 .testing-task {
   margin-bottom: 5rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid #e8eaff;
 }
 
 .ux-section .uxlist ol{
   color: #2a2c4b;
 }
 
-.testing-task:last-of-type {
-  border-bottom: none;
-}
 
 .testing-task-title {
   font-size: 1.35rem;
