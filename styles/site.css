@@ -1951,6 +1951,7 @@ a.project-link {
   .home-blurb {
     font-size: 1.8em;
     margin-bottom: 1rem;
+    text-align: left;
   }
 
   .home-name {
