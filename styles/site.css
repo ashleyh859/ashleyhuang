@@ -873,6 +873,201 @@ a.project-link {
   text-decoration: underline;
 }
 
+.creative-main {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+}
+
+.creative-intro {
+  margin-bottom: 40px;
+}
+
+.creative-intro h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #000000;
+  font-weight: 600;
+  max-width: 18ch;
+}
+
+.creative-project-grid {
+  display: grid;
+  gap: 50px;
+}
+
+.creative-project-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.95fr);
+  gap: 2rem;
+  padding: 0;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.creative-project-card--highlight {
+  background: #ffffff;
+}
+
+.creative-project-copy h2 {
+  margin: 15px 0 15px;
+  font-size: 1.35em;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: 400;
+}
+
+.creative-project-tag {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #333;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1.25px solid #cccccc;
+}
+
+.creative-project-objective,
+.creative-project-body {
+  margin: 0 0 0.95rem;
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.creative-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.2rem;
+}
+
+.creative-metric-card {
+  padding: 1rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fff 0%, #fbf4ef 100%);
+  border: 1px solid #eadfd7;
+}
+
+.creative-metric-number {
+  display: block;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #8f5137;
+  line-height: 1.1;
+}
+
+.creative-metric-label {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: #6d615b;
+}
+
+.creative-project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0;
+  position: relative;
+}
+
+.creative-project-gallery--assorted {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: start;
+}
+
+.creative-project-image {
+  width: min(30%, 168px);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1.25px solid #cccccc;
+  box-shadow: none;
+  background: #ffffff;
+  padding: 0;
+}
+
+.creative-video-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.creative-video-link .creative-project-image {
+  cursor: pointer;
+}
+
+.creative-video-link:hover .creative-project-image {
+  transform: rotate(-7deg) translateY(8px) scale(1.02);
+}
+
+.creative-project-image--landscape {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.creative-project-image--wide {
+  width: 100%;
+}
+
+.creative-project-gallery .creative-project-image:nth-child(1) {
+  transform: rotate(-7deg) translateY(8px);
+}
+
+.creative-project-gallery .creative-project-image:nth-child(2) {
+  transform: rotate(4deg);
+}
+
+.creative-project-gallery .creative-project-image:nth-child(3) {
+  transform: rotate(-2deg) translateY(14px);
+}
+
+@media (max-width: 900px) {
+  .creative-project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .creative-project-gallery--assorted {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  }
+
+  .creative-project-image {
+    width: min(42%, 180px);
+  }
+}
+
+@media (max-width: 640px) {
+  .creative-main {
+    width: min(100vw - 20px, 1100px);
+    padding-top: 1rem;
+  }
+
+  .creative-project-card {
+    gap: 1.25rem;
+  }
+
+  .creative-project-image {
+    width: min(46%, 150px);
+  }
+
+  .creative-project-gallery--assorted {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
 /* ============================================
    ENHANCED CASE STUDY STYLES
    ============================================ */
@@ -1607,7 +1802,7 @@ a.project-link {
     margin-bottom: 1.5rem;
     margin-top: 2rem;
   }
-  
+
   .decision-header {
     font-size: 1.2rem;
   }
