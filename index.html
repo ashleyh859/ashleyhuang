@@ -13,56 +13,19 @@
     <link rel="shortcut icon" href="bearicon.svg">
 </head>
 
-<body>
-    <header>
-        <div>
-            <nav id="widescreen">
-                <div class="myname">
-                    <a href="index.html" aria-label="navigate to home">
-                        <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
+<body class="home-page">
+    <header class="site-header">
+        <nav class="floating-nav" aria-label="Primary">
+            <ul class="floating-nav-list">
+                <li>
+                    <a class="floating-nav-link floating-nav-home" href="index.html#top" aria-label="Home" data-nav-key="home">
+                        <img src="bearicon.svg" alt="" width="24" height="24">
                     </a>
-                </div>
-                <div>
-                    <ul class="desktop-nav-links">
-                        <li>
-                            <a href="index.html" aria-label="navigate to design">design</a>
-                        </li>
-                                                <li>
-                            <a href="creative.html" aria-label="navigate to creative">creative</a>
-                        </li>
-                        <li>
-                            <a href="technical.html" aria-label="navigate to technical">technical</a>
-                        </li>
-                        <li>
-                            <a href="about.html" aria-label="navigate to about">about</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- Narrow Hamburger Menu -->
-        <div id="header">
-            <div class="myname">
-                <a href="index.html" aria-label="navigate to home">
-                    <img src="bearicon.svg" alt="Ashley Huang" width="56" height="56">
-                </a>
-            </div>
-            <button id="menubutton" aria-label="open hamburger menu">≡</button>
-        </div>
-        <nav id="navmenu" class="accessible-hidden">
-            <ul>
-                <li>
-                    <a href="index.html" aria-label="navigate to design">design</a>
                 </li>
-                                        <li>
-                            <a href="creative.html" aria-label="navigate to creative">creative</a>
-                        </li>
-                <li>
-                    <a href="technical.html" aria-label="navigate to technical">technical</a>
-                </li>
-                <li>
-                    <a href="about.html" aria-label="navigate to about">about</a>
-                </li>
+                <li><a class="floating-nav-link" href="index.html#projects-section" data-nav-key="design">Design</a></li>
+                <li><a class="floating-nav-link" href="creative.html" data-nav-key="creative">Creative</a></li>
+                <li><a class="floating-nav-link" href="technical.html" data-nav-key="technical">Technical</a></li>
+                <li><a class="floating-nav-link" href="about.html" data-nav-key="about">About</a></li>
             </ul>
         </nav>
     </header>
@@ -70,30 +33,39 @@
     <main>
 
 
-        <div class="home-container">
+        <section class="home-container hero-shell" aria-labelledby="hero-title">
+            <div class="home-header-container hero-layout">
+                <div class="home-intro hero-copy">
+                    <h1 id="hero-title" class="hero-title">I'm Ashley, a product designer who makes complex ideas feel clear, human, and worth coming back to.</h1>
+                    <p class="home-name hero-credibility">Prev. @ Amazon · Cornell '26 · Based in NYC</p>
+                    <p class="hero-supporting-copy">Design, AI prototyping, and inclusive digital experiences.</p>
+                </div>
 
-            <div class="home-header-container">
-                <!-- <div class="bear-icon-container">
-                        <img src="bearicon.svg" alt="Ashley's icon" width="80" height="80">
-                    </div>-->
-
-
-                <div class="home-intro">
-                    <p class="home-blurb" style="color: #2079c7;">
-                        Hi there, I'm Ashley.
-                    </p>
-                    <p class="home-name">A Product Engineer @ Cornell University transforming innovative ideas into
-                        inclusive, real-world user experiences, through design thinking and AI-assisted prototyping.</p>
-
-
-
-                    <p class="home-name">Previously @ <span style="color: #ff9900; font-weight: 400;">Amazon</span>.
-                        Seeking New Grad 2026 opportunities.</p>
+                <div class="hero-desk-column">
+                    <div class="tabletop-canvas" data-tabletop-canvas>
+                        <article class="receipt-paper" data-receipt-paper>
+                            <strong class="receipt-heading">DESIGN PHILOSOPHY RECEIPT</strong>
+                            <div class="receipt-details">
+                                <span>GUZHENG ............ 13 YRS</span>
+                                <span>VIOLIN .............. 7 YRS</span>
+                                <span> × ∞ MUSICAL TIMING, TONE, & PHRASING</span>
+                            </div>
+                            <span>──────────────────────────────────────</span>
+                            <span class="receipt-total-label">TOTAL</span>
+                            <strong class="receipt-total-message">EXPERIENCES PEOPLE CAN FEEL</strong>
+                        </article>
+                        <img class="tabletop-object tabletop-eyeshadow" src="images/home/asset_eyeshadow.png" alt="" aria-hidden="true" tabindex="-1" data-drag-object="eyeshadow">
+                        <img class="tabletop-object tabletop-polaroid" src="images/home/asset_polaroid.png" alt="" aria-hidden="true" tabindex="-1" data-drag-object="polaroid">
+                        <img class="tabletop-object tabletop-matcha" src="images/home/asset_matcha.png" alt="" aria-hidden="true" tabindex="-1" data-drag-object="matcha">
+                        <img class="tabletop-object tabletop-headphones" src="images/home/asset_headphone.png" alt="" aria-hidden="true" tabindex="-1" data-drag-object="headphones">
+                        <img class="tabletop-object tabletop-lipgloss" src="images/home/asset_lipstick.png" alt="" aria-hidden="true" tabindex="-1" data-drag-object="lipgloss">
+                    </div>
+                    <button class="tabletop-toggle" type="button" aria-pressed="false" data-tabletop-toggle><span data-tabletop-label>Organize my desk</span> <span aria-hidden="true">→</span></button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="home-project-portfolio" id="projects-section">
+        <div class="home-project-portfolio" id="projects-section" data-nav-section="design">
 
                         <div class="home-project-project ">
                 <a href="https://cornell-info4340-2026sp.github.io/ah859-hw5/" class="home-project-image-link"
@@ -406,6 +378,7 @@
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/scroll-animations.js"></script>
     <script src="scripts/image.js"></script>
+    <script src="scripts/desk.js"></script>
 
 
 </body>
