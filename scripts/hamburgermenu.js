@@ -9,7 +9,7 @@ function mountFloatingNavigation() {
     header.innerHTML = `
       <nav class="floating-nav" aria-label="Primary">
         <ul class="floating-nav-list">
-          <li><a class="floating-nav-link floating-nav-home" href="index.html#top" aria-label="Home" data-nav-key="home"><img src="bearicon.svg" alt="" width="24" height="24"></a></li>
+          <li><a class="floating-nav-link floating-nav-home" href="index.html#top" aria-label="Home" data-nav-key="home"><img src="ah_monogram.svg" alt="" width="24" height="24"></a></li>
           <li><a class="floating-nav-link" href="index.html#projects-section" data-nav-key="design">Design</a></li>
           <li><a class="floating-nav-link" href="creative.html" data-nav-key="creative">Creative</a></li>
           <li><a class="floating-nav-link" href="technical.html" data-nav-key="technical">Technical</a></li>

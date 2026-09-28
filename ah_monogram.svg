@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 300" width="430" height="300">
+  <title>AH Monogram</title>
+  <desc>Hand-drawn interlocked AH monogram.</desc>
+
+  <g fill="none"
+     stroke="#5A351F"
+     stroke-width="28"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+
+    <!-- A: left leg rising to the apex -->
+    <path d="M86 232 C101 190 142 112 191 48
+             C202 33 214 39 214 58" />
+
+    <!-- A right leg / H left stem: one continuous downstroke -->
+    <path d="M214 58 C214 112 213 174 222 244" />
+
+    <!-- Shared A/H crossbar -->
+    <path d="M98 190 C160 180 227 171 302 158" />
+
+    <!-- H right stem -->
+    <path d="M286 67 C286 119 285 181 292 232" />
+  </g>
+</svg>
