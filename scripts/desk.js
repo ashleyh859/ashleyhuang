@@ -15,8 +15,9 @@ if (tabletopCanvas && tabletopToggle) {
 
     const setTabletopState = (isTidy) => {
         tabletopCanvas.classList.toggle('is-open', isTidy);
-        tabletopToggle.setAttribute('aria-pressed', String(isTidy));
-        tabletopToggle.querySelector('[data-tabletop-label]').textContent = isTidy ? 'Undo' : 'Organize my desk';
+        tabletopToggle.setAttribute('aria-expanded', String(isTidy));
+        tabletopToggle.setAttribute('aria-label', isTidy ? 'Hide desk' : 'Organize my desk');
+        tabletopToggle.querySelector('[data-tabletop-label]').textContent = isTidy ? 'Hide desk ↙' : 'Organize my desk ↗';
         tabletopObjects.forEach((object) => {
             object.style.transform = '';
             object.style.zIndex = '';
@@ -81,10 +82,6 @@ if (tabletopCanvas && tabletopToggle) {
         object.addEventListener('pointerup', finishDrag);
         object.addEventListener('pointercancel', finishDrag);
     });
-
-    if (window.matchMedia('(max-width: 767px)').matches) {
-        setTabletopState(true);
-    }
 
     if (!prefersReducedMotion) {
         window.setTimeout(() => tabletopCanvas.classList.add('is-settled'), 1500);
