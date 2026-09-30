@@ -70,72 +70,14 @@
     </header>
 
     <main>
-        <div class="about-main">
-        <header class="about-header">
-            <div class="about-header-content">
-                <img src="images/about/casualheadshot.jpg" alt="Photo of Ashley Huang" class="about-photo">
-                <div class="about-intro-text">
-                    <h1>Hi there, I'm Ashley Huang!</h1>
-                    <p>I'm a recent graduate at Cornell University studying Information Science with Concentrations in UX Design and Behaviorial Science. My journey has been driven by a fascination with technology's potential to create meaningful and user-centric solutions.</p>
-                    <p>From a young age, my creative journey was shaped by my education in arts-focused middle and high schools, where music was central to my life. This background instilled in me a passion for innovation and design, which has guided my exploration into fields like data science, network security, and product design.</p>
-                    <p>This journey has culminated in my current focus on product design, where I blend my technical skills with creative thinking to craft innovative solutions and create user-centered designs that are both functional and engaging.</p>
+        <div class="about-main about-bag-page">
+            <h1 class="about-page-title">Things that have shaped how I see,<br>make, and design experiences</h1>
 
-                </div>
+            <div class="bag-scene is-open" aria-live="polite">
+                <!-- <div class="bag-helper">tap a memory</div> -->
+                <div id="bag-stage" class="bag-stage" aria-label="A collage of memories in Ashley's purse"></div>
             </div>
-        </header>
-
-
-        <section class="about-drives">
-            <h2>What Drives Me</h2>
-            <div class="about-drive">
-                <p><strong>Continuous Learning:</strong> I'm motivated by the opportunity to expand my knowledge and tackle new challenges. My experiences in data science, network security, and product design drive me to constantly seek growth.</p>
-            </div>
-            <div class="about-drive">
-                <p><strong>Innovation:</strong> I thrive on finding creative solutions to complex problems and enhancing user experiences. I believe in the power of combining empathy with data-driven insights to create impactful and forward-thinking solutions.</p>
-            </div>
-        </section>
-
-        <section class="about-outside">
-            <div class="about-hobby first-item">
-                <h2>I enjoy playing and sharing my music
-                </h2>
-                <p>I'm a multi-instrumentalist with a deep love for playing the guzheng and violin. Music has been a significant part of my life, and I enjoy sharing my performances and exploring different musical traditions. A fun fact is that I won Gold Award at the Huaxia Cup International Guzheng Competition three years ago.
-                </p>
-                <p>At Cornell, I'm part of the Cornell Eastern Music Ensemble, where I play both instruments and serve as their Frontend Developer Lead.</p>
-
-                <div class="hobby-images">
-                    <img src="images/about/guzheng1.png" alt="Music Performance" class="hobby-img">
-                    <img src="images/about/violin.jpg" alt="Violin Practice" class="hobby-img">
-                    <img src="images/about/guzheng2.jpeg" alt="Music Performance" class="hobby-img">
-
-                </div>
-            </div>
-            <div class="about-hobby">
-                <h2>Dance brings me joy and creative expression</h2>
-                <p>Though I'm new to dancing, I find joy in exploring different dance styles and expressing myself through movement. As the Performance Director of Assorted Aces Dance Team, I also lead and organize dance performances, which enriches my creative experience.</p>
-                <div class="hobby-images">
-                    <img src="images/about/dance.JPG" alt="Dance Photo" class="hobby-img">
-                    <img src="images/about/dancegroup.jpg" alt="Dance Group Photo" class="hobby-img">
-                    <img src="images/about/danceclosing.jpeg" alt="Dance Closing" class="hobby-img">
-                </div>
-            </div>
-
-            <section class="about-hobby">
-                <h2>I love exploring other creative pursuits during my free time</h2>
-                <p>In addition to those interests, I enjoy a variety of creative hobbies such as video editing, graphic designing, photography, singing, and oil pastel art. These activities allow me to express myself in different ways and bring a sense of fun and relaxation to my life.</p>
-                <div class="hobby-images">
-                    <img src="images/about/oilpastel1.jpg" alt="Oil Pastel 1" class="hobby-img">
-                    <img src="images/about/videoediting.JPG" alt="Video Editing" class="hobby-img">
-                    <img src="images/about/oilpastel2.jpg" alt="Oil Pastel 2" class="hobby-img">
-                    <img src="images/about/graphicdesign.jpg" alt="Graphic Design" class="hobby-img">
-
-                </div>
-
-            </section>
-
-        </section>
-
-    </div>
+        </div>
     </main>
 
 
@@ -165,6 +107,411 @@
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/scroll-animations.js"></script>
     <script src="scripts/image.js"></script>
+    <script>
+        const bagMemories = [
+            {
+                id: 'guzheng',
+                type: 'polaroid',
+                image: 'images/about/guzheng1.png',
+                handwrittenCaption: 'performing the music I grew up with',
+                back: {
+                    kicker: '13 YEARS OF GUZHENG',
+                    title: 'Soloist Performer',
+                    detail: 'Huaxia Cup Gold Award',
+                    note: 'Still teaching me to listen for the smallest shifts and timbre.',
+                },
+                ariaLabel: 'Flip my guzheng performance photo to read details',
+                desktopPosition: { x: 40, y: 44 },
+                tabletPosition: { x: 42, y: 44 },
+                mobilePosition: { x: 43, y: 43 },
+                rotation: -2.2,
+                zIndex: 18,
+                width: 200,
+                shape: 'photo'
+            },
+            {
+                id: 'graduation',
+                type: 'polaroid',
+                image: 'images/about/graduation.JPG',
+                handwrittenCaption: 'ending one chapter at Cornell',
+                back: {
+                    kicker: 'CORNELL UNIVERSITY',
+                    title: 'Information Science',
+                    detail: 'UX Design & Behavioral Science',
+                    note: 'Class of 2026',
+                },
+                ariaLabel: 'Flip my Cornell graduation photo to read details',
+                desktopPosition: { x: 52, y: 72 },
+                tabletPosition: { x: 53, y: 72 },
+                mobilePosition: { x: 53, y: 72 },
+                rotation: 1.4,
+                zIndex: 17,
+                width: 230,
+                shape: 'photo'
+            },
+            {
+                id: 'ensemble',
+                type: 'polaroid',
+                image: 'images/about/violin.jpg',
+                handwrittenCaption: 'playing and building with the ensemble',
+                back: {
+                    kicker: 'CORNELL EASTERN MUSIC ENSEMBLE',
+                    title: 'Violinist + Frontend Developer Lead',
+                    note: 'Rehearsals, performances, and a site that feels like us.',
+                },
+                ariaLabel: 'Flip my Cornell ensemble photo to read details',
+                desktopPosition: { x: 24, y: 65 },
+                tabletPosition: { x: 25, y: 65 },
+                mobilePosition: { x: 28, y: 66 },
+                rotation: 6.5,
+                zIndex: 13,
+                width: 182,
+                shape: 'photo'
+            },
+            {
+                id: 'dance',
+                type: 'polaroid',
+                image: 'images/about/danceclosing.jpeg',
+                handwrittenCaption: 'dancing and leading for a team of 100',
+                back: {
+                    kicker: 'ASSORTED ACES DANCE TEAM',
+                    title: 'Performance Director',
+                    note: 'Leading rehearsals, logistics, and showcases for a 100-person team.',
+                },
+                ariaLabel: 'Flip my dance showcase photo to read details',
+                desktopPosition: { x: 68, y: 45 },
+                tabletPosition: { x: 70, y: 45 },
+                mobilePosition: { x: 70, y: 46 },
+                rotation: -8,
+                zIndex: 14,
+                width: 184,
+                shape: 'photo'
+            },
+            {
+                id: 'oilpastel',
+                type: 'polaroid',
+                image: 'images/about/oilpastel1.jpg',
+                handwrittenCaption: 'creating with color, just for fun',
+                back: {
+                    kicker: 'A FAVORITE RESET',
+                    title: 'Oil pastels, color, texture, and a little mess.',
+                    note: 'Just making something because I want to.',
+                },
+                ariaLabel: 'Flip my oil pastel photo to read details',
+                desktopPosition: { x: 79, y: 70 },
+                tabletPosition: { x: 77, y: 70 },
+                mobilePosition: { x: 79, y: 71 },
+                rotation: 2.2,
+                zIndex: 16,
+                width: 142,
+                shape: 'photo'
+            },
+            {
+                id: 'metrocard',
+                type: 'object',
+                image: 'images/about/asset_metrocard.png',
+                pill: 'born & raised in NYC',
+                ariaLabel: 'Show NYC note',
+                desktopPosition: { x: 25, y: 42 },
+                tabletPosition: { x: 24, y: 44 },
+                mobilePosition: { x: 23, y: 47 },
+                rotation: -8,
+                zIndex: 8,
+                width: 100,
+                shape: 'metrocard'
+            },
+            {
+                id: 'digicam',
+                type: 'object',
+                image: 'images/about/asset_digicam.png',
+                pill: 'always capturing little moments',
+                ariaLabel: 'Show photography note',
+                desktopPosition: { x: 68, y: 72 },
+                tabletPosition: { x: 69, y: 73 },
+                mobilePosition: { x: 68, y: 73 },
+                rotation: -14,
+                zIndex: 12,
+                width: 110,
+                shape: 'digicam'
+            },
+            {
+                id: 'lipgloss',
+                type: 'object',
+                image: 'images/about/asset_lipgloss.png',
+                pill: 'first in line for new beauty drops',
+                ariaLabel: 'Show beauty note',
+                desktopPosition: { x: 78, y: 51 },
+                tabletPosition: { x: 78, y: 52 },
+                mobilePosition: { x: 77, y: 54 },
+                rotation: -7,
+                zIndex: 22,
+                width: 64,
+                shape: 'lipgloss'
+            },
+            {
+                id: 'clapperboard',
+                type: 'object',
+                image: 'images/about/asset_clapperboard.png',
+                pill: 'directing, filming & editing',
+                ariaLabel: 'Show directing and editing note',
+                desktopPosition: { x: 55, y: 36 },
+                tabletPosition: { x: 55, y: 38 },
+                mobilePosition: { x: 54, y: 40 },
+                rotation: -4,
+                zIndex: 11,
+                width: 96,
+                shape: 'clapperboard'
+            },
+            {
+                id: 'quarter-note',
+                type: 'object',
+                image: 'images/about/asset_quarter_note.png',
+                pill: 'on repeat: “Boys” — Adéla',
+                ariaLabel: 'Show current music note',
+                desktopPosition: { x: 35, y: 72 },
+                tabletPosition: { x: 35, y: 74 },
+                mobilePosition: { x: 34, y: 76 },
+                rotation: -8,
+                zIndex: 7,
+                width: 78,
+                shape: 'quarter-note'
+            },
+        ];
+
+        const stage = document.getElementById('bag-stage');
+        let activeMemoryId = null;
+        let activeObjectId = null;
+
+        const getPosition = (item) => {
+            if (window.innerWidth <= 620) return item.mobilePosition;
+            if (window.innerWidth <= 960) return item.tabletPosition;
+            return item.desktopPosition;
+        };
+
+        const createObjectMarkup = (item) => {
+            const object = document.createElement('div');
+            object.className = `memory-object memory-object--${item.shape}`;
+
+            const image = document.createElement('img');
+            image.src = item.image;
+            image.alt = '';
+            image.loading = 'lazy';
+            object.appendChild(image);
+
+            const pill = document.createElement('span');
+            pill.className = 'memory-object-pill';
+            pill.textContent = item.pill;
+            object.appendChild(pill);
+
+            return object;
+        };
+
+        const createMemoryItem = (item) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = `memory-item memory-item--${item.type} memory-item--${item.shape} memory-item--${item.id}`;
+            button.dataset.id = item.id;
+            button.setAttribute('aria-label', item.ariaLabel);
+            button.setAttribute('aria-pressed', String(activeMemoryId === item.id));
+
+            const position = getPosition(item);
+            button.style.left = `${position.x}%`;
+            button.style.top = `${position.y}%`;
+            button.style.width = `${item.width}px`;
+            button.style.zIndex = item.zIndex;
+            button.style.setProperty('--rotation', `${item.rotation}deg`);
+
+            const content = document.createElement('div');
+            content.className = 'memory-content';
+
+            if (item.type === 'polaroid') {
+                const polaroid = document.createElement('div');
+                polaroid.className = 'polaroid';
+
+                const front = document.createElement('div');
+                front.className = 'polaroid-face polaroid-front';
+
+                const image = document.createElement('img');
+                image.src = item.image;
+                image.alt = item.handwrittenCaption;
+                image.loading = 'lazy';
+                front.appendChild(image);
+
+                const meta = document.createElement('div');
+                meta.className = 'polaroid-meta';
+
+                const caption = document.createElement('span');
+                caption.className = 'memory-handwritten';
+                caption.textContent = item.handwrittenCaption;
+
+                meta.appendChild(caption);
+                front.appendChild(meta);
+
+                const back = document.createElement('div');
+                back.className = 'polaroid-face polaroid-back';
+
+                const backContent = document.createElement('div');
+                backContent.className = 'polaroid-back-content';
+
+                if (item.back?.kicker) {
+                    const kicker = document.createElement('p');
+                    kicker.className = 'polaroid-back-kicker';
+                    kicker.textContent = item.back.kicker;
+                    backContent.appendChild(kicker);
+                }
+
+                if (item.back?.title) {
+                    const title = document.createElement('p');
+                    title.className = 'polaroid-back-title';
+                    title.textContent = item.back.title;
+                    backContent.appendChild(title);
+                }
+
+                if (item.back?.detail) {
+                    const detail = document.createElement('p');
+                    detail.className = 'polaroid-back-detail';
+                    detail.textContent = item.back.detail;
+                    backContent.appendChild(detail);
+                }
+
+                if (item.back?.note) {
+                    const note = document.createElement('p');
+                    note.className = 'polaroid-back-note';
+                    note.textContent = item.back.note;
+                    backContent.appendChild(note);
+                }
+
+                back.appendChild(backContent);
+                polaroid.append(front, back);
+                content.appendChild(polaroid);
+            } else {
+                content.appendChild(createObjectMarkup(item));
+            }
+
+            button.appendChild(content);
+
+            const isActive = activeMemoryId === item.id;
+            const isObjectActive = activeObjectId === item.id;
+            button.classList.toggle('is-active', isActive);
+            button.classList.toggle('is-flipped', isActive);
+            button.classList.toggle('is-object-active', isObjectActive);
+            button.setAttribute('aria-pressed', String(item.type === 'polaroid' ? isActive : isObjectActive));
+
+            if (item.type === 'polaroid') {
+                button.addEventListener('mouseenter', () => {
+                    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+                        return;
+                    }
+
+                    if (activeMemoryId !== item.id) {
+                        button.classList.add('is-flipped');
+                    }
+                });
+
+                button.addEventListener('mouseleave', () => {
+                    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+                        return;
+                    }
+
+                    if (activeMemoryId !== item.id) {
+                        window.setTimeout(() => {
+                            if (activeMemoryId !== item.id && !button.matches(':hover')) {
+                                button.classList.remove('is-flipped');
+                            }
+                        }, 160);
+                    }
+                });
+
+                button.addEventListener('focus', () => {
+                    if (activeMemoryId !== item.id) {
+                        button.classList.add('is-flipped');
+                    }
+                });
+
+                button.addEventListener('blur', () => {
+                    if (activeMemoryId !== item.id) {
+                        window.setTimeout(() => {
+                            if (activeMemoryId !== item.id && !button.matches(':focus-visible')) {
+                                button.classList.remove('is-flipped');
+                            }
+                        }, 160);
+                    }
+                });
+            } else {
+                button.addEventListener('mouseenter', () => {
+                    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && activeObjectId !== item.id) {
+                        button.classList.add('is-object-visible');
+                    }
+                });
+
+                button.addEventListener('mouseleave', () => {
+                    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && activeObjectId !== item.id) {
+                        window.setTimeout(() => {
+                            if (activeObjectId !== item.id && !button.matches(':hover')) {
+                                button.classList.remove('is-object-visible');
+                            }
+                        }, 160);
+                    }
+                });
+
+                button.addEventListener('focus', () => {
+                    button.classList.add('is-object-visible');
+                });
+
+                button.addEventListener('blur', () => {
+                    if (activeObjectId !== item.id) {
+                        window.setTimeout(() => {
+                            if (activeObjectId !== item.id && !button.matches(':focus-visible')) {
+                                button.classList.remove('is-object-visible');
+                            }
+                        }, 160);
+                    }
+                });
+            }
+
+            button.addEventListener('click', (event) => {
+                event.stopPropagation();
+
+                if (item.type !== 'polaroid') {
+                    activeMemoryId = null;
+                    activeObjectId = activeObjectId === item.id ? null : item.id;
+                    renderBag();
+                    return;
+                }
+
+                activeObjectId = null;
+                activeMemoryId = activeMemoryId === item.id ? null : item.id;
+                renderBag();
+            });
+
+            return button;
+        };
+
+        function renderBag() {
+            stage.innerHTML = '';
+
+            const purse = document.createElement('img');
+            purse.src = 'images/about/asset_purse.png';
+            purse.alt = 'A soft pink purse';
+            purse.className = 'purse-base';
+            stage.appendChild(purse);
+
+            bagMemories.forEach((item) => {
+                stage.appendChild(createMemoryItem(item));
+            });
+        }
+
+        stage.addEventListener('click', (event) => {
+            if (!event.target.closest('.memory-item')) {
+                activeMemoryId = null;
+                activeObjectId = null;
+                renderBag();
+            }
+        });
+
+        window.addEventListener('resize', renderBag);
+        renderBag();
+    </script>
 
 
 </body>

@@ -770,106 +770,758 @@ a.project-link {
 .about-header {
   display: flex;
   align-items: center;
-}
-
-.about-header-content {
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  overflow: hidden;
   justify-content: center;
-  gap: 40px;
 }
 
-/* Photo styling */
-.about-photo {
-  flex: 3; /* Takes up 4 parts of available space */
+.about-intro {
+  width: min(100%, 820px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-eyebrow {
+  margin: 0 0 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #a95a72;
+}
+
+.about-intro h1 {
+    margin: 0;
+    font-size: clamp(2.7rem, 3vw, 3.8rem);
+    line-height: 1.12;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    color: #271d1c;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-main {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding-top: 2.2rem;
+  padding-bottom: 5rem;
+}
+
+.about-bag-page {
+  padding-top: 0.75rem;
+}
+
+.about-page-title {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #76585b;
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.bag-scene {
+  position: relative;
+  width: min(100%, 1320px);
+  margin: 2.2rem auto 0;
+  padding-top: 0;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.bag-helper {
+  margin: 0 0 0.25rem;
+  text-align: center;
+  font-size: 0.68rem;
+  letter-spacing: 0.2rem;
+  text-transform: lowercase;
+  color: rgba(76, 54, 52, 0.8);
+  position: relative;
+  z-index: 12;
+}
+
+.bag-stage {
+  position: relative;
+  width: min(100%, 1280px);
+  height: clamp(560px, 72vw, 820px);
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.purse-base {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: min(100%, 1230px);
+  height: auto;
+  filter: drop-shadow(0 18px 24px rgba(92, 53, 46, 0.1));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.memory-item {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(var(--rotation, 0deg));
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  z-index: 12;
+  opacity: 0.9;
+  perspective: 1200px;
+  transition: transform 180ms ease, filter 180ms ease, opacity 180ms ease;
+  touch-action: manipulation;
+}
+
+.memory-item:hover,
+.memory-item:focus-visible {
+  transform: translate(-50%, -50%) rotate(var(--rotation, 0deg));
+  opacity: 1;
+}
+
+.memory-item:focus-visible {
+  filter: drop-shadow(0 0 0 3px rgba(133, 56, 69, 0.22));
+}
+
+.memory-item.is-active {
+  transform: translate(-50%, -50%) rotate(var(--rotation, 0deg));
+  opacity: 1;
+  z-index: 40;
+}
+
+.memory-content {
+  position: relative;
+}
+
+.memory-item--polaroid {
+  opacity: 1;
+}
+
+.polaroid {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #fffefa;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 4px 10px rgba(65, 42, 40, 0.16);
+  overflow: visible;
+  transform-style: preserve-3d;
+  transition: transform 300ms ease-in-out, box-shadow 180ms ease;
+  backface-visibility: hidden;
+}
+
+.memory-item:hover .polaroid,
+.memory-item:focus-visible .polaroid,
+.memory-item.is-active .polaroid {
+  box-shadow: 0 7px 15px rgba(65, 42, 40, 0.22);
+}
+
+.polaroid-face {
+  position: relative;
+  width: 100%;
+  border-radius: 0;
+  background: #fffefa;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.polaroid-front {
+  padding: 12px 12px 14px;
+  background: #fffefa;
+}
+
+.polaroid-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  min-height: 100%;
+  align-items: stretch;
+  padding: 16px;
+  overflow: hidden;
+  color: #382426;
+  background: #fffefa;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transform: rotateY(180deg);
+}
+
+.memory-item.is-flipped .polaroid {
+  transform: rotateY(180deg);
+}
+
+.polaroid-front img {
+  display: block;
   width: 100%;
   height: auto;
-  max-height: 400px; /* Set a reasonable max height */
-  border-radius: 10px;
+  aspect-ratio: 1 / 1.1;
   object-fit: cover;
+  border-radius: 0;
+  background: #fffefa;
 }
 
-/* Text container styling */
-.about-intro-text {
-    flex: 7;
-}
-
-.about-intro-text h1 {
-    font-size: 2.2em;
-  letter-spacing: 0.75px;
-  font-weight:400;
-}
-
-.about-intro-text p{
-    font-size: 1.6rem;
-}
-
-/* Flexbox for section and other content */
-.about-main {
-
-  padding: 20px;
-  margin-bottom: 20px;
-  width: 80vw;
+.polaroid-meta {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 58px;
+  padding: 0.8rem 0.5rem 0.15rem;
+  background: #fffefa;
+  color: #4d3b3a;
 }
 
-.about-main h2{
-      font-size: 2.2em;
-  letter-spacing: 0.75px;
-  font-weight:400;
+.memory-handwritten {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
+  color: #4c3d3d;
 }
 
-.about-main p{
-      font-size: 1.3em;
-}
-
-.about-outside, .about-leadership {
-  margin-bottom: 40px; /* Space between sections */
-}
-
-.about-drive, .about-hobby, .about-role {
-  margin-bottom: 20px; /* Space between items within sections */
-}
-
-.about-hobby {
-  margin-top: 50px; /* Space between items within sections */
-}
-
-.about-hobby.first-item {
-  margin-top: 0; /* Remove top margin for the first item */
-}
-
-
-.hobby-images {
+.polaroid-back-content {
+  position: relative;
+  z-index: 1;
   display: flex;
-  gap: 30px; /* Space between images */
-  width:100%;
-  box-sizing: border-box;
-  margin-top:30px;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  text-align: left;
 }
 
-.hobby-img {
-  width: 200px;
-  border-radius: 10px; /* Optional: for rounded corners */
-  flex:1;
-  object-fit: cover;
+.polaroid-back-kicker {
+  margin: 0;
+  color: #ad5f7a;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.25;
+}
 
+.polaroid-back-title {
+  margin: 0;
+  max-width: 19ch;
+  color: #382426;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.polaroid-back-detail {
+  margin: 0;
+  max-width: 19ch;
+  color: #4d2f2d;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.about-page-title,
+.polaroid-back-note {
+  font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
+}
+
+.polaroid-back-note {
+  margin: 5px 0 0;
+  max-width: 20ch;
+  color: #76585b;
+  font-size: 0.76rem;
+  line-height: 1.3;
+}
+
+.memory-object {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 110px;
+  border-radius: 16px;
+  background: rgba(255, 244, 238, 0.32);
+  border: 1px solid rgba(126, 83, 78, 0.12);
+  box-shadow: 0 12px 18px rgba(113, 72, 62, 0.08);
+  overflow: hidden;
+}
+
+.memory-object--laptop::before {
+  content: "";
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: 16%;
+  height: 32px;
+  border-radius: 7px 7px 4px 4px;
+  background: linear-gradient(180deg, #f4f1ec, #dcc1b4);
+  border: 2px solid rgba(134, 99, 74, 0.65);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+.memory-object--laptop::after {
+  content: "";
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  bottom: 16%;
+  height: 10px;
+  border-radius: 10px;
+  background: #b98f70;
+  box-shadow: 0 0 0 1px rgba(99, 72, 63, 0.18);
+}
+
+.memory-object--notebook::before {
+  content: "";
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: 18%;
+  bottom: 18%;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #f7f1ea, #eae1d9);
+  border: 1px solid rgba(120, 101, 82, 0.35);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.memory-object--notebook::after {
+  content: "";
+  position: absolute;
+  left: 24%;
+  right: 24%;
+  top: 30%;
+  bottom: 30%;
+  background: repeating-linear-gradient(180deg, rgba(151, 119, 111, 0.3), rgba(151, 119, 111, 0.3) 1px, transparent 1px, transparent 4px);
+  border-radius: 4px;
+}
+
+.memory-object--lipstick::before {
+  content: "";
+  position: absolute;
+  left: 38%;
+  right: 36%;
+  top: 18%;
+  bottom: 18%;
+  background: linear-gradient(180deg, #b65d67, #d39399);
+  border-radius: 18px 18px 12px 12px;
+  box-shadow: inset 0 0 0 2px rgba(116, 49, 55, 0.16);
+}
+
+.memory-object--lipstick::after {
+  content: "";
+  position: absolute;
+  left: 44%;
+  width: 14px;
+  top: 8%;
+  height: 18px;
+  border-radius: 8px 8px 3px 3px;
+  background: #efcfbb;
+  box-shadow: inset 0 0 0 1px rgba(83, 59, 54, 0.12);
+}
+
+.memory-object--camcorder::before {
+  content: "";
+  position: absolute;
+  left: 16%;
+  right: 16%;
+  top: 24%;
+  bottom: 22%;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #e9dfd5, #d2b4a4);
+  border: 2px solid rgba(131, 97, 76, 0.6);
+}
+
+.memory-object--camcorder::after {
+  content: "";
+  position: absolute;
+  left: 33%;
+  right: 33%;
+  top: 36%;
+  bottom: 36%;
+  border-radius: 50%;
+  background: #f6eee4;
+  box-shadow: 0 0 0 3px rgba(129, 89, 76, 0.4);
+}
+
+.memory-item--object {
+  perspective: none;
+}
+
+.memory-item--object .memory-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.memory-item--object .memory-object {
+  width: 100%;
+}
+
+.memory-item--object {
+  min-width: 44px;
+  min-height: 44px;
+  perspective: none;
+}
+
+.memory-item--object:hover,
+.memory-item--object:focus-visible,
+.memory-item--object.is-object-active,
+.memory-item--object.is-object-visible {
+  transform: translate(-50%, -50%) rotate(var(--rotation, 0deg));
+  z-index: 50 !important;
+}
+
+.memory-item--object.is-object-active {
+  z-index: 35;
+}
+
+.memory-item--object .memory-object {
+  position: relative;
+  min-width: 44px;
+  min-height: 44px;
+  height: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.memory-item--object .memory-object img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 108px;
+  object-fit: contain;
+}
+
+.memory-object-pill {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  z-index: 100;
+  width: max-content;
+  max-width: min(210px, 44vw);
+  padding: 0.3rem 0.62rem;
+  border: 1px solid rgba(128, 99, 89, 0.3);
+  border-radius: 999px;
+  background: rgba(255, 248, 242, 0.97);
+  box-shadow: 0 7px 13px rgba(105, 69, 59, 0.1);
+  color: #513b3a;
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: normal;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 8px);
+  transition: opacity 170ms ease, transform 170ms ease;
+}
+
+.memory-item--object.is-object-active .memory-object-pill,
+.memory-item--object.is-object-visible .memory-object-pill,
+.memory-item--object:focus-visible .memory-object-pill {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.memory-item--metrocard .memory-object-pill,
+.memory-item--digicam .memory-object-pill {
+  left: 100%;
+  bottom: 50%;
+  transform: translate(8px, 50%);
+}
+
+.memory-item--metrocard.is-object-active .memory-object-pill,
+.memory-item--metrocard.is-object-visible .memory-object-pill,
+.memory-item--digicam.is-object-active .memory-object-pill,
+.memory-item--digicam.is-object-visible .memory-object-pill {
+  transform: translate(0, 50%);
+}
+
+.memory-item--lipgloss .memory-object-pill {
+  left: auto;
+  right: 0;
+  bottom: calc(100% + 8px);
+  transform: translate(0, 8px);
+}
+
+.memory-item--lipgloss.is-object-active .memory-object-pill,
+.memory-item--lipgloss.is-object-visible .memory-object-pill {
+  transform: translate(0, 0);
+}
+
+.memory-item--clapperboard .memory-object-pill {
+  bottom: auto;
+  top: calc(100% + 8px);
+  transform: translate(-50%, -8px);
+}
+
+.memory-item--clapperboard.is-object-active .memory-object-pill,
+.memory-item--clapperboard.is-object-visible .memory-object-pill {
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 620px) {
+  .about-main {
+    width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .about-intro h1 {
+    max-width: 20ch;
+    font-size: clamp(2rem, 8.6vw, 2.7rem);
+  }
+
+  .bag-scene {
+    margin-top: 1.4rem;
+  }
+
+  .bag-stage {
+    width: 100%;
+    height: 620px;
+  }
+
+  .purse-base {
+    width: 100%;
+    max-width: none;
+  }
+
+  .bag-stage {
+    height: 1190px;
+  }
+
+  .memory-item--object {
+    top: 50% !important;
+  }
+
+  .memory-item--quarter-note {
+    top: 100px !important;
+    left: 34% !important;
+  }
+
+  .memory-item--metrocard {
+    top: 135px !important;
+    left: 23% !important;
+  }
+
+  .memory-item--clapperboard {
+    top: 155px !important;
+    left: 55% !important;
+  }
+
+  .memory-item--digicam {
+    top: 177px !important;
+    left: 68% !important;
+  }
+
+  .memory-item--lipgloss {
+    top: 205px !important;
+    left: 78% !important;
+  }
+
+  .memory-item--polaroid,
+  .memory-item--polaroid:hover,
+  .memory-item--polaroid:focus-visible,
+  .memory-item--polaroid.is-active {
+    left: 50% !important;
+    transform: translate(-50%, -50%) rotate(0deg) !important;
+  }
+
+  .memory-item--guzheng {
+    top: 340px !important;
+  }
+
+  .memory-item--graduation {
+    top: 540px !important;
+  }
+
+  .memory-item--ensemble {
+    top: 735px !important;
+  }
+
+  .memory-item--dance {
+    top: 900px !important;
+  }
+
+  .memory-item--oilpastel {
+    top: 1050px !important;
+  }
+
+  .memory-item--polaroid {
+    opacity: 1;
+  }
+
+  .memory-item--guzheng {
+    width: 150px !important;
+  }
+
+  .memory-item--graduation {
+    width: 150px !important;
+  }
+
+  .memory-item--ensemble {
+    width: 150px !important;
+  }
+
+  .memory-item--dance {
+    width: 150px !important;
+  }
+
+  .memory-item--oilpastel {
+    width: 150px !important;
+  }
+
+  .memory-item--metrocard {
+    width: 76px !important;
+  }
+
+  .memory-item--digicam {
+    width: 82px !important;
+  }
+
+  .memory-item--lipgloss {
+    width: 54px !important;
+  }
+
+  .memory-item--clapperboard {
+    width: 78px !important;
+  }
+
+  .memory-item--quarter-note {
+    width: 58px !important;
+  }
+
+  .polaroid-meta {
+    min-height: 43px;
+    padding: 0.55rem 0.3rem 0.1rem;
+  }
+
+  .memory-handwritten {
+    font-size: 0.68rem;
+    line-height: 1.15;
+  }
+
+  .polaroid-back {
+    padding: 12px 10px 10px;
+  }
+
+  .polaroid-back-content {
+    gap: 5px;
+  }
+
+  .polaroid-back-kicker {
+    font-size: 0.48rem;
+  }
+
+  .polaroid-back-title {
+    max-width: 17ch;
+    font-size: 0.78rem;
+  }
+
+  .polaroid-back-detail {
+    max-width: 20ch;
+    font-size: 0.6rem;
+    line-height: 1.3;
+  }
+
+  .polaroid-back-note {
+    max-width: 20ch;
+    font-size: 0.64rem;
+  }
+
+  .memory-object-pill {
+    max-width: min(155px, 48vw);
+    padding: 0.28rem 0.5rem;
+    font-size: 0.68rem;
+  }
+
+  .memory-item--digicam .memory-object-pill {
+    left: 50%;
+    right: auto;
+    bottom: calc(100% + 6px);
+    transform: translate(-50%, 8px);
+  }
+
+  .memory-item--digicam.is-object-active .memory-object-pill,
+  .memory-item--digicam.is-object-visible .memory-object-pill,
+  .memory-item--digicam:focus-visible .memory-object-pill {
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (min-width: 961px) {
+  .memory-item--object {
+    width: 123px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bag-entrance,
+  .closed-purse-button,
+  .bag-open-action,
+  .bag-scene,
+  .memory-item,
+  .polaroid {
+    transition: none !important;
+  }
+
+  .memory-item:hover,
+  .memory-item:focus-visible,
+  .memory-item.is-active {
+    transform: translate(-50%, -50%) rotate(var(--rotation, 0deg));
+  }
+
+  .bag-scene {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .memory-item.is-flipped .polaroid {
+    transform: none;
+  }
+
+  .memory-item--object:hover,
+  .memory-item--object:focus-visible,
+  .memory-item--object.is-object-active,
+  .memory-item--object.is-object-visible {
+    transform: translate(-50%, -50%) rotate(var(--rotation, 0deg));
+  }
+
+  .memory-object-pill,
+  .memory-item--metrocard .memory-object-pill,
+  .memory-item--digicam .memory-object-pill,
+  .memory-item--lipgloss .memory-object-pill,
+  .memory-item--clapperboard .memory-object-pill {
+    transition: none;
+  }
+
+  .memory-item--object.is-object-active .memory-object-pill,
+  .memory-item--object.is-object-visible .memory-object-pill,
+  .memory-item--object:focus-visible .memory-object-pill {
+    transform: translate(-50%, 0);
+  }
 }
 
 .about-footer {
   text-align: center;
   padding: 20px;
-  background-color: #ffffff; /* Optional: adds a background color to the footer */
+  background-color: #ffffff;
 }
 
 .about-footer a {
-  color: #007bff; /* Optional: link color */
+  color: #007bff;
   text-decoration: none;
 }
 
