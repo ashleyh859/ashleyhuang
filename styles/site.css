@@ -473,10 +473,116 @@ footer h1{
     gap: 75px;
 }
 
+.work-section,
+.extras-section {
+  width: 80vw;
+  margin: 0 auto 12rem;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid #111;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 4.5rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.section-kicker,
+.extra-project-number {
+  margin: 0;
+  color: #6d6d6d;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.work-section .home-project-portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
 .home-project-project {
   background-color: #ffffff;
   border-radius: 10px;
   overflow: hidden;
+}
+
+.work-section .home-project-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  column-gap: 4rem;
+  align-items: end;
+  overflow: visible;
+}
+
+.work-section .home-project-image-link {
+  grid-row: span 4;
+}
+
+.work-section .home-project-image-container {
+  border-radius: 0;
+  background: #f2f0eb;
+}
+
+.work-section .home-project-project-image {
+  aspect-ratio: 16 / 10;
+}
+
+.work-section .home-project-title {
+  margin-top: 0;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+
+.work-section .home-project-description {
+  margin-bottom: 0;
+  color: #4f4f4f;
+  font-size: 1rem;
+}
+
+.extras-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.extra-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  gap: 4rem;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 2rem;
+}
+
+.extra-project .home-project-image-container {
+  border-radius: 0;
+  background: #f2f0eb;
+}
+
+.extra-project .home-project-project-image {
+  aspect-ratio: 16 / 9;
+}
+
+.extra-project-details .home-project-title {
+  margin: 0.8rem 0 1rem;
+  font-size: 2rem;
+}
+
+.extra-project-details .home-project-description {
+  margin-bottom: 0;
+  color: #4f4f4f;
+  font-size: 1rem;
 }
 
 .home-project-image-container {
@@ -2848,6 +2954,47 @@ a.project-link {
   }
 }
 
+@media (max-width: 700px) {
+  .work-section,
+  .extras-section {
+    width: calc(100vw - 40px);
+    margin-bottom: 7rem;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-heading h2 {
+    font-size: 3rem;
+  }
+
+  .work-section .home-project-portfolio {
+    gap: 4rem;
+  }
+
+  .work-section .home-project-project,
+  .extra-project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .work-section .home-project-image-link {
+    order: 0;
+  }
+
+  .work-section .home-project-title,
+  .extra-project-details .home-project-title {
+    font-size: 1.75rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .desk-asset, .desk-receipt, .hero-primary-cta, .desk-toggle { transition-duration: 120ms; }
 }
@@ -3012,8 +3159,25 @@ a.project-link {
 
 /* Unfold the receipt tabletop */
 .tabletop-canvas {
-  background-color: #fcf5eb;
-  background-image: linear-gradient(rgba(228, 164, 138, 0.115), rgba(228, 164, 138, 0.115)), linear-gradient(90deg, rgba(189, 145, 111, 0.09), rgba(189, 145, 111, 0.09));
+  background-color: #F8E7DB;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(169, 141, 185, 0.08) 0,
+      rgba(169, 141, 185, 0.08) 12px,
+      transparent 12px,
+      transparent 52px,
+      rgba(169, 141, 185, 0.08) 52px,
+      rgba(169, 141, 185, 0.08) 64px
+    ),
+    linear-gradient(
+      rgba(208, 140, 135, 0.10) 0,
+      rgba(208, 140, 135, 0.10) 12px,
+      transparent 12px,
+      transparent 52px,
+      rgba(208, 140, 135, 0.10) 52px,
+      rgba(208, 140, 135, 0.10) 64px
+    );
   background-size: 64px 64px;
   border-color: rgba(78, 56, 43, 0.1);
   box-shadow: 0 13px 32px rgba(70, 45, 30, 0.07), inset 0 0 30px rgba(104, 70, 45, 0.045);
