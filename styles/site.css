@@ -481,6 +481,9 @@ main{
 
 @media (max-width: 640px) {
   .site-footer {
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
     grid-template-columns: 1fr;
     grid-template-areas:
       "copy"
