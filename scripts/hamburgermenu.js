@@ -10,9 +10,9 @@ function mountFloatingNavigation() {
       <nav class="floating-nav" aria-label="Primary">
         <ul class="floating-nav-list">
           <li><a class="floating-nav-link floating-nav-home" href="index.html#top" aria-label="Home" data-nav-key="home"><img src="ah_monogram.svg" alt="" width="24" height="24"></a></li>
-          <li><a class="floating-nav-link" href="index.html#projects-section" data-nav-key="design">Design</a></li>
+          <li><a class="floating-nav-link" href="index.html#design" data-nav-key="design">Design</a></li>
+          <li><a class="floating-nav-link" href="index.html#technical" data-nav-key="technical">Technical</a></li>
           <li><a class="floating-nav-link" href="creative.html" data-nav-key="creative">Creative</a></li>
-          <li><a class="floating-nav-link" href="technical.html" data-nav-key="technical">Technical</a></li>
           <li><a class="floating-nav-link" href="about.html" data-nav-key="about">About</a></li>
         </ul>
       </nav>`;
@@ -56,7 +56,8 @@ function mountFloatingNavigation() {
   if (currentPath === 'index.html') {
     var observedSections = [
       { element: document.querySelector('.hero-shell'), key: 'home' },
-      { element: document.querySelector('[data-nav-section="design"]'), key: 'design' }
+      { element: document.querySelector('[data-nav-section="design"]'), key: 'design' },
+      { element: document.querySelector('[data-nav-section="technical"]'), key: 'technical' }
     ].filter(function (section) { return section.element; });
 
     function updateActiveSection() {

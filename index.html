@@ -22,9 +22,9 @@
                         <img src="ah_monogram.svg" alt="" width="24" height="24">
                     </a>
                 </li>
-                <li><a class="floating-nav-link" href="index.html#projects-section" data-nav-key="design">Design</a></li>
+                <li><a class="floating-nav-link" href="index.html#design" data-nav-key="design">Design</a></li>
+                <li><a class="floating-nav-link" href="index.html#technical" data-nav-key="technical">Technical</a></li>
                 <li><a class="floating-nav-link" href="creative.html" data-nav-key="creative">Creative</a></li>
-                <li><a class="floating-nav-link" href="technical.html" data-nav-key="technical">Technical</a></li>
                 <li><a class="floating-nav-link" href="about.html" data-nav-key="about">About</a></li>
             </ul>
         </nav>
@@ -65,29 +65,11 @@
             </div>
         </section>
 
-        <div class="home-project-portfolio" id="projects-section" data-nav-section="design">
-
-                        <div class="home-project-project ">
-                <a href="https://cornell-info4340-2026sp.github.io/ah859-hw5/" class="home-project-image-link"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/info4340/caption_generator_cover.png" alt="AI Caption Generator"
-                            class="home-project-project-image">
-                    </div>
-                </a>
-                <a href="https://cornell-info4340-2026sp.github.io/ah859-hw5/" class="home-project-title-link"
-                    target="_blank" rel="noopener noreferrer">
-                    <h2 class="home-project-title">AI-Powered Tool: Caption Generator</h2>
-                </a>
-                <div class="home-project-tags">
-                    <span class="home-project-tag">Vibecoding</span>
-                </div>
-                <p class="home-project-description">Helping users generate compelling captions effortlessly with AI-powered suggestions tailored to various content styles and platforms.</p>
-
-            </div>
-
-
-            <div class="home-project-project ">
+        <section class="home-project-section" id="design" data-nav-section="design"
+            aria-labelledby="selected-work-title">
+            <h2 class="home-project-section-title" id="selected-work-title">Selected Work</h2>
+            <div class="home-project-portfolio">
+            <div class="home-project-project">
                 <a href="https://ashleyhuang.me/amazon.html" class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
                         <img src="images/amazon/amazon-cover.png" alt="Amazon internship project"
@@ -95,7 +77,7 @@
                     </div>
                 </a>
                 <a href="https://ashleyhuang.me/amazon.html" class="home-project-title-link">
-                    <h2 class="home-project-title">Amazon UX Design Internship: Fintech Notification Framework</h2>
+                    <h3 class="home-project-title">Amazon UX Design Internship: Fintech Notification Framework</h3>
                 </a>
                 <div class="home-project-tags">
                     <span class="home-project-tag">UX Design Intern</span>
@@ -115,33 +97,13 @@
                 </a>
                 <a href="https://ashleyhuang.me/discord.html"
                     class="home-project-title-link">
-                    <h2 class="home-project-title">Case Study: Discord Bookmarks</h2>
+                    <h3 class="home-project-title">Case Study: Discord Bookmarks</h3>
                 </a>
                 <div class="home-project-tags">
                     <span class="home-project-tag">Case Study</span>
                 </div>
                 <p class="home-project-description">Helping Discord users stay organized and productive by designing a
                     bookmarks feature that saves important messages from getting lost in busy conversations.</p>
-
-            </div>
-
-              <div class="home-project-project ">
-                <a href="https://cornell-info4340-2026sp.github.io/i-heart-vue-project/" class="home-project-image-link"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/info4340/travel_tinerary_cover.png" alt="AI Travel Itinerary"
-                            class="home-project-project-image">
-                    </div>
-                </a>
-                <a href="https://cornell-info4340-2026sp.github.io/i-heart-vue-project/" class="home-project-title-link"
-                    target="_blank" rel="noopener noreferrer">
-                    <h2 class="home-project-title">AI-Powered Tool: Travel Itinerary</h2>
-                </a>
-                <div class="home-project-tags">
-                    <span class="home-project-tag">Vibecoding</span>
-                </div>
-                <p class="home-project-description">Helping users plan itineraries, discover restaurants, and finalize
-                    packing lists with a streamlined travel planning experience.</p>
 
             </div>
 
@@ -153,7 +115,7 @@
                     </div>
                 </a>
                 <a href="https://ashleyhuang.me/ecocart.html" class="home-project-title-link">
-                    <h2 class="home-project-title">Case Study: Redefining Sustainable Grocery Shopping</h2>
+                    <h3 class="home-project-title">Case Study: Redefining Sustainable Grocery Shopping</h3>
                 </a>
                 <div class="home-project-tags">
                     <span class="home-project-tag">Case Study</span>
@@ -170,7 +132,7 @@
                     </div>
                 </a>
                 <a href="https://ashleyhuang.me/airy.html" class="home-project-title-link">
-                    <h2 class="home-project-title">Dandilyonn Nonprofit Program: Mental Health App</h2>
+                    <h3 class="home-project-title">Dandilyonn Nonprofit Program: Mental Health App</h3>
                 </a>
                 <div class="home-project-tags">
                     <span class="home-project-tag">Mobile App Developer & UX Designer</span>
@@ -189,8 +151,8 @@
                             class="home-project-project-image">
                     </div>
                 </a>
-                <a href="https://ashleyhuang.me/ecocart.html" class="home-project-title-link">
-                    <h2 class="home-project-title">Case Study: Cultural Identity Through Community</h2>
+                <a href="https://ashleyhuang.me/routestoroots.html" class="home-project-title-link">
+                    <h3 class="home-project-title">Case Study: Cultural Identity Through Community</h3>
                 </a>
                 <div class="home-project-tags">
                     <span class="home-project-tag">Case Study</span>
@@ -200,15 +162,58 @@
                     identity.</p>
 
             </div>
+            </div>
+        </section>
+
+        <section class="home-project-section" id="technical" data-nav-section="technical"
+            aria-labelledby="technical-builds-title">
+            <h2 class="home-project-section-title" id="technical-builds-title">Technical Builds</h2>
+            <div class="home-project-portfolio">
+            <div class="home-project-project">
+                <a href="https://cornell-info4340-2026sp.github.io/ah859-hw5/" class="home-project-image-link"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="home-project-image-container" onclick="toggleScale(this)">
+                        <img src="images/info4340/caption_generator_cover.png" alt="AI Caption Generator"
+                            class="home-project-project-image">
+                    </div>
+                </a>
+                <a href="https://cornell-info4340-2026sp.github.io/ah859-hw5/" class="home-project-title-link"
+                    target="_blank" rel="noopener noreferrer">
+                    <h3 class="home-project-title">AI-Powered Tool: Caption Generator</h3>
+                </a>
+                <div class="home-project-tags">
+                    <span class="home-project-tag">Vibecoding</span>
+                </div>
+                <p class="home-project-description">Helping users generate compelling captions effortlessly with AI-powered suggestions tailored to various content styles and platforms.</p>
+            </div>
 
             <div class="home-project-project">
+                <a href="https://cornell-info4340-2026sp.github.io/i-heart-vue-project/" class="home-project-image-link"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="home-project-image-container" onclick="toggleScale(this)">
+                        <img src="images/info4340/travel_tinerary_cover.png" alt="AI Travel Itinerary"
+                            class="home-project-project-image">
+                    </div>
+                </a>
+                <a href="https://cornell-info4340-2026sp.github.io/i-heart-vue-project/" class="home-project-title-link"
+                    target="_blank" rel="noopener noreferrer">
+                    <h3 class="home-project-title">AI-Powered Tool: Travel Itinerary</h3>
+                </a>
+                <div class="home-project-tags">
+                    <span class="home-project-tag">Vibecoding</span>
+                </div>
+                <p class="home-project-description">Helping users plan itineraries, discover restaurants, and finalize
+                    packing lists with a streamlined travel planning experience.</p>
+            </div>
+
+            <!-- <div class="home-project-project">
                 <a href="https://cornellceme.org/index.html" class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
                         <img src="images/technical/cemecover.png" alt="CEME Project" class="home-project-project-image">
                     </div>
                 </a>
                 <a href="https://cornellceme.org/" class="home-project-title-link">
-                    <h2 class="home-project-title">Cornell Eastern Music Ensemble (CEME) Website </h2>
+                    <h3 class="home-project-title">Cornell Eastern Music Ensemble (CEME) Website </h3>
                 </a>
                 <div class="home-project-tags">
                     <span class="home-project-tag">Web Design Lead</span>
@@ -217,10 +222,11 @@
                     redesigned responsive website that helps music enthusiasts discover performances and cultural
                     experiences.</p>
 
+            </div> -->
             </div>
+        </section>
 
-
-            <!-- <div class="home-project-project">
+            <!--
                 <a href="https://ashleyhuang.me/fashionux.html" class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
                         <img src="images/fashionuxcover.png" alt="UX Project" class="home-project-project-image">
