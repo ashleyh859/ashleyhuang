@@ -665,11 +665,20 @@ main{
   .home-page .home-project-portfolio {
     grid-template-columns: 1fr;
     gap: 40px;
+    padding: 0;
   }
 
   .home-page .home-project-project {
     width: 100%;
     margin: 0;
+  }
+
+  .home-page .site-footer {
+    width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -1424,7 +1433,11 @@ a.project-link {
   }
 
   .bag-stage {
-    height: 1190px;
+    height: 1700px;
+  }
+
+  .about-page-title {
+    font-size: clamp(2.05rem, 9.5vw, 2.8rem);
   }
 
   .memory-item--object {
@@ -1469,19 +1482,19 @@ a.project-link {
   }
 
   .memory-item--graduation {
-    top: 540px !important;
+    top: 660px !important;
   }
 
   .memory-item--ensemble {
-    top: 735px !important;
+    top: 980px !important;
   }
 
   .memory-item--dance {
-    top: 900px !important;
+    top: 1300px !important;
   }
 
   .memory-item--oilpastel {
-    top: 1050px !important;
+    top: 1620px !important;
   }
 
   .memory-item--polaroid {
@@ -1489,23 +1502,23 @@ a.project-link {
   }
 
   .memory-item--guzheng {
-    width: 150px !important;
+    width: 240px !important;
   }
 
   .memory-item--graduation {
-    width: 150px !important;
+    width: 240px !important;
   }
 
   .memory-item--ensemble {
-    width: 150px !important;
+    width: 240px !important;
   }
 
   .memory-item--dance {
-    width: 150px !important;
+    width: 240px !important;
   }
 
   .memory-item--oilpastel {
-    width: 150px !important;
+    width: 240px !important;
   }
 
   .memory-item--metrocard {
@@ -1900,7 +1913,7 @@ a.project-link {
 
 @media (max-width: 640px) {
   .creative-main {
-    width: min(100vw - 20px, 1100px);
+    width: min(calc(100vw - 40px), 1100px);
     padding-top: 1rem;
   }
 
@@ -1913,8 +1926,25 @@ a.project-link {
   }
 
   .creative-project-gallery--assorted {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .creative-project-gallery--assorted .creative-project-image {
+    width: 100%;
+  }
+
+  .creative-project-card--highlight .creative-project-gallery {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .creative-project-card--highlight .creative-project-image {
+    width: 100%;
+  }
+
+  .goddard-photo-strip {
+    --goddard-photo-width: clamp(180px, 56vw, 220px);
   }
 }
 
@@ -2979,6 +3009,13 @@ a.project-link {
 
   .actions-column {
     padding: 1rem 1.05rem;
+  }
+
+  .amazon-problem-ledger-image {
+    max-width: 100%;
+    max-height: 280px !important;
+    height: auto;
+    width: auto !important;
   }
 }
 
