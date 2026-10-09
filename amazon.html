@@ -15,7 +15,7 @@
   <link rel="shortcut icon" href="ah_monogram.svg">
 </head>
 
-<body>
+<body class="amazon-case-study">
     <header>
         <div>
             <nav id="widescreen">
@@ -120,6 +120,151 @@
                                            <p class="uxparagraph">Here's my project timeline and key milestones over the summer.
                 </p>
                                 <img src="images/amazon/amazon-timeline.png" alt="Amazon UX Cover" class="UX-header-image">
+
+ <section class="ux-section">
+        <div class="problem-layout">
+          <div class="problem-column">
+            <p class="section-eyebrow">The Problem</p>
+            <h2 class="section-heading">Automated entries. Uncertain users.</h2>
+
+            <p class="section-body">
+
+              This internal financial platform automated manual bookkeeping, but users still wondered: “Did my entry go through? Do something need my attention? Do I need to take action?”
+
+            </p>
+
+            <p class="section-body">
+              The November 2024 customer satisfaction survey revealed this gap: <strong>users weren't sure what had happened to their entries, so they kept checking.</strong>
+            </p>
+          </div>
+
+          <div class="problem-column actions-column">
+            <img src="images/amazon/amazon-problem-ledger.jpg" alt="Amazon problem ledger image"
+              style="margin-top: 2rem; margin-bottom: 2rem; max-height: 400px; width: auto; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="ux-section amazon-research-section">
+        <p class="section-eyebrow">User Research</p>
+        <h2 class="section-heading">Understanding why users kept checking</h2>
+
+        <div class="amazon-research-layout">
+          <div class="amazon-research-content">
+            <p class="section-body">
+              I reviewed existing interviews and spoke with PMs and engineers to understand the notification gaps. Then,
+              I conducted targeted interviews and grouped the insights into four recurring challenges.
+            </p>
+
+            <div class="amazon-research-findings">
+              <div class="decision-outcome amazon-research-card">
+                <h3>Critical alerts were missing</h3>
+                <blockquote>“We don't even get emails when a journal entry fails to be created or posted. There's no notification at all.”</blockquote>
+              </div>
+              <div class="decision-outcome amazon-research-card">
+                <h3>Users tracked work manually</h3>
+                <blockquote>“Many of us maintain a separate document listing all the use cases we're responsible for and manually check them off as we process each entry.”</blockquote>
+              </div>
+              <div class="decision-outcome amazon-research-card">
+                <h3>Navigation required too many clicks</h3>
+                <blockquote>“It only takes 5 mins but the number of clicks I have to make wastes time.”</blockquote>
+              </div>
+              <div class="decision-outcome amazon-research-card">
+                <h3>Updates lacked information context</h3>
+                <blockquote>“If it doesn't call out the period I wouldn't know if it is related to current month or previous month or subsequent month.”</blockquote>
+              </div>
+            </div>
+          </div>
+
+          <figure class="amazon-research-figure">
+            <img src="images/amazon/amazon-affinity-mapping.png"
+              alt="Interview insights grouped into notification management, visibility, navigation, and information clarity themes">
+          </figure>
+        </div>
+
+      </section>
+
+      <section class="ux-section amazon-design-challenge">
+        <p class="section-eyebrow">Problem Statement</p>
+        <h2 class="section-heading">Keep users informed, not overwhelmed</h2>
+        <p class="section-body">
+          During month-end close, users managed 20+ workflows within five days, with multiple roles. Missing an action could delay others,
+          but sending more notifications risked overwhelming them.
+        </p>
+
+        <div class="decision-card amazon-design-challenge-callout">
+          <p class="decision-title">How might we keep our users informed during high pressure cycles without creating notification fatigue?</p>
+        </div>
+      </section>
+
+      <section class="ux-section amazon-journey-section">
+        <p class="section-eyebrow">Journey Mapping</p>
+        <h2 class="section-heading">From system statuses to meaningful updates</h2>
+        <p class="section-body">
+          The existing statuses described technical steps like upload and file validation. Some accountants (journal-entry preparers, approvers, managers) weren't sure
+          what those statuses meant for their work.
+        </p>
+
+        <figure class="amazon-journey-figure amazon-journey-original">
+          <p class="amazon-journey-figure-label">Existing system statuses</p>
+          <img src="images/amazon/amazon-journey-old.png" alt="Original workflow states before the notification redesign">
+        </figure>
+
+        <p class="section-body amazon-journey-transition">
+          I worked with an accounting manager to define statuses that reflected accountants' workflows, then mapped when
+          preparers and approvers needed notifications.
+        </p>
+
+        <figure class="amazon-journey-figure">
+          <h3 class="amazon-journey-figure-label">Preparer notification flow</h3>
+          <img src="images/amazon/amazon-journey-preparer.png"
+            alt="Redefined notification flow for journal-entry preparers.">
+        </figure>
+
+        <figure class="amazon-journey-figure">
+          <h3 class="amazon-journey-figure-label">Approver notification flow</h3>
+          <img src="images/amazon/amazon-journey-approver.png"
+            alt="Redefined notification flow for journal-entry approvers.">
+        </figure>
+      </section>
+
+      <section class="ux-section amazon-design-decision">
+        <p class="section-eyebrow">Design Direction</p>
+        <h2 class="section-heading">Not every update needed immediate attention</h2>
+        <p class="section-body">
+Mapping through each stage of the workflow helped me identify a clear pattern: users need two distinct types of notifications:
+
+        </p>
+
+        <div class="amazon-notification-comparison">
+          <div class="amazon-notification-column amazon-notification-urgent">
+            <h3>Event-Driven Updates</h3>
+            <p>Failures, rejections, and pending approvals needed prompt attention.</p>
+            <ul>
+              <li>Send immediately</li>
+              <li>Required: users can't opt out</li>
+              <li>Help prevent unresolved actions from blocking other teams</li>
+            </ul>
+          </div>
+
+          <div class="amazon-notification-column amazon-notification-batched">
+            <h3>Bulked Status Updates</h3>
+            <p>Updates kept users informed without requiring immediate action.</p>
+            <ul>
+                                          <li>Delivered at the user's preferred frequency</li>
+                                                        <li>Optional: users can opt out</li>
+
+
+              <li>Good to know -> not urgent</li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
             <h3 class="sectiontitle">My Main Takeaways</h3>
                 <p class="uxparagraph"><strong>User mental models drive great design.</strong> The best designs work with how people already think, not against them. Understanding how accountants naturally track responsibilities and deadlines helped me design notification patterns that fit their workflows instead of forcing new mental models.
                 </p>
