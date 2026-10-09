@@ -1433,7 +1433,7 @@ a.project-link {
   }
 
   .bag-stage {
-    height: 1700px;
+    height: 2400px;
   }
 
   .about-page-title {
@@ -1478,23 +1478,23 @@ a.project-link {
   }
 
   .memory-item--guzheng {
-    top: 340px !important;
+    top: 520px !important;
   }
 
   .memory-item--graduation {
-    top: 660px !important;
+    top: 900px !important;
   }
 
   .memory-item--ensemble {
-    top: 980px !important;
+    top: 1280px !important;
   }
 
   .memory-item--dance {
-    top: 1300px !important;
+    top: 1660px !important;
   }
 
   .memory-item--oilpastel {
-    top: 1620px !important;
+    top: 2040px !important;
   }
 
   .memory-item--polaroid {
@@ -1560,23 +1560,23 @@ a.project-link {
   }
 
   .polaroid-back-kicker {
-    font-size: 0.48rem;
+    font-size: 0.62rem;
   }
 
   .polaroid-back-title {
     max-width: 17ch;
-    font-size: 0.78rem;
+    font-size: 0.95rem;
   }
 
   .polaroid-back-detail {
     max-width: 20ch;
-    font-size: 0.6rem;
+    font-size: 0.72rem;
     line-height: 1.3;
   }
 
   .polaroid-back-note {
     max-width: 20ch;
-    font-size: 0.64rem;
+    font-size: 0.78rem;
   }
 
   .memory-object-pill {
