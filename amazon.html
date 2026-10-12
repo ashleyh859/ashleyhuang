@@ -181,7 +181,8 @@
                 </div>
                 <div class="decision-outcome amazon-research-card">
                   <h3>Navigation required too many clicks</h3>
-                  <blockquote>“It only takes 5 mins but the number of clicks I have to make wastes time.”</blockquote>
+                  <blockquote>“It only
+                     takes 5 mins but the number of clicks I have to make wastes time.”</blockquote>
                 </div>
                 <div class="decision-outcome amazon-research-card">
                   <h3>Updates lacked information context</h3>
@@ -279,6 +280,201 @@
                 <li>Good to know -> not urgent</li>
 
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="ux-section amazon-channel-exploration">
+          <p class="section-eyebrow">Channel Exploration</p>
+          <h2 class="section-heading">Choosing where updates should reach users</h2>
+          <p class="section-body">
+            I explored browser alerts, Slack, and an in-app notification center to see how each could support urgent
+            actions and status updates.
+          </p>
+
+          <img class="amazon-channel-exploration-image"
+            src="images/amazon/amazon-ideation.png"
+            alt="Notification concepts explored across browser alerts, Slack, and an in-app notification center.">
+          <p class="section-body">
+            Browser alerts were easy to miss or dismiss and offered limited context. Slack made outstanding actions difficult to track, though it could support announcements.
+          </p>
+
+          <div class="decision-card amazon-channel-exploration-callout">
+            <p class="decision-label">The Turning Point</p>
+            <p class="decision-title">Another feed meant more monitoring</p>
+            <p class="decision-text">
+              As I developed the in-app concept, I realized it duplicated information already available in task pages and dashboards. Adding an activity feed—and read/unread states would give users another inbox to manage.
+            </p>
+          </div>
+        </section>
+
+        <section class="ux-section amazon-email-direction">
+          <p class="section-eyebrow">Design Direction</p>
+          <h2 class="section-heading">Meet users where they already work</h2>
+          <p class="section-body">
+            I chose email because it was already part of users' daily workflows and mental workflows. It could deliver urgent alerts with
+            the context and direct links needed to act, without requiring another place to check.
+          </p>
+
+          <div class="amazon-email-comparison">
+            <figure class="amazon-email-figure">
+              <h3 class="amazon-email-figure-label">Event-Driven Email</h3>
+              <img src="images/amazon/amazon-ideation-action-required.jpg"
+                alt="Event-driven email showing an action-required message, relevant details, and a direct link to the task.">
+              <figcaption>Alerts users when something needs attention, with context and a direct link to act.</figcaption>
+            </figure>
+
+            <figure class="amazon-email-figure">
+              <h3 class="amazon-email-figure-label">Status Summary Email</h3>
+              <img src="images/amazon/amazon-ideation-bulk.jpg"
+                alt="Status summary email grouping nonurgent journal-entry updates.">
+              <figcaption>Groups nonurgent updates into a summary delivered at the user’s preferred frequency.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="ux-section amazon-email-validation">
+          <p class="section-eyebrow">Email Design &amp; Validation</p>
+          <h2 class="section-heading">Making updates easier to understand and act on</h2>
+          <p class="section-body">
+            I iterated on both email types to clarify urgent actions and make multiple status updates easier to scan.
+            For the status summaries, I tested two candidate designs to understand which structure users preferred.
+          </p>
+
+          <div class="design-decision amazon-email-validation-subsection">
+            <h3 class="decision-header">Making the next action clear</h3>
+            <p class="decision-context">
+              Early drafts made the action difficult to find or overemphasized urgency. I refined the hierarchy to bring
+              the message, relevant details, and next step into focus.
+            </p>
+
+            <div class="single-row-comparison">
+              <figure class="comparison-column amazon-email-iteration">
+                <h4 class="column-title">Draft 1</h4>
+                <div class="column-content">
+                  <img class="column-image" src="images/amazon/amazon-immediate-v1.png"
+                  alt="First action-required email draft with annotations highlighting text-heavy content and an unclear next action.">
+                  <ul class="column-bullets">
+                    <li class="pro">✓ Includes entry details</li>
+                    <li class="con">✗ Text-heavy and hard to scan</li>
+                    <li class="con">✗ Required action gets buried</li>
+                  </ul>
+                </div>
+              </figure>
+
+              <figure class="comparison-column amazon-email-iteration">
+                <h4 class="column-title">Draft 2</h4>
+                <div class="column-content">
+                  <img class="column-image" src="images/amazon/amazon-immediate-v2.png"
+                  alt="Second action-required email draft with annotations highlighting redundant urgency banners and accessibility concerns.">
+                  <ul class="column-bullets">
+                    <li class="pro">✓ Urgency stands out</li>
+                    <li class="con">✗ Redundant alert banners</li>
+                    <li class="con">✗ Red background raises accessibility concerns</li>
+                  </ul>
+                </div>
+              </figure>
+
+              <figure class="comparison-column amazon-email-iteration">
+                <h4 class="column-title">Final design</h4>
+                <div class="column-content">
+                  <img class="column-image" src="images/amazon/amazon-immediate-final.png"
+                  alt="Final action-required email design with a clear message, contextual details, and a direct link to the task.">
+                  <ul class="column-bullets">
+                    <li class="pro">✓ Clear message hierarchy</li>
+                    <li class="pro">✓ Relevant details grouped together</li>
+                    <li class="pro">✓ Direct link to the task</li>
+                  </ul>
+                </div>
+              </figure>
+            </div>
+          </div>
+
+          <div class="design-decision amazon-email-validation-subsection">
+            <h3 class="decision-header">Finding the right structure for multiple updates</h3>
+            <p class="decision-context">
+              The initial summaries separated updates by role but were difficult to scan. I explored ways to show
+              workflow progress more clearly for users managing multiple responsibilities.
+            </p>
+
+            <div class="single-row-comparison">
+              <figure class="comparison-column amazon-email-iteration">
+                <h4 class="column-title">Draft 1</h4>
+                <div class="column-content">
+                  <img class="column-image" src="images/amazon/amazon-bulk-v1.png"
+                  alt="First status-summary email draft with updates separated by preparer and approver roles.">
+                  <ul class="column-bullets">
+                    <li class="pro">✓ Separates updates by role</li>
+                    <li class="con">✗ Forces users to scan separate workflows</li>
+                    <li class="con">✗ Limited visual hierarchy</li>
+                  </ul>
+                </div>
+              </figure>
+
+              <figure class="comparison-column amazon-email-iteration">
+                <h4 class="column-title">Draft 2</h4>
+                <div class="column-content">
+                  <img class="column-image" src="images/amazon/amazon-bulk-v2.png"
+                  alt="Second status-summary email draft with a summary and table, annotated to highlight remaining hierarchy issues.">
+                  <ul class="column-bullets">
+                    <li class="pro">✓ Adds a summary and structured table</li>
+                    <li class="con">✗ Statuses are hard to distinguish</li>
+                    <li class="con">✗ Dense information is difficult to scan</li>
+                  </ul>
+                </div>
+              </figure>
+            </div>
+
+            <h3 class="decision-header amazon-email-candidate-heading">Comparing new iterations</h3>
+            <p class="decision-context">
+              I developed two alternatives: grouping updates by status or showing the most recent changes.
+            </p>
+
+            <div class="single-row-comparison">
+              <figure class="comparison-column amazon-email-iteration">
+                <h4 class="column-title">Version 1 - Grouped by status</h4>
+                <div class="column-content">
+                  <img class="column-image" src="images/amazon/amazon-bulk-final1.png"
+                  alt="Status-summary email organizing journal-entry updates into status groups.">
+                  <ul class="column-bullets">
+                    <li class="pro">✓ Groups entries by workflow status</li>
+                    <li class="pro">✓ Supports an overview of pending work</li>
+                    <li class="con">✗ Recent changes aren't the main focus</li>
+                  </ul>
+                </div>
+              </figure>
+
+              <figure class="comparison-column amazon-email-iteration">
+                <h4 class="column-title">Version 2 - Most recent updates</h4>
+                <div class="column-content">
+                  <img class="column-image" src="images/amazon/amazon-bulk-final2.png"
+                  alt="Status-summary email showing the most recent journal-entry updates.">
+                  <ul class="column-bullets">
+                    <li class="pro">✓ Highlights what changed recently</li>
+                    <li class="pro">✓ Combines updates across statuses</li>
+                    <li class="con">✗ Related statuses are spread across the list</li>
+                  </ul>
+                </div>
+              </figure>
+            </div>
+
+            <div class="amazon-email-testing">
+              <h3 class="decision-header">Testing which structure worked better</h3>
+              <p class="decision-context">
+                I compared both versions with 15 participants using side-by-side preference questions and clarity
+                ratings.
+              </p>
+
+              <div class="amazon-email-results">
+                <p>60% preferred Version 1, the status-organized version.</p>
+                <p>83% of managers preferred Version 1, the status-organized version.</p>
+                <p>Average clarity rating: 4.2/5 for Version 1, compared with 3.8/5 for Version 2.</p>
+              </div>
+
+              <p class="amazon-email-testing-takeaway">
+                The results supported grouping updates by status, particularly for managers who needed an overview of
+                workflow progress.
+              </p>
             </div>
           </div>
         </section>

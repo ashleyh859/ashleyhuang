@@ -2114,6 +2114,139 @@ a.project-link {
   line-height: 1.5;
 }
 
+.amazon-channel-exploration-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.amazon-channel-exploration-callout {
+  margin-top: 1.75rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.amazon-email-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.amazon-email-figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.amazon-email-figure-label {
+  margin: 0 0 0.8rem;
+  color: #2a2c4b;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.amazon-email-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.amazon-email-figure figcaption {
+  margin-top: 0.75rem;
+  color: #5a5c78;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.amazon-email-validation-subsection {
+  margin-top: 3.5rem;
+}
+
+.amazon-email-validation .single-row-comparison {
+  margin-top: 2rem;
+}
+
+.amazon-email-validation .comparison-column {
+  max-width: none;
+}
+
+.amazon-email-validation .column-content {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(120px, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.amazon-email-validation .column-image {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+.amazon-email-validation .column-bullets {
+  min-width: 0;
+}
+
+.amazon-email-iteration {
+  min-width: 0;
+  margin: 0;
+}
+
+.amazon-email-iteration-label {
+  margin: 0 0 0.8rem;
+  color: #2a2c4b;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.amazon-email-iteration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.amazon-email-candidate-heading {
+  margin-top: 3rem;
+}
+
+.amazon-email-testing {
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.amazon-email-results {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.amazon-email-results p {
+  margin: 0;
+  padding: 1rem;
+  border-left: 3px solid var(--amazon-orange);
+  background: var(--amazon-orange-soft);
+  color: #454760;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.amazon-email-testing-takeaway {
+  margin: 1.5rem 0 0;
+  color: #454760;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .amazon-email-validation .column-content {
+    grid-template-columns: 1fr;
+  }
+}
+
 .amazon-journey-section {
   text-align: left;
 }
@@ -3004,6 +3137,14 @@ a.project-link {
   }
 
   .amazon-notification-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .amazon-email-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .amazon-email-results {
     grid-template-columns: 1fr;
   }
 
