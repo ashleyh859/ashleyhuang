@@ -2038,6 +2038,10 @@ a.project-link {
   margin-bottom: 1.2rem;
 }
 
+.discord-case-study .decision-context {
+  color: #454760;
+}
+
 .amazon-research-section .amazon-research-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
