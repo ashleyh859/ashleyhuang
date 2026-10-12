@@ -2052,7 +2052,7 @@ a.project-link {
 
 .amazon-research-section .amazon-research-findings {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, auto);
   gap: 1rem;
   margin-top: 2rem;
@@ -2244,6 +2244,10 @@ a.project-link {
 @media (max-width: 900px) {
   .amazon-email-validation .column-content {
     grid-template-columns: 1fr;
+  }
+
+  .amazon-email-validation .column-bullets {
+    text-align: center;
   }
 }
 
