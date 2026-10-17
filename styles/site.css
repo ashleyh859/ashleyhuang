@@ -71,6 +71,10 @@ main{
   padding-top: 1rem;
 }
 
+.home-page .home-container {
+  margin-top: 96px;
+}
+
 .accessible-hidden {
   position: absolute;
   left: -10000px;
