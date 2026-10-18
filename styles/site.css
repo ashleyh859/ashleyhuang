@@ -318,6 +318,84 @@ main{
     letter-spacing: -0.4px;
 }
 
+.ashley-action-label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+.ashley-jelly-text {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.ashley-jelly-char {
+    display: inline-block;
+    min-width: 0.22em;
+    transform-origin: center bottom;
+}
+
+.ashley-jelly-char.is-jelly {
+    animation: ashley-keycaps-jelly 700ms both;
+    animation-delay: var(--jelly-delay);
+}
+
+.ashley-action-underline {
+    width: 100px;
+    height: 14px;
+    flex: 0 0 100px;
+    fill: none;
+    color: #3157b7;
+    overflow: visible;
+    clip-path: inset(0 50% 0 50%);
+    transition: clip-path 250ms ease;
+}
+
+.ashley-action-underline path {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-width: 3;
+}
+
+.ashley-keycap-action:hover .ashley-action-underline,
+.ashley-keycap-action:focus-visible .ashley-action-underline,
+.ashley-keycap-action:active .ashley-action-underline {
+    clip-path: inset(0 0 0 0);
+    transition-duration: 350ms;
+}
+
+@media (pointer: coarse) {
+    .ashley-keycap-action:active .ashley-action-underline {
+        clip-path: inset(0 0 0 0);
+    }
+
+    .ashley-keycap-action:active {
+        outline: 3px solid #4d4c87;
+        outline-offset: 8px;
+    }
+}
+
+@keyframes ashley-keycaps-jelly {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.15, 0.75);
+    }
+
+    45% {
+        transform: scale(0.88, 1.18);
+    }
+
+    70% {
+        transform: scale(1.06, 0.95);
+    }
+}
+
 .ashley-keycaps-story {
     min-height: 175px;
     max-width: 720px;
@@ -891,6 +969,14 @@ main{
 }
 
 @media (max-width: 767px) {
+  .home-page main {
+    margin-top: 0;
+  }
+
+  .home-page .home-container {
+    margin-top: 0;
+  }
+
   .home-headline-break {
     display: inline;
   }
@@ -989,6 +1075,14 @@ main{
     letter-spacing: -0.35px;
   }
 
+  .ashley-action-label {
+    gap: 1px;
+  }
+
+  .ashley-jelly-text {
+    white-space: nowrap;
+  }
+
   .ashley-keycaps-story {
     min-height: 200px;
     margin-top: 16px;
@@ -1013,6 +1107,15 @@ main{
 
   .ashley-keycaps-cursor {
     animation: none;
+  }
+
+  .ashley-jelly-char.is-jelly {
+    animation: none;
+  }
+
+  .ashley-action-underline {
+    clip-path: inset(0 0 0 0);
+    transition: none;
   }
 }
 
@@ -3855,7 +3958,7 @@ a.project-link {
 
   .home-header-container {
     width: 100%;
-    padding: 20px 0;
+    padding: 8px 0;
   }
 
   .home-intro {

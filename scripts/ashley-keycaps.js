@@ -5,16 +5,50 @@
     const cursor = document.querySelector('.ashley-keycaps-cursor');
     const status = document.querySelector('#ashley-story-status');
     const letterKeys = document.querySelectorAll('.ashley-keycap-letter');
+    const jellyTargets = document.querySelectorAll('.ashley-jelly-text');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const storyText = '13 years of guzheng. 10 years of violin.\n\nMusic taught me how small choices change the way an experience feels.';
     let animationFrame = 0;
     let isTyping = false;
     let animationStart = null;
     const pressTimers = new Set();
+    const listenerController = new AbortController();
+    const listenerOptions = { signal: listenerController.signal };
 
     if (!storyButton || !storyContainer || !typedStory || !cursor || !status) {
         return;
     }
+
+    jellyTargets.forEach((target) => {
+        const label = target.dataset.jellyText || '';
+        [...label].forEach((character, index) => {
+            const span = document.createElement('span');
+            span.className = 'ashley-jelly-char';
+            span.style.setProperty('--jelly-delay', `${index * 60}ms`);
+            span.textContent = character === ' ' ? '\u00a0' : character;
+            target.appendChild(span);
+        });
+
+        const replayJelly = () => {
+            if (reducedMotion.matches) {
+                return;
+            }
+
+            const characters = target.querySelectorAll('.ashley-jelly-char');
+            characters.forEach((character) => character.classList.remove('is-jelly'));
+            void target.offsetWidth;
+            characters.forEach((character) => character.classList.add('is-jelly'));
+        };
+
+        const keycap = target.parentElement.closest('.ashley-keycap');
+        keycap.addEventListener('pointerenter', replayJelly, listenerOptions);
+        keycap.addEventListener('focusin', replayJelly, listenerOptions);
+        keycap.addEventListener('pointerup', (event) => {
+            if (event.pointerType === 'touch') {
+                replayJelly();
+            }
+        }, listenerOptions);
+    });
 
     const finishStory = () => {
         window.cancelAnimationFrame(animationFrame);
@@ -100,5 +134,6 @@
         window.cancelAnimationFrame(animationFrame);
         pressTimers.forEach((timer) => window.clearTimeout(timer));
         pressTimers.clear();
+        listenerController.abort();
     }, { once: true });
 })();
