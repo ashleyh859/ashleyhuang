@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Home</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="styles/site.css">
 
     <link rel="icon" type="image/svg+xml" href="ah_monogram.svg">
@@ -18,16 +18,17 @@
         <nav class="floating-nav" aria-label="Primary">
             <ul class="floating-nav-list">
                 <li>
-                    <a class="floating-nav-link floating-nav-home" href="index.html#top" aria-label="Home" data-nav-key="home">
+                    <a class="floating-nav-link floating-nav-home" href="index.html#top" aria-label="Home"
+                        data-nav-key="home">
                         <img src="ah_monogram.svg" alt="" width="24" height="24">
                     </a>
-                        </li>
+                </li>
                 <li><a class="floating-nav-link" href="index.html#design" data-nav-key="design">Design</a></li>
                 <li><a class="floating-nav-link" href="index.html#technical" data-nav-key="technical">Technical</a></li>
                 <li><a class="floating-nav-link" href="creative.html" data-nav-key="creative">Creative</a></li>
                 <li><a class="floating-nav-link" href="about.html" data-nav-key="about">About</a></li>
-                    </ul>
-                </nav>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -35,126 +36,190 @@
 
         <div class="home-container">
 
-    <div class="home-header-container">
-         <!-- <div class="bear-icon-container">
+            <div class="home-header-container">
+                <!-- <div class="bear-icon-container">
                 <img src="bearicon.svg" alt="Ashley's icon" width="80" height="80">
             </div>-->
 
 
-        <div class="home-intro">
-            <p class="home-blurb" style="color: #2079c7;">
-    Hi there, I'm Ashley.
-</p>
-<p class="home-name">A Product Designer @ Cornell University transforming innovative ideas into inclusive, real-world user experiences, where design meets code.</p>
+                <div class="home-intro">
+                    <!-- <p class="home-blurb" style="color: #2079c7;">
+                        Hi there, I'm Ashley.
+                    </p> -->
+                    <p class="home-name">I make complex ideas feel<span class="home-headline-break"><br></span> <span class="home-highlight">clear, enjoyable,</span> and <span class="home-highlight">worth coming back to</span>.
+                    </p>
 
-<p class="home-name">Previously @ <span style="color: #ff9900; font-weight: 400;">Amazon</span>. Seeking New Grad 2026 opportunities.</p>
+                    <p class="home-name">Previously @ <span style="color: #ff9900; font-weight: 400;">Amazon</span> ·
+                        Cornell'26 · Based in NYC</p>
 
 
 
+
+                </div>
+            </div>
 
         </div>
-    </div>
-</div>
-        </section>
+
+        <div class="ashley-keycaps-container">
+            <!-- Curated by ui.debbie. AshleyKeycaps is implemented with HTML, CSS, and JavaScript. -->
+            <section class="ashley-keycaps" aria-label="Ashley keycaps">
+                <div class="ashley-keycaps-letters" aria-label="ASHLEY">
+                    <button class="ashley-keycap ashley-keycap-letter" type="button" aria-label="Press A"
+                        style="--key-face: #A5B2EB; --key-sidewall: #6B78B1;">
+                        <span class="ashley-keycap-face" aria-hidden="true">A</span>
+                    </button>
+                    <button class="ashley-keycap ashley-keycap-letter" type="button" aria-label="Press S"
+                        style="--key-face: #DDD7F0; --key-sidewall: #B2A9CC;">
+                        <span class="ashley-keycap-face" aria-hidden="true">S</span>
+                    </button>
+                    <button class="ashley-keycap ashley-keycap-letter" type="button" aria-label="Press H"
+                        style="--key-face: #F3C2D0; --key-sidewall: #D69EAB;">
+                        <span class="ashley-keycap-face" aria-hidden="true">H</span>
+                    </button>
+                    <button class="ashley-keycap ashley-keycap-letter" type="button" aria-label="Press L"
+                        style="--key-face: #C6D6F3; --key-sidewall: #859CC5;">
+                        <span class="ashley-keycap-face" aria-hidden="true">L</span>
+                    </button>
+                    <button class="ashley-keycap ashley-keycap-letter" type="button" aria-label="Press E"
+                        style="--key-face: #DBD4EE; --key-sidewall: #AEA3C5;">
+                        <span class="ashley-keycap-face" aria-hidden="true">E</span>
+                    </button>
+                    <button class="ashley-keycap ashley-keycap-letter" type="button" aria-label="Press Y"
+                        style="--key-face: #F7E1CA; --key-sidewall: #DABCA3;">
+                        <span class="ashley-keycap-face" aria-hidden="true">Y</span>
+                    </button>
+                </div>
+
+                <div class="ashley-keycaps-actions" id="ashley-keycaps-actions">
+                    <button class="ashley-keycap ashley-keycap-action" id="ashley-story-button" type="button"
+                        style="--key-face: #D7D0EE; --key-sidewall: #B0A7D4;" aria-label="My design story"
+                        aria-expanded="false" aria-controls="ashley-story">
+                        <span class="ashley-keycap-face" aria-hidden="true">
+                            <span>My design story</span><span>↵</span>
+                        </span>
+                    </button>
+                    <a class="ashley-keycap ashley-keycap-action" href="#design"
+                        style="--key-face: #EEB4CC; --key-sidewall: #CD8FA9;" aria-label="View selected work">
+                        <span class="ashley-keycap-face" aria-hidden="true">
+                            <span>View selected work</span><span>↗</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="ashley-keycaps-story" id="ashley-story" hidden aria-hidden="true">
+                    <p class="ashley-keycaps-story-visual" aria-hidden="true">
+                        <span id="ashley-story-typed"></span><span class="ashley-keycaps-cursor" hidden></span>
+                    </p>
+                    <p class="ashley-keycaps-story-accessible">
+                        13 years of guzheng. 10 years of violin.<br><br>
+                        Music taught me how small choices change the way an experience feels.
+                    </p>
+                </div>
+                <p class="ashley-keycaps-status" id="ashley-story-status" role="status" aria-live="polite"></p>
+            </section>
+        </div>
 
         <section class="home-project-section" id="design" data-nav-section="design"
             aria-labelledby="selected-work-title">
             <h2 class="home-project-section-title" id="selected-work-title">Selected Work</h2>
             <div class="home-project-portfolio">
-            <div class="home-project-project">
-                <a href="https://ashleyhuang.me/amazon.html" class="home-project-image-link">
-                    <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/amazon/amazon-cover.png" alt="Amazon internship project"
-                            class="home-project-project-image">
+                <div class="home-project-project">
+                    <a href="https://ashleyhuang.me/amazon.html" class="home-project-image-link">
+                        <div class="home-project-image-container" onclick="toggleScale(this)">
+                            <img src="images/amazon/amazon-cover.png" alt="Amazon internship project"
+                                class="home-project-project-image">
+                        </div>
+                    </a>
+                    <a href="https://ashleyhuang.me/amazon.html" class="home-project-title-link">
+                        <h3 class="home-project-title">Amazon UX Design Internship: Fintech Notification Framework</h3>
+                    </a>
+                    <div class="home-project-tags">
+                        <span class="home-project-tag">UX Design Intern</span>
                     </div>
-                </a>
-                <a href="https://ashleyhuang.me/amazon.html" class="home-project-title-link">
-                    <h3 class="home-project-title">Amazon UX Design Internship: Fintech Notification Framework</h3>
-                </a>
-                <div class="home-project-tags">
-                    <span class="home-project-tag">UX Design Intern</span>
+                    <p class="home-project-description">Defining notification standards for Amazon's financial
+                        automation
+                        platform that save teams thousands of hours annually processing trillions in transactions.</p>
+
                 </div>
-                <p class="home-project-description">Defining notification standards for Amazon's financial automation
-                    platform that save teams thousands of hours annually processing trillions in transactions.</p>
 
-            </div>
-
-            <div class="home-project-project ">
-                <a href="https://ashleyhuang.me/discord.html"
-                    class="home-project-image-link">
-                    <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/discordux/discord_cover.png" alt="Discord project"
-                            class="home-project-project-image">
+                <div class="home-project-project ">
+                    <a href="https://ashleyhuang.me/discord.html" class="home-project-image-link">
+                        <div class="home-project-image-container" onclick="toggleScale(this)">
+                            <img src="images/discordux/discord_cover.png" alt="Discord project"
+                                class="home-project-project-image">
+                        </div>
+                    </a>
+                    <a href="https://ashleyhuang.me/discord.html" class="home-project-title-link">
+                        <h3 class="home-project-title">Case Study: Discord Bookmarks</h3>
+                    </a>
+                    <div class="home-project-tags">
+                        <span class="home-project-tag">Case Study</span>
                     </div>
-                </a>
-                <a href="https://ashleyhuang.me/discord.html"
-                    class="home-project-title-link">
-                    <h3 class="home-project-title">Case Study: Discord Bookmarks</h3>
-                </a>
-                <div class="home-project-tags">
-                    <span class="home-project-tag">Case Study</span>
+                    <p class="home-project-description">Helping Discord users stay organized and productive by designing
+                        a
+                        bookmarks feature that saves important messages from getting lost in busy conversations.</p>
+
                 </div>
-                <p class="home-project-description">Helping Discord users stay organized and productive by designing a
-                    bookmarks feature that saves important messages from getting lost in busy conversations.</p>
-
-            </div>
 
 
-            <div class="home-project-project ">
-                <a href="https://ashleyhuang.me/ecocart.html" class="home-project-image-link">
-                    <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/ecocart/ecocartcover.png" alt="Project Eco-Cart"
-                            class="home-project-project-image">
+                <div class="home-project-project ">
+                    <a href="https://ashleyhuang.me/ecocart.html" class="home-project-image-link">
+                        <div class="home-project-image-container" onclick="toggleScale(this)">
+                            <img src="images/ecocart/ecocartcover.png" alt="Project Eco-Cart"
+                                class="home-project-project-image">
+                        </div>
+                    </a>
+                    <a href="https://ashleyhuang.me/ecocart.html" class="home-project-title-link">
+                        <h3 class="home-project-title">Case Study: Redefining Sustainable Grocery Shopping</h3>
+                    </a>
+                    <div class="home-project-tags">
+                        <span class="home-project-tag">Case Study</span>
                     </div>
-                </a>
-                <a href="https://ashleyhuang.me/ecocart.html" class="home-project-title-link">
-                    <h3 class="home-project-title">Case Study: Redefining Sustainable Grocery Shopping</h3>
-                </a>
-                <div class="home-project-tags">
-                    <span class="home-project-tag">Case Study</span>
+                    <p class="home-project-description">Empowering shoppers to make sustainable choices through a
+                        grocery
+                        app that provides real-time eco-friendly product suggestions and rewards greener purchasing
+                        decisions.</p>
                 </div>
-                <p class="home-project-description">Empowering shoppers to make sustainable choices through a grocery
-                    app that provides real-time eco-friendly product suggestions and rewards greener purchasing
-                    decisions.</p>
-            </div>
 
-            <div class="home-project-project ">
-                <a href="https://ashleyhuang.me/airy.html" class="home-project-image-link">
-                    <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/airyux/airycover.png" alt="Project 1" class="home-project-project-image">
+                <div class="home-project-project ">
+                    <a href="https://ashleyhuang.me/airy.html" class="home-project-image-link">
+                        <div class="home-project-image-container" onclick="toggleScale(this)">
+                            <img src="images/airyux/airycover.png" alt="Project 1" class="home-project-project-image">
+                        </div>
+                    </a>
+                    <a href="https://ashleyhuang.me/airy.html" class="home-project-title-link">
+                        <h3 class="home-project-title">Dandilyonn Nonprofit Program: Mental Health App</h3>
+                    </a>
+                    <div class="home-project-tags">
+                        <span class="home-project-tag">Mobile App Developer & UX Designer</span>
                     </div>
-                </a>
-                <a href="https://ashleyhuang.me/airy.html" class="home-project-title-link">
-                    <h3 class="home-project-title">Dandilyonn Nonprofit Program: Mental Health App</h3>
-                </a>
-                <div class="home-project-tags">
-                    <span class="home-project-tag">Mobile App Developer & UX Designer</span>
+                    <p class="home-project-description">Supporting college students' mental wellbeing through a React
+                        Native
+                        app that provides safe spaces for mood tracking and anonymous journaling.</p>
+
                 </div>
-                <p class="home-project-description">Supporting college students' mental wellbeing through a React Native
-                    app that provides safe spaces for mood tracking and anonymous journaling.</p>
-
-            </div>
 
 
 
-            <div class="home-project-project ">
-                <a href="https://ashleyhuang.me/routestoroots.html" class="home-project-image-link">
-                    <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/routestoroots/RoutestoRootsCover.png" alt="Project Routes to Routes"
-                            class="home-project-project-image">
+                <div class="home-project-project ">
+                    <a href="https://ashleyhuang.me/routestoroots.html" class="home-project-image-link">
+                        <div class="home-project-image-container" onclick="toggleScale(this)">
+                            <img src="images/routestoroots/RoutestoRootsCover.png" alt="Project Routes to Routes"
+                                class="home-project-project-image">
+                        </div>
+                    </a>
+                    <a href="https://ashleyhuang.me/routestoroots.html" class="home-project-title-link">
+                        <h3 class="home-project-title">Case Study: Cultural Identity Through Community</h3>
+                    </a>
+                    <div class="home-project-tags">
+                        <span class="home-project-tag">Case Study</span>
                     </div>
-                </a>
-                <a href="https://ashleyhuang.me/routestoroots.html" class="home-project-title-link">
-                    <h3 class="home-project-title">Case Study: Cultural Identity Through Community</h3>
-                </a>
-                <div class="home-project-tags">
-                    <span class="home-project-tag">Case Study</span>
-                </div>
-                <p class="home-project-description">Helping students reconnect with their cultural heritage through an
-                    innovative campus kiosk that fosters meaningful community connections and celebrates cultural
-                    identity.</p>
+                    <p class="home-project-description">Helping students reconnect with their cultural heritage through
+                        an
+                        innovative campus kiosk that fosters meaningful community connections and celebrates cultural
+                        identity.</p>
 
-            </div>
+                </div>
             </div>
         </section>
 
@@ -162,44 +227,46 @@
             aria-labelledby="technical-builds-title">
             <h2 class="home-project-section-title" id="technical-builds-title">Technical Builds</h2>
             <div class="home-project-portfolio">
-            <div class="home-project-project">
-                <a href="https://cornell-info4340-2026sp.github.io/ah859-hw5/" class="home-project-image-link"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/info4340/caption_generator_cover.png" alt="AI Caption Generator"
-                            class="home-project-project-image">
+                <div class="home-project-project">
+                    <a href="https://cornell-info4340-2026sp.github.io/ah859-hw5/" class="home-project-image-link"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="home-project-image-container" onclick="toggleScale(this)">
+                            <img src="images/info4340/caption_generator_cover.png" alt="AI Caption Generator"
+                                class="home-project-project-image">
+                        </div>
+                    </a>
+                    <a href="https://cornell-info4340-2026sp.github.io/ah859-hw5/" class="home-project-title-link"
+                        target="_blank" rel="noopener noreferrer">
+                        <h3 class="home-project-title">AI-Powered Tool: Caption Generator</h3>
+                    </a>
+                    <div class="home-project-tags">
+                        <span class="home-project-tag">Vibecoding</span>
                     </div>
-                </a>
-                <a href="https://cornell-info4340-2026sp.github.io/ah859-hw5/" class="home-project-title-link"
-                    target="_blank" rel="noopener noreferrer">
-                    <h3 class="home-project-title">AI-Powered Tool: Caption Generator</h3>
-                </a>
-                <div class="home-project-tags">
-                    <span class="home-project-tag">Vibecoding</span>
+                    <p class="home-project-description">Helping users generate compelling captions effortlessly with
+                        AI-powered suggestions tailored to various content styles and platforms.</p>
                 </div>
-                <p class="home-project-description">Helping users generate compelling captions effortlessly with AI-powered suggestions tailored to various content styles and platforms.</p>
-            </div>
 
-            <div class="home-project-project">
-                <a href="https://cornell-info4340-2026sp.github.io/i-heart-vue-project/" class="home-project-image-link"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="home-project-image-container" onclick="toggleScale(this)">
-                        <img src="images/info4340/travel_tinerary_cover.png" alt="AI Travel Itinerary"
-                            class="home-project-project-image">
+                <div class="home-project-project">
+                    <a href="https://cornell-info4340-2026sp.github.io/i-heart-vue-project/"
+                        class="home-project-image-link" target="_blank" rel="noopener noreferrer">
+                        <div class="home-project-image-container" onclick="toggleScale(this)">
+                            <img src="images/info4340/travel_tinerary_cover.png" alt="AI Travel Itinerary"
+                                class="home-project-project-image">
+                        </div>
+                    </a>
+                    <a href="https://cornell-info4340-2026sp.github.io/i-heart-vue-project/"
+                        class="home-project-title-link" target="_blank" rel="noopener noreferrer">
+                        <h3 class="home-project-title">AI-Powered Tool: Travel Itinerary</h3>
+                    </a>
+                    <div class="home-project-tags">
+                        <span class="home-project-tag">Vibecoding</span>
                     </div>
-                </a>
-                <a href="https://cornell-info4340-2026sp.github.io/i-heart-vue-project/" class="home-project-title-link"
-                    target="_blank" rel="noopener noreferrer">
-                    <h3 class="home-project-title">AI-Powered Tool: Travel Itinerary</h3>
-                </a>
-                <div class="home-project-tags">
-                    <span class="home-project-tag">Vibecoding</span>
+                    <p class="home-project-description">Helping users plan itineraries, discover restaurants, and
+                        finalize
+                        packing lists with a streamlined travel planning experience.</p>
                 </div>
-                <p class="home-project-description">Helping users plan itineraries, discover restaurants, and finalize
-                    packing lists with a streamlined travel planning experience.</p>
-            </div>
 
-            <!-- <div class="home-project-project">
+                <!-- <div class="home-project-project">
                 <a href="https://cornellceme.org/index.html" class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
                         <img src="images/technical/cemecover.png" alt="CEME Project" class="home-project-project-image">
@@ -219,7 +286,7 @@
             </div>
         </section>
 
-            <!--
+        <!--
                 <a href="https://ashleyhuang.me/fashionux.html" class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
                         <img src="images/fashionuxcover.png" alt="UX Project" class="home-project-project-image">
@@ -228,12 +295,12 @@
                 <a href="https://ashleyhuang.me/fashionux.html" class="home-project-title-link">
                     <h2 class="home-project-title">eleVate: a Renovated Fashion E-Commerce App</h2>
                 </a> -->
-                      <!-- <div class="home-project-tags">
+        <!-- <div class="home-project-tags">
                     <span class="home-project-tag">App UX Design</span>
                 </div>-->
-            <!-- <p class="home-project-description">A personalized fashion discovery app using tags to enhance style exploration.</p>
+        <!-- <p class="home-project-description">A personalized fashion discovery app using tags to enhance style exploration.</p>
             </div> -->
-<!--
+        <!--
             <div class="home-project-project">
                 <a href="https://ashleyhuang.me/cemeux.html" class="home-project-image-link">
                     <div class="home-project-image-container" onclick="toggleScale(this)">
@@ -342,7 +409,7 @@
         </a>
         </div> -->
 
-</div>
+        </div>
 
 
     </main>
@@ -351,11 +418,27 @@
         <div class="footer-copy">
             <p class="footer-kicker">Thanks for visiting!</p>
             <h1 class="footer-headline">LET’S MAKE SOMETHING PEOPLE WANT TO COME BACK TO.</h1>
-         </div>
+        </div>
         <nav class="footer-social" aria-label="Social links">
-            <a class="footer-social-link" href="mailto:ashleyhuang.ny@gmail.com" aria-label="Email Ashley Huang" title="Email Ashley Huang"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /></svg></a>
-            <a class="footer-social-link" href="https://www.linkedin.com/in/ashleyhuang-ny" target="_blank" rel="noreferrer" aria-label="Ashley Huang on LinkedIn" title="Ashley Huang on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5V18M6.5 6v.01M10.5 18v-5.2a2.8 2.8 0 0 1 5.6 0V18M10.5 10.5V18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" /></svg></a>
-            <a class="footer-social-link" href="https://github.com/ashleyh859" target="_blank" rel="noreferrer" aria-label="Ashley Huang on GitHub" title="Ashley Huang on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 .9-4-2-5-2m10 4v-3.2a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-5.8a4.5 4.5 0 0 0-1.2-3.1 4.2 4.2 0 0 0-.1-3.1s-1-.3-3.2 1.2a11 11 0 0 0-5.8 0C6.2 2.2 5.2 2.5 5.2 2.5a4.2 4.2 0 0 0-.1 3.1 4.5 4.5 0 0 0-1.2 3.1c0 4.5 2.8 5.5 5.5 5.8a3 3 0 0 0-.8 2.3V21" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" /></svg></a>
+            <a class="footer-social-link" href="mailto:ashleyhuang.ny@gmail.com" aria-label="Email Ashley Huang"
+                title="Email Ashley Huang"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 5.5h18v13H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.5" />
+                </svg></a>
+            <a class="footer-social-link" href="https://www.linkedin.com/in/ashleyhuang-ny" target="_blank"
+                rel="noreferrer" aria-label="Ashley Huang on LinkedIn" title="Ashley Huang on LinkedIn"><svg
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6.5 8.5V18M6.5 6v.01M10.5 18v-5.2a2.8 2.8 0 0 1 5.6 0V18M10.5 10.5V18" fill="none"
+                        stroke="currentColor" stroke-linecap="round" stroke-width="1.5" />
+                </svg></a>
+            <a class="footer-social-link" href="https://github.com/ashleyh859" target="_blank" rel="noreferrer"
+                aria-label="Ashley Huang on GitHub" title="Ashley Huang on GitHub"><svg viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                        d="M9 19c-4 .9-4-2-5-2m10 4v-3.2a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-5.8a4.5 4.5 0 0 0-1.2-3.1 4.2 4.2 0 0 0-.1-3.1s-1-.3-3.2 1.2a11 11 0 0 0-5.8 0C6.2 2.2 5.2 2.5 5.2 2.5a4.2 4.2 0 0 0-.1 3.1 4.5 4.5 0 0 0-1.2 3.1c0 4.5 2.8 5.5 5.5 5.8a3 3 0 0 0-.8 2.3V21"
+                        fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5" />
+                </svg></a>
         </nav>
         <p class="footer-credit">© ASHLEY HUANG · 2026</p>
         <p class="footer-location">Brooklyn, NY</p>
@@ -368,9 +451,10 @@
     <script src="scripts/scroll-animations.js"></script>
     <script src="scripts/image.js"></script>
     <script src="scripts/desk.js"></script>
+    <script src="scripts/ashley-keycaps.js"></script>
 
 
-<script src="scripts/site-footer.js"></script>
+    <script src="scripts/site-footer.js"></script>
 </body>
 
 </html>
